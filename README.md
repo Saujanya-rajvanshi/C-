@@ -77,3 +77,27 @@ int main() {
     return 0;
 }
 ```
+
+
+### HCF
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n,i;
+    cout << "Enter number (n): ";
+    cin >> n;
+    int hcf;
+    for(i=(n/2);i<n;i++){
+        if(n%i==0){
+            hcf=i;
+        }
+    }
+
+    cout << "hcf: " << hcf;
+    
+
+    return 0;
+}
+```
