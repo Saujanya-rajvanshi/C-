@@ -3,7 +3,7 @@ C++ language
 
 
 ### loss or profit by cp and sp 
-```
+```cpp
     
 #include <iostream>
 using namespace std;
