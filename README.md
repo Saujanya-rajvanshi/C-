@@ -2,7 +2,8 @@
 C++ language 
 ### index 
 - [loss or profit by cp and sp](#loss-or-profit-by-cp-and-sp)
-- [validation of triangle](#validation-of-triangle )
+- [validation of triangle](#validation-of-triangle)
+- [Arithmetic progression](#Arithmetic-progression)
 
 ### loss or profit by cp and sp 
 ```cpp
