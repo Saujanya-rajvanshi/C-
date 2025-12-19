@@ -7,6 +7,55 @@ C++ language
 - [Arithmetic progression](#Arithmetic-progression)
 - [HCF](#HCF)
 
+### calculator
+```cpp
+#include<iostream>
+using namespace std;
+
+void calculator(){
+    cout << "hello its your calculator";
+    cout << endl ;
+    cout<< "select any operator" << endl << "+ - * / ";
+    char opr ;
+    cin >> opr ;
+    int a, b;
+    cout << "enter the first numbers";
+    cin >> a;
+    cout << "enter the second number";
+    cin >> b;
+    int answer;
+    if ( opr == '+'){
+        answer = a+b;
+    }
+    else if( opr == '-'){
+        answer = a-b;
+    }
+    else if ( opr == '*'){
+        answer = a*b;
+    }
+    else if ( opr == '/'){
+        int rem ;
+        rem = a % b ;
+        cout << " remainer : " << rem ;
+        answer = a/b ;
+        cout << endl ;
+        cout << " quotient : " ;
+        
+    }
+    cout << "your answer  : " << answer;
+    cout << endl << endl ;
+}
+
+int main(){
+    int t;
+    cin >> t;
+    for(int i=0; i<t; i++){
+        calculator();
+    }
+    return 0;
+}
+```
+
 ### loss or profit by cp and sp 
 ```cpp
     
