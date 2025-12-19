@@ -1,12 +1,30 @@
 # C++
 C++ language 
 ### index 
+- [basics](#basics)
 - [calculator](#calculator)
 - [loss or profit by cp and sp](#loss-or-profit-by-cp-and-sp)
 - [validation of triangle](#validation-of-triangle)
 - [Arithmetic progression](#Arithmetic-progression)
 - [HCF](#HCF)
 
+### basics
+```
+// boiler plate code
+#include<iostream>
+using namespace std;
+
+int main(){
+    cout<< " hello world";
+}
+return o;
+```
+```
+// new line
+cout << endl ;
+cout << "\n";
+cout << "hellow\nworld";
+```
 ### calculator
 ```cpp
 #include<iostream>
