@@ -16,8 +16,8 @@ using namespace std;
 
 int main(){
     cout<< " hello world";
-}
 return o;
+}
 ```
 ```
 // new line
