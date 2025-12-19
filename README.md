@@ -1,7 +1,7 @@
 # C++
 C++ language 
 ### index 
-- (calculator)[#calculator]
+- [calculator](#calculator)
 - [loss or profit by cp and sp](#loss-or-profit-by-cp-and-sp)
 - [validation of triangle](#validation-of-triangle)
 - [Arithmetic progression](#Arithmetic-progression)
