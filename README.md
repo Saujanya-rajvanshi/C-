@@ -23,7 +23,7 @@ return 0;
 // new line
 cout << endl ;
 cout << "\n";
-cout << "hellow\nworld";
+cout << "hello\nworld";
 ```
 ### calculator
 ```cpp
