@@ -3,6 +3,7 @@ C++ language
 ### index 
 - [basics](#basics)
 - [calculator](#calculator)
+- [number factors](#number-factor)
 - [loss or profit by cp and sp](#loss-or-profit-by-cp-and-sp)
 - [validation of triangle](#validation-of-triangle)
 - [Arithmetic progression](#Arithmetic-progression)
@@ -72,6 +73,25 @@ int main(){
     }
     return 0;
 }
+```
+
+### namber factor
+```cpp
+#include<iostream>
+using namespace std;
+
+int main(){
+    cout << "hello";
+    int n;
+    cin >> n;
+    for(int i=1;i<=n;i++){
+        if(n % i==0){
+            cout << i;
+        }
+    }
+    return 0;
+}
+//never start the loop with zero as it breaks the loop as division by zero is undefined
 ```
 
 ### loss or profit by cp and sp 
