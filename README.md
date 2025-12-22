@@ -4,6 +4,7 @@ C++ language
 - [basics](#basics)
 - [calculator](#calculator)
 - [number factors](#number-factor)
+- [multiples](#multiples)
 - [loss or profit by cp and sp](#loss-or-profit-by-cp-and-sp)
 - [validation of triangle](#validation-of-triangle)
 - [Arithmetic progression](#Arithmetic-progression)
@@ -93,6 +94,34 @@ int main(){
 }
 //never start the loop with zero as it breaks the loop as division by zero is undefined
 ```
+
+### multiples 
+```cpp
+#include<iostream>
+using namespace std;
+
+int multiples(int n, int k){
+    cout << "your multiples are :\n"; 
+    for (int i=1;i<=k;i++){
+        cout << i*n << " ";
+    }
+    return 0;
+}
+
+int main(){
+    cout << "enter the number";
+    int n;
+    cin >> n;
+    cout << "how may nultiples do you want";
+    int k;
+    cin >> k;
+
+    multiples(n,k);
+
+    return 0;
+}
+```
+
 
 ### loss or profit by cp and sp 
 ```cpp
