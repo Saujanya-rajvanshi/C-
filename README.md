@@ -5,6 +5,7 @@ C++ language
 - [calculator](#calculator)
 - [number factors](#number-factor)
 - [multiples](#multiples)
+- []
 - [loss or profit by cp and sp](#loss-or-profit-by-cp-and-sp)
 - [validation of triangle](#validation-of-triangle)
 - [Arithmetic progression](#Arithmetic-progression)
@@ -27,6 +28,34 @@ cout << endl ;
 cout << "\n";
 cout << "hello\nworld";
 ```
+### prime number
+```cpp
+#include<iostream>
+using namespace std;
+
+int main(){
+cout<< " hello world";
+    // new line
+cout << endl ;
+cout << "\n";
+int n; 
+cin >> n;
+int i;
+for( i = 2;i < 10000000 ;i++ ){
+    if(n%i == 0){
+        break;
+    }
+}
+if(i == n){
+            cout << "prime number";
+        }
+else{
+            cout << "not a prime number";
+        }
+return 0;
+}
+```
+
 ### calculator
 ```cpp
 #include<iostream>
