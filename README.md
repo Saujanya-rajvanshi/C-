@@ -5,7 +5,7 @@ C++ language
 - [calculator](#calculator)
 - [number factors](#number-factor)
 - [multiples](#multiples)
-- [prime numbers](#prime-numbers)
+- [prime numbers](#prime-number)
 - [loss or profit by cp and sp](#loss-or-profit-by-cp-and-sp)
 - [validation of triangle](#validation-of-triangle)
 - [Arithmetic progression](#Arithmetic-progression)
