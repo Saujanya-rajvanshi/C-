@@ -57,6 +57,34 @@ return 0;
 }
 ```
 
+### composite numbers
+```cpp
+#include<iostream>
+using namespace std;
+
+int main(){
+cout<< " hello world";
+    // new line
+cout << endl ;
+cout << "\n";
+int n; 
+cin >> n;
+int i;
+for( i = 2;i < 10000000 ;i++ ){
+    if(n%i == 0){
+        break;
+    }
+}
+if(i == n){
+            cout << "not a composite number ";
+        }
+else{
+            cout << "composite number";
+        }
+return 0;
+}
+```
+
 ### calculator
 ```cpp
 #include<iostream>
