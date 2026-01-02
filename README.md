@@ -17,6 +17,7 @@ C++ language
 - [character set](#character-set)
 - [tokens](#tokens)
 - [keywords](#keywords)
+- [identifier](#identifier)
 - [boiler plate code](#boile-plate-code)
 - [next line](#next-line)
 - [output & input](#output-and-input)
@@ -25,30 +26,30 @@ C++ language
 ```cpp
 C++ Character Set
 
-Letters: A–Z, a–z
+🌸 Letters: A–Z, a–z
 
-Digits: 0–9
+🌸 Digits: 0–9
 
-Special symbols:** `+  -  *  /  %  =  <  >  !  &  |  ^  ~  ?  :  ;  ,  .  '  "  #  $  @  _  ( )  { }  [ ]
+🌸 Special symbols:** `+  -  *  /  %  =  <  >  !  &  |  ^  ~  ?  :  ;  ,  .  '  "  #  $  @  _  ( )  { }  [ ]
 
-Whitespace characters:** space, tab (`\t`), newline (`\n`), carriage return (`\r`)
+🌸 Whitespace characters:** space, tab (`\t`), newline (`\n`), carriage return (`\r`)
 
 ```
 ##### tokens
 ```cpp
 Tokens in C++
 
-Tokens are the **smallest units** of a C++ program.
+🌸 Tokens are the **smallest units** of a C++ program.
 
-Keywords:** `int`, `float`, `if`, `else`, `for`, `while`, `return`, etc.
+🌸 Keywords:** `int`, `float`, `if`, `else`, `for`, `while`, `return`, etc.
 
-Identifiers:** names of variables, functions, classes (e.g. `sum`, `main`, `count`)
+🌸 Identifiers:** names of variables, functions, classes (e.g. `sum`, `main`, `count`)
 
-Constants (literals):** fixed values like `10`, `3.14`, `'a'`, `"hello"`
+🌸 Constants (literals):** fixed values like `10`, `3.14`, `'a'`, `"hello"`
 
-Operators:** `+ - * / % = == < > && ||
+🌸 Operators:** `+ - * / % = == < > && ||
 
-Separators (punctuators):** `; , ( ) { } [ ]
+🌸 Separators (punctuators):** `; , ( ) { } [ ]
 
 ```
 ##### keywords
@@ -93,6 +94,49 @@ nullptr, true, false, asm
 Interview one-liner
 “Keywords are reserved words in C++ with predefined meaning and cannot be used as variable or function names.”
 ```
+##### identifier
+```cpp
+Identifier in C++
+
+An **identifier** is the **name given to a variable, function, class, or object** in a C++ program.
+
+🌸 Rules for identifiers
+
+* Must start with a letter (A–Z / a–z) or **underscore (_)
+* Can contain **letters, digits, and underscores
+* Cannot start with a digit
+* Cannot be a keyword
+* Case-sensitive
+
+🌸 Examples
+
+✔ Valid: `sum`, `total_marks`, `_count`, `main`
+❌ Invalid: `1num`, `float`, `total-marks`
+
+👉 Identifiers are used to **identify program elements uniquely**.
+```
+##### literals
+```cpp
+Literals in C++
+
+Literals are fixed constant values used directly in a program.
+Types of literals
+
+🌸 Integer literals: 10, -5, 0, 100
+
+🌸 Floating-point literals: 3.14, 0.5, 2.0
+
+🌸 Character literals: 'a', 'Z', '9'
+
+🌸 String literals: "Hello", "C++"
+
+🌸 Boolean literals: true, false
+
+🌸 Null pointer literal: nullptr
+
+👉 Literals represent constant values that do not change during program execution.
+```
+
 
 ##### boiler plate code
 ```cpp
