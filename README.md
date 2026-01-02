@@ -14,9 +14,20 @@ C++ language
 - [HCF](#HCF)
 
 ### basics
+- [character set](#character-set)
 - [boiler plate code](#boile-plate-code)
 - [next line](#next-line)
 - [output & input](#output-and-input)
+
+##### character set
+```cpp
+C++ Character Set
+
+Letters:** A–Z, a–z
+Digits:** 0–9
+Special symbols:** `+  -  *  /  %  =  <  >  !  &  |  ^  ~  ?  :  ;  ,  .  '  "  #  $  @  _  ( )  { }  [ ]`
+Whitespace characters:** space, tab (`\t`), newline (`\n`), carriage return (`\r`)
+```
 
 ##### boiler plate code
 ```cpp
