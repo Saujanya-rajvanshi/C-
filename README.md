@@ -7,6 +7,7 @@ C++ language
 - [multiples](#multiples)
 - [prime numbers](#prime-number)
 - [composite numbers](#composite-numbers)
+- [prime factorisation](#prime-factorisation)
 - [loss or profit by cp and sp](#loss-or-profit-by-cp-and-sp)
 - [validation of triangle](#validation-of-triangle)
 - [Arithmetic progression](#Arithmetic-progression)
@@ -151,6 +152,32 @@ int main(){
     return 0;
 }
 //never start the loop with zero as it breaks the loop as division by zero is undefined
+```
+### prime factorisation
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+
+    for (int i = 2; i * i <= n; i++) { 
+        while (n % i == 0) {
+            cout << i << " ";
+            n /= i;
+        }
+    }
+
+    if (n > 1) {
+        cout << n;
+    }
+}
+
+//dont use i<= sqrt(n) it will result in double use i*i <= n
+// dont check after half of number in factor question
+// if n is prime number n%i  will not be equal to 0 and the thr no. itself will be printed
+
 ```
 
 ### multiples 
