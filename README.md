@@ -123,6 +123,7 @@ Literals are fixed constant values used directly in a program.
 Types of literals
 
 🌸 Integer literals: 10, -5, 0, 100
+- [integer](#integer)
 
 🌸 Floating-point literals: 3.14, 0.5, 2.0
 
@@ -135,6 +136,26 @@ Types of literals
 🌸 Null pointer literal: nullptr
 
 👉 Literals represent constant values that do not change during program execution.
+```
+###### integer 
+```cpp
+Integer Literals in C++ (Sub-types)
+
+🌸 Decimal: base 10 → digits 0–9
+    Examples: 10, 25, 100
+
+🌸 Octal: base 8 → starts with 0
+    Digits: 0–7
+    Examples: 012, 075
+
+🌸 Hexadecimal: base 16 → starts with 0x or 0X
+    Digits: 0–9, A–F
+    Examples: 0x1A, 0XFF
+
+🌸 Binary (C++14 onwards): base 2 → starts with 0b or 0B
+    Digits: 0 and 1
+    Examples: 0b1010, 0B1101
+
 ```
 
 
