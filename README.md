@@ -16,6 +16,7 @@ C++ language
 ### basics
 - [character set](#character-set)
 - [tokens](#tokens)
+- [keywords](#keywords)
 - [boiler plate code](#boile-plate-code)
 - [next line](#next-line)
 - [output & input](#output-and-input)
@@ -40,7 +41,48 @@ Identifiers:** names of variables, functions, classes (e.g. `sum`, `main`, `coun
 Constants (literals):** fixed values like `10`, `3.14`, `'a'`, `"hello"`
 Operators:** `+ - * / % = == < > && ||
 Separators (punctuators):** `; , ( ) { } [ ]
+```
+##### keywords
+```cpp
+C++ Keywords
 
+1. Basic & Data types
+int, float, double, char, void, bool, short, long, signed, unsigned, wchar_t
+
+2. Control statements
+if, else, switch, case, default
+for, while, do, break, continue, goto, return
+
+3. Storage classes
+auto, register, static, extern, mutable
+
+4. Type modifiers & casting
+const, volatile, typedef, using, sizeof, typeid
+
+5. OOP related
+class, struct, union, public, private, protected
+this, new, delete, virtual, override, final, friend
+
+6. Inheritance & polymorphism
+inherit, (no direct keyword)
+virtual, dynamic_cast, static_cast, reinterpret_cast, const_cast
+
+7. Templates & namespaces
+template, typename, namespace, export
+
+8. Exception handling
+try, catch, throw, noexcept
+
+9. Others / advanced
+inline, explicit, constexpr, decltype, operator
+nullptr, true, false, asm
+
+📌 Important note
+ * Keywords cannot be used as identifiers
+ * Total keywords ≈ 95 (C++20)
+
+Interview one-liner
+“Keywords are reserved words in C++ with predefined meaning and cannot be used as variable or function names.”
 ```
 
 ##### boiler plate code
