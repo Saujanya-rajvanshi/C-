@@ -14,9 +14,9 @@ C++ language
 - [HCF](#HCF)
 
 ### basics
--[boiler plate code](#boile-plate-code)
--[next line](#next-line)
--[output & input](#output-and-input)
+- [boiler plate code](#boile-plate-code)
+- [next line](#next-line)
+- [output & input](#output-and-input)
 
 ##### boiler plate code
 ```cpp
