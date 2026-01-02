@@ -18,6 +18,7 @@ C++ language
 - [tokens](#tokens)
 - [keywords](#keywords)
 - [identifier](#identifier)
+- [literals](#literals)
 - [boiler plate code](#boile-plate-code)
 - [next line](#next-line)
 - [output & input](#output-and-input)
