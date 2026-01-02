@@ -25,10 +25,14 @@ C++ language
 ```cpp
 C++ Character Set
 
-Letters:** A–Z, a–z
-Digits:** 0–9
-Special symbols:** `+  -  *  /  %  =  <  >  !  &  |  ^  ~  ?  :  ;  ,  .  '  "  #  $  @  _  ( )  { }  [ ]`
+Letters: A–Z, a–z
+
+Digits: 0–9
+
+Special symbols:** `+  -  *  /  %  =  <  >  !  &  |  ^  ~  ?  :  ;  ,  .  '  "  #  $  @  _  ( )  { }  [ ]
+
 Whitespace characters:** space, tab (`\t`), newline (`\n`), carriage return (`\r`)
+
 ```
 ##### tokens
 ```cpp
@@ -37,10 +41,15 @@ Tokens in C++
 Tokens are the **smallest units** of a C++ program.
 
 Keywords:** `int`, `float`, `if`, `else`, `for`, `while`, `return`, etc.
+
 Identifiers:** names of variables, functions, classes (e.g. `sum`, `main`, `count`)
+
 Constants (literals):** fixed values like `10`, `3.14`, `'a'`, `"hello"`
+
 Operators:** `+ - * / % = == < > && ||
+
 Separators (punctuators):** `; , ( ) { } [ ]
+
 ```
 ##### keywords
 ```cpp
