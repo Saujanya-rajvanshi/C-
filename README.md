@@ -14,8 +14,12 @@ C++ language
 - [HCF](#HCF)
 
 ### basics
-```
-// boiler plate code
+-[boiler plate code](#boile-plate-code)
+-[next line](#next-line)
+-[output & input](#output-and-input)
+
+##### boiler plate code
+```cpp
 #include<iostream>
 using namespace std;
 
@@ -24,11 +28,17 @@ int main(){
 return 0;
 }
 ```
-```
+##### next line
+```cpp
 // new line
 cout << endl ;
 cout << "\n";
 cout << "hello\nworld";
+```
+##### output and input 
+```cpp
+//output cout << ;
+//input cin >> ;
 ```
 ### prime number
 ```cpp
