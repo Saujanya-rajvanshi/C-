@@ -124,7 +124,6 @@ Literals are fixed constant values used directly in a program.
 Types of literals
 
 🌸 Integer literals: 10, -5, 0, 100
-- [integer](#integer)
 
 🌸 Floating-point literals: 3.14, 0.5, 2.0
 
@@ -138,6 +137,9 @@ Types of literals
 
 👉 Literals represent constant values that do not change during program execution.
 ```
+- [integer](#integer)
+
+
 ###### integer 
 ```cpp
 Integer Literals in C++ (Sub-types)
