@@ -143,6 +143,8 @@ Types of literals
 
 ###### integer 
 ---
+## integers 
+
 Integer Literals in C++ (Sub-types)
 
 🌸 Decimal: base 10 → digits 0–9
@@ -171,7 +173,7 @@ conversion/
 
 ##### Floating-point
 ---
-
+## floating point numbers literals
 ### 🔸 Definition
 
 Floating-point numbers are numbers that **contain a decimal point** or are written in **exponential form**.
@@ -222,6 +224,7 @@ Floating-point numbers are stored in **IEEE 754 format** using:
 
 ##### characters
 ---
+## characters literals
 
 * **Character**: stores a single symbol
 * **Type**: `char`
@@ -251,6 +254,7 @@ Floating-point numbers are stored in **IEEE 754 format** using:
 
 ##### string
 ---
+## string 
 
 * **String**: collection of characters
 * **Type**: `string` (STL)
