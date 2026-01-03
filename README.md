@@ -224,66 +224,74 @@ Floating-point numbers are stored in **IEEE 754 format** using:
 
 ##### characters
 ---
-## characters literals
 
-* **Character**: stores a single symbol
-* **Type**: `char`
-* **Size**: 1 byte
-* **Written in**: single quotes `'A'`
+## 💎 Character Literals
 
-**Includes:**
+* **💠 Character**: stores a single symbol
+* **💠 Type**: `char`
+* **💠 Size**: 1 byte
+* **💠 Written in**: single quotes `'A'`
 
-* Letters → `A–Z`, `a–z`
-* Digits → `0–9`
-* Special symbols → `@ # $ %`
-* Whitespace → space, tab, newline
+### ✨ Includes
 
-**ASCII-based storage**
+* 🔹 **Letters** → `A–Z`, `a–z`
+* 🔹 **Digits** → `0–9`
+* 🔹 **Special symbols** → `@ # $ %`
+* 🔹 **Whitespace** → space, tab, newline
+
+### ⚡ ASCII-based Storage
 
 * `'A'` = 65, `'a'` = 97, `'0'` = 48
 
-**Escape characters**
+### 🛠 Escape Characters
 
-* `\n`, `\t`, `\\`, `\'`
+* `\n` → newline
+* `\t` → tab
+* `\\` → backslash
+* `\'` → single quote
 
-**Common functions**
+### 📝 Common Functions
 
-* `isalpha()`, `isdigit()`, `toupper()`, `tolower()`
+* `isalpha()` → check letter
+* `isdigit()` → check digit
+* `toupper()` → convert to uppercase
+* `tolower()` → convert to lowercase
 
 ---
 
 ##### string
 ---
-## string 
 
-* **String**: collection of characters
-* **Type**: `string` (STL)
-* **Header**: `<string>`
+## 💎 String 
 
-**Features**
+* **💠 String**: collection of characters
+* **💠 Type**: `string` (STL)
+* **💠 Header**: `<string>`
 
-* Dynamic size
-* Stores text data
-* Uses contiguous memory
+### ✨ Features
 
-**Common Operations**
+* 🔹 Dynamic size
+* 🔹 Stores text data
+* 🔹 Uses contiguous memory
 
-* Length → `length()` / `size()`
-* Access → `at(i)` / `[]`
-* Add → `append()`, `+`
-* Remove → `erase()`
-* Clear → `clear()`
+### 🛠 Common Operations
 
-**Input / Output**
+* 🔹 **Length** → `length()` / `size()`
+* 🔹 **Access** → `at(i)` / `[]`
+* 🔹 **Add** → `append()` / `+`
+* 🔹 **Remove** → `erase()`
+* 🔹 **Clear** → `clear()`
 
-* `cin` → single word
-* `getline()` → full line
+### 📝 Input / Output
 
-**Important Points**
+* 🔹 `cin` → single word
+* 🔹 `getline()` → full line
 
-* Indexing starts from 0
-* Strings are mutable
-* Safer than C-style strings
+### ⚡ Important Points
+
+* 🔹 Indexing starts from 0
+* 🔹 Strings are mutable
+* 🔹 Safer than C-style strings
 
 ---
 ##### boiler plate code
