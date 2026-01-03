@@ -138,6 +138,7 @@ Types of literals
 👉 Literals represent constant values that do not change during program execution.
 ```
 - [integer](#integer)
+- [Floating-point](#Floating-point)
 
 
 ###### integer 
@@ -166,13 +167,74 @@ conversion/
 2. binary(2)/octal(8)/hexadecimal(16) to decimal
      A * (2/8/16) power n 
 
+---
 
-      
+##### Floating-point
+---
+## 🔹 Floating-Point Numbers (Notes)
 
+### 🔸 Definition
 
+Floating-point numbers are numbers that **contain a decimal point** or are written in **exponential form**.
 
 ---
 
+### 🔸 Types in C++
+
+* `float` → single precision
+* `double` → double precision (more accurate)
+* `long double` → extended precision
+
+---
+
+### 🔸 Examples
+
+* `3.14`
+* `-0.5`
+* `2.5e3` (means 2.5 × 10³)
+
+---
+
+### 🔸 Storage
+
+Floating-point numbers are stored in **IEEE 754 format** using:
+
+* Sign
+* Exponent
+* Mantissa (fraction)
+
+---
+
+### 🔸 Precision
+
+* `float` → ~6–7 decimal digits
+* `double` → ~15–16 decimal digits
+
+---
+
+### 🔸 Important Points
+
+* Floating-point values are **approximate**, not exact
+* Direct comparison (`==`) is unsafe
+* Use a small **epsilon** for comparison
+
+---
+
+### 🔸 Common Issues
+
+* Rounding errors
+* Precision loss
+* Overflow / underflow
+
+---
+
+### 🔸 Use Cases
+
+* Scientific calculations
+* Measurements
+* Financial calculations (prefer `double`)
+
+---
 
 ##### boiler plate code
 ```cpp
