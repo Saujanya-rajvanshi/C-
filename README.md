@@ -294,6 +294,42 @@ Floating-point numbers are stored in **IEEE 754 format** using:
 * 🔹 Safer than C-style strings
 
 ---
+
+#####  boolean
+---
+
+## 💎 Boolean
+
+* **💠 Boolean**: stores truth values
+* **💠 Type**: `bool`
+* **💠 Size**: usually 1 byte
+* **💠 Values**: `true` / `false`
+
+### ✨ Usage
+
+* 🔹 Used in **conditions**, **flags**, and **logical operations**
+
+### 🛠 Common Operators
+
+* 🔹 `!` → NOT
+* 🔹 `&&` → AND
+* 🔹 `||` → OR
+
+### 📝 Example
+
+```cpp
+bool isOn = true;
+if(!isOn) {
+    // executes if isOn is false
+}
+```
+
+### ⚡ Important Points
+
+* 🔹 Only two values: `true` or `false`
+* 🔹 Can be used in arithmetic: `true = 1`, `false = 0`
+
+---
 ##### boiler plate code
 ```cpp
 #include<iostream>
