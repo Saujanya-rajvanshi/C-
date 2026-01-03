@@ -96,7 +96,7 @@ Interview one-liner
 “Keywords are reserved words in C++ with predefined meaning and cannot be used as variable or function names.”
 ```
 ##### identifier
-```cpp
+---
 Identifier in C++
 
 An **identifier** is the **name given to a variable, function, class, or object** in a C++ program.
@@ -123,9 +123,9 @@ Literals in C++
 Literals are fixed constant values used directly in a program.
 Types of literals
 
-🌸 Integer literals: 10, -5, 0, 100
+🌸 Integer literals: 10, -5, 0, 100 - [integer](#integer)
 
-🌸 Floating-point literals: 3.14, 0.5, 2.0
+🌸 Floating-point literals: 3.14, 0.5, 2.0 - [Floating-point](#Floating-point)
 
 🌸 Character literals: 'a', 'Z', '9'
 
@@ -136,10 +136,8 @@ Types of literals
 🌸 Null pointer literal: nullptr
 
 👉 Literals represent constant values that do not change during program execution.
-```
-- [integer](#integer)
-- [Floating-point](#Floating-point)
 
+---
 
 ###### integer 
 ---
