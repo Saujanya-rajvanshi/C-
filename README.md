@@ -19,6 +19,7 @@ C++ language
 - [keywords](#keywords)
 - [identifier](#identifier)
 - [literals](#literals)
+- [operator](#operator)
 - [boiler plate code](#boile-plate-code)
 - [next line](#next-line)
 - [output & input](#output-and-input)
@@ -359,6 +360,57 @@ if(ptr == nullptr) {
 * 🔹 `NULL` is older, `nullptr` is preferred in modern C++
 * 🔹 Always initialize pointers to `nullptr` if not assigned
 * 🔹 Dereferencing a null pointer → **runtime error**
+
+---
+
+##### operator
+---
+
+## 💎 C++ Operators
+
+### ✨ Categories
+
+* **💠 Arithmetic** → `+`, `-`, `*`, `/`, `%`
+* **💠 Relational** → `==`, `!=`, `<`, `>`, `<=`, `>=`
+* **💠 Logical** → `&&`, `||`, `!`
+* **💠 Bitwise** → `&`, `|`, `^`, `~`, `<<`, `>>`
+* **💠 Assignment** → `=`, `+=`, `-=`, `*=`, `/=`, `%=` …
+* **💠 Increment / Decrement** → `++`, `--`
+* **💠 Conditional / Ternary** → `?:`
+* **💠 Comma** → `,`
+* **💠 Pointer / Reference** → `*`, `&`, `->`
+* **💠 Member / Scope** → `.`, `::`
+
+---
+
+### 🏆 Operator Precedence & Associativity
+
+| **Precedence** | **Operator**                                                                 | **Description**                  | **Associativity** |            |              |
+| -------------- | ---------------------------------------------------------------------------- | -------------------------------- | ----------------- | ---------- | ------------ |
+| 1              | `::`                                                                         | Scope resolution                 | Left → Right      |            |              |
+| 2              | `++`, `--`, `+`(unary), `-`(unary), `!`, `~`, `*`(dereference), `&`(address) | Unary operators                  | Right → Left      |            |              |
+| 3              | `*`, `/`, `%`                                                                | Multiplication, division, modulo | Left → Right      |            |              |
+| 4              | `+`, `-`                                                                     | Addition, subtraction            | Left → Right      |            |              |
+| 5              | `<<`, `>>`                                                                   | Bitwise shift                    | Left → Right      |            |              |
+| 6              | `<`, `<=`, `>`, `>=`                                                         | Relational                       | Left → Right      |            |              |
+| 7              | `==`, `!=`                                                                   | Equality                         | Left → Right      |            |              |
+| 8              | `&`                                                                          | Bitwise AND                      | Left → Right      |            |              |
+| 9              | `^`                                                                          | Bitwise XOR                      | Left → Right      |            |              |
+| 10             | `\|`                                                                         | Bitwise OR                       | Left → Right      |            |              |
+| 11             | `&&`                                                                         | Logical AND                      | Left → Right      |            |              |
+| 12             | `                                                                            |                                  | `                 | Logical OR | Left → Right |
+| 13             | `?:`                                                                         | Ternary conditional              | Right → Left      |            |              |
+| 14             | `=`, `+=`, `-=`, `*=`, `/=`, `%=` …                                          | Assignment                       | Right → Left      |            |              |
+| 15             | `,`                                                                          | Comma                            | Left → Right      |            |              |
+
+---
+
+### ⚡ Notes
+
+* 🔹 Higher precedence → evaluated first
+* 🔹 Associativity → resolves **operators with same precedence**
+* 🔹 Unary operators have **right-to-left** associativity
+* 🔹 Always use parentheses `()` to avoid ambiguity
 
 ---
 
