@@ -141,7 +141,7 @@ Types of literals
 
 
 ###### integer 
-```cpp
+---
 Integer Literals in C++ (Sub-types)
 
 🌸 Decimal: base 10 → digits 0–9
@@ -159,7 +159,19 @@ Integer Literals in C++ (Sub-types)
     Digits: 0 and 1
     Examples: 0b1010, 0B1101
 
-```
+conversion/
+1. decimal to binary(2)/octal(8)/hexadecimal(16)
+      A.B  devide A -|-- by 2/8/16   B  multiply 0.---*2/8/16
+
+2. binary(2)/octal(8)/hexadecimal(16) to decimal
+     A * (2/8/16) power n 
+
+
+      
+
+
+
+---
 
 
 ##### boiler plate code
