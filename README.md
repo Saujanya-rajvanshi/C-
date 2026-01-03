@@ -115,9 +115,11 @@ An **identifier** is the **name given to a variable, function, class, or object*
 ❌ Invalid: `1num`, `float`, `total-marks`
 
 👉 Identifiers are used to **identify program elements uniquely**.
-```
+
+---
+
 ##### literals
-```cpp
+---
 Literals in C++
 
 Literals are fixed constant values used directly in a program.
@@ -219,6 +221,70 @@ Floating-point numbers are stored in **IEEE 754 format** using:
 * Financial calculations (prefer `double`)
 ---
 
+##### characters
+---
+## 🔹 Character (Short Notes)
+
+* **Character**: stores a single symbol
+* **Type**: `char`
+* **Size**: 1 byte
+* **Written in**: single quotes `'A'`
+
+**Includes:**
+
+* Letters → `A–Z`, `a–z`
+* Digits → `0–9`
+* Special symbols → `@ # $ %`
+* Whitespace → space, tab, newline
+
+**ASCII-based storage**
+
+* `'A'` = 65, `'a'` = 97, `'0'` = 48
+
+**Escape characters**
+
+* `\n`, `\t`, `\\`, `\'`
+
+**Common functions**
+
+* `isalpha()`, `isdigit()`, `toupper()`, `tolower()`
+
+---
+
+##### string
+---
+## 🔹 String (Short Notes)
+
+* **String**: collection of characters
+* **Type**: `string` (STL)
+* **Header**: `<string>`
+
+**Features**
+
+* Dynamic size
+* Stores text data
+* Uses contiguous memory
+
+**Common Operations**
+
+* Length → `length()` / `size()`
+* Access → `at(i)` / `[]`
+* Add → `append()`, `+`
+* Remove → `erase()`
+* Clear → `clear()`
+
+**Input / Output**
+
+* `cin` → single word
+* `getline()` → full line
+
+**Important Points**
+
+* Indexing starts from 0
+* Strings are mutable
+* Safer than C-style strings
+
+---
 ##### boiler plate code
 ```cpp
 #include<iostream>
@@ -229,6 +295,7 @@ int main(){
 return 0;
 }
 ```
+
 ##### next line
 ```cpp
 // new line
