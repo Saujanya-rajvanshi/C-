@@ -123,17 +123,17 @@ Literals in C++
 Literals are fixed constant values used directly in a program.
 Types of literals
 
-🌸 Integer literals: 10, -5, 0, 100 - [integer](#integer)
+🌸 Integer literals: 10, -5, 0, 100  - [integer](#integer)
 
 🌸 Floating-point literals: 3.14, 0.5, 2.0 - [Floating-point](#Floating-point)
 
-🌸 Character literals: 'a', 'Z', '9'
+🌸 Character literals: 'a', 'Z', '9' -[Character](#Character)
 
-🌸 String literals: "Hello", "C++"
+🌸 String literals: "Hello", "C++" -[string](#string)
 
-🌸 Boolean literals: true, false
+🌸 Boolean literals: true, false -[boolean](#boolean)
 
-🌸 Null pointer literal: nullptr
+🌸 Null pointer literal: nullptr -[null pointer](#null)
 
 👉 Literals represent constant values that do not change during program execution.
 
@@ -175,23 +175,17 @@ conversion/
 
 Floating-point numbers are numbers that **contain a decimal point** or are written in **exponential form**.
 
----
-
 ### 🔸 Types in C++
 
 * `float` → single precision
 * `double` → double precision (more accurate)
 * `long double` → extended precision
 
----
-
 ### 🔸 Examples
 
 * `3.14`
 * `-0.5`
 * `2.5e3` (means 2.5 × 10³)
-
----
 
 ### 🔸 Storage
 
@@ -201,14 +195,10 @@ Floating-point numbers are stored in **IEEE 754 format** using:
 * Exponent
 * Mantissa (fraction)
 
----
-
 ### 🔸 Precision
 
 * `float` → ~6–7 decimal digits
 * `double` → ~15–16 decimal digits
-
----
 
 ### 🔸 Important Points
 
@@ -216,22 +206,17 @@ Floating-point numbers are stored in **IEEE 754 format** using:
 * Direct comparison (`==`) is unsafe
 * Use a small **epsilon** for comparison
 
----
-
 ### 🔸 Common Issues
 
 * Rounding errors
 * Precision loss
 * Overflow / underflow
 
----
-
 ### 🔸 Use Cases
 
 * Scientific calculations
 * Measurements
 * Financial calculations (prefer `double`)
-
 ---
 
 ##### boiler plate code
