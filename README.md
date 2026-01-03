@@ -330,6 +330,38 @@ if(!isOn) {
 * 🔹 Can be used in arithmetic: `true = 1`, `false = 0`
 
 ---
+
+##### null
+---
+
+## 💎 Null Pointer
+
+* **💠 Null Pointer**: a pointer that points to nothing
+* **💠 Type**: any pointer type (e.g., `int*`, `char*`)
+* **💠 Value**: `nullptr` (C++11 and later)
+
+### ✨ Usage
+
+* 🔹 Indicates that the pointer **does not point to any valid memory**
+* 🔹 Helps **avoid dangling pointers**
+
+### 🛠 Example
+
+```cpp
+int* ptr = nullptr;  // pointer points to nothing
+if(ptr == nullptr) {
+    // safe check before using ptr
+}
+```
+
+### ⚡ Important Points
+
+* 🔹 `NULL` is older, `nullptr` is preferred in modern C++
+* 🔹 Always initialize pointers to `nullptr` if not assigned
+* 🔹 Dereferencing a null pointer → **runtime error**
+
+---
+
 ##### boiler plate code
 ```cpp
 #include<iostream>
