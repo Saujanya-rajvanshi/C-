@@ -120,7 +120,7 @@ An **identifier** is the **name given to a variable, function, class, or object*
 
 ##### literals
 ---
-Literals in C++
+## Literals
 
 Literals are fixed constant values used directly in a program.
 Types of literals
