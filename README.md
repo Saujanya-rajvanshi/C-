@@ -129,7 +129,7 @@ Types of literals
 
 🌸 Floating-point literals: 3.14, 0.5, 2.0 - [Floating-point](#Floating-point)
 
-🌸 Character literals: 'a', 'Z', '9' -[Character](#Character)
+🌸 Character literals: 'a', 'Z', '9' -[Character](#Characters)
 
 🌸 String literals: "Hello", "C++" -[string](#string)
 
