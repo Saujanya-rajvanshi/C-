@@ -171,7 +171,6 @@ conversion/
 
 ##### Floating-point
 ---
-## 🔹 Floating-Point Numbers (Notes)
 
 ### 🔸 Definition
 
@@ -223,7 +222,6 @@ Floating-point numbers are stored in **IEEE 754 format** using:
 
 ##### characters
 ---
-## 🔹 Character (Short Notes)
 
 * **Character**: stores a single symbol
 * **Type**: `char`
@@ -253,7 +251,6 @@ Floating-point numbers are stored in **IEEE 754 format** using:
 
 ##### string
 ---
-## 🔹 String (Short Notes)
 
 * **String**: collection of characters
 * **Type**: `string` (STL)
