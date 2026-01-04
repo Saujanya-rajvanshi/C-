@@ -2,6 +2,7 @@
 C++ language 
 ### index 
 - [basics](#basics)
+- [Data handling](#Data-handling)
 - [calculator](#calculator)
 - [number factors](#number-factor)
 - [multiples](#multiples)
@@ -492,6 +493,212 @@ if(ptr == nullptr) {
 
 * Defined using `{ }`
 * Same braces = same scope
+
+---
+
+###### Data handling
+Below are **FULL, structured, exam-ready notes on Data Handling in C++**, written cleanly and beautifully, with **clear classification + flow-chart style hierarchy** (no code-heavy stuff).
+
+---
+
+# 💎 Data Handling in C++
+
+## 🔷 Data Handling
+
+* **Data handling** refers to **storing, processing, and manipulating data** in a program.
+* C++ handles data using **data types, variables, constants, and operators**.
+
+---
+
+## 💎 Data Types in C++
+
+### 🔹 Definition
+
+* **Data Type** specifies:
+
+  * Type of data
+  * Size in memory
+  * Range of values
+  * Operations allowed
+
+---
+
+## 🏗 Classification of Data Types in C++
+
+### 📌 1. Built-in (Core / Primitive)
+
+### 📌 2. Derived
+
+### 📌 3. User-defined
+
+---
+
+## 💎 Core (Built-in) Data Types
+
+### ✨ Characteristics
+
+* Predefined in C++
+* Fast and memory-efficient
+* Store **single values**
+
+---
+
+## 🔰 Core Data Types – Flow Chart (Hierarchy)
+
+```
+                Core Data Types
+                       |
+        --------------------------------------------------------------------
+        |              |               |              |                     |
+     Numeric         sets            none          sequence              mapping
+        |                                             |                     |
+   --------------------------                         ----- string        dictionary
+   |            |           |                         |
+ Integer     Floating      complex                    -----tuple
+                                                      |
+                                                      -----list
+```
+
+---
+
+## 💎 Numeric Data Types
+
+### 🔹 Integer Types
+
+* Used to store **whole numbers**
+* No decimal point
+
+| Type            | Description          |
+| --------------- | -------------------- |
+| `int`           | Standard integer     |
+| `short int`     | Smaller range        |
+| `long int`      | Larger range         |
+| `long long int` | Very large numbers   |
+| `unsigned int`  | Only positive values |
+
+---
+
+### 🔹 Floating-Point Types
+
+* Used to store **decimal numbers**
+
+| Type          | Precision          |
+| ------------- | ------------------ |
+| `float`       | Single precision   |
+| `double`      | Double precision   |
+| `long double` | Extended precision |
+
+---
+
+## 💎 Character Data Type
+
+### 🔹 `char`
+
+* Stores **single character**
+* Written in **single quotes**
+* Size: **1 byte**
+* Stored using **ASCII values**
+
+Examples:
+
+* `'A'`, `'9'`, `'@'`
+
+---
+
+## 💎 Boolean Data Type
+
+### 🔹 `bool`
+
+* Stores **true / false**
+* Used in **conditions and decisions**
+* Internally:
+
+  * `true` → 1
+  * `false` → 0
+
+---
+
+## 💎 Void Data Type
+
+### 🔹 `void`
+
+* Represents **no value**
+* Used when:
+
+  * Function returns nothing
+  * Generic pointers
+
+---
+
+## 💎 Mutable vs Immutable Data (C++ Perspective)
+
+> C++ does **not strictly enforce** mutability like Python, but conceptually:
+
+---
+
+### 🔹 Mutable Data
+
+* Data that **can be changed**
+* Examples:
+
+  * Variables
+  * Arrays
+  * Objects
+  * `string` (STL)
+
+✔ Value can be modified after creation
+
+---
+
+### 🔹 Immutable Data
+
+* Data that **cannot be changed once created**
+* Achieved using:
+
+  * `const` keyword
+  * Literal values
+
+✔ Prevents accidental modification
+
+---
+
+## 💎 Derived Data Types
+
+* Formed using **core data types**
+
+| Type      | Description             |
+| --------- | ----------------------- |
+| Array     | Collection of same type |
+| Pointer   | Stores address          |
+| Reference | Alias of variable       |
+| Function  | Block of code           |
+
+---
+
+## 💎 User-Defined Data Types
+
+* Created by programmer
+
+| Type                | Purpose               |
+| ------------------- | --------------------- |
+| `struct`            | Group different types |
+| `union`             | Shared memory         |
+| `enum`              | Named constants       |
+| `typedef` / `using` | Alias for data type   |
+| `class`             | Blueprint for objects |
+
+---
+
+## ⚡ Key Exam Points
+
+* Core data types store **single values**
+* Integer → whole numbers
+* Floating → decimal values
+* `char` → single character
+* `bool` → true / false
+* `void` → no value
+* `const` helps achieve immutability
+* Flow-chart classification is **very important for theory exams**
 
 ---
 
