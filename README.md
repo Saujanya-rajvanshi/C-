@@ -21,6 +21,7 @@ C++ language
 - [literals](#literals)
 - [operator](#operator)
 - [panctuator](#panctuator)
+- [Barebones of c++ Program](#barebones-of-cpp-program)
 - [boiler plate code](#boile-plate-code)
 - [next line](#next-line)
 - [output & input](#output-and-input)
@@ -461,6 +462,39 @@ if(ptr == nullptr) {
 * 🔹 Different from operators, but some symbols overlap
 
 ---
+
+###### barebones of cpp program
+---
+
+## 💎 Barebones of C++ Program
+
+### 🔹 Program Structure
+
+* Starts from `main()`
+* Statements end with `;`
+
+### 🔹 Expressions
+
+* Produce a value
+* Example: `a + b`, `x > 5`
+
+### 🔹 Statements
+
+* Perform actions
+* Example: declaration, assignment, `if`, `cout`
+
+### 🔹 Comments
+
+* `//` → single-line
+* `/* */` → multi-line
+
+### 🔹 Blocks
+
+* Defined using `{ }`
+* Same braces = same scope
+
+---
+
 
 
 ##### boiler plate code
