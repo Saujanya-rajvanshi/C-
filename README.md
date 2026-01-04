@@ -20,6 +20,7 @@ C++ language
 - [identifier](#identifier)
 - [literals](#literals)
 - [operator](#operator)
+- [panctuator](#panctuator)
 - [boiler plate code](#boile-plate-code)
 - [next line](#next-line)
 - [output & input](#output-and-input)
@@ -413,6 +414,54 @@ if(ptr == nullptr) {
 * 🔹 Always use parentheses `()` to avoid ambiguity
 
 ---
+
+##### panctuator
+---
+
+## 💎 Punctuators (C++)
+
+* **💠 Punctuators**: symbols used to **separate, group, or structure** code
+* **💠 Role**: define **syntax and program flow**
+* **💠 Do not perform operations** like operators
+
+---
+
+### ✨ Common Punctuators
+
+| **Punctuator** | **Purpose**                       |
+| -------------- | --------------------------------- |
+| `;`            | Statement terminator              |
+| `{ }`          | Block / scope                     |
+| `( )`          | Function call, condition grouping |
+| `[ ]`          | Array indexing                    |
+| `,`            | Separator                         |
+| `:`            | Labels, ternary, initializer list |
+| `.`            | Member access                     |
+| `->`           | Pointer member access             |
+| `::`           | Scope resolution                  |
+| `#`            | Preprocessor directive            |
+| `...`          | Variadic arguments                |
+
+---
+
+### ⚡ Examples
+
+* `;` → ends a statement
+* `{ }` → defines scope of loops / functions
+* `( )` → used in `if`, `while`, function calls
+* `#include` → uses `#` punctuator
+
+---
+
+### 📝 Important Points
+
+* 🔹 Punctuators **do not produce values**
+* 🔹 Used to **organize and structure** code
+* 🔹 Essential for **syntax correctness**
+* 🔹 Different from operators, but some symbols overlap
+
+---
+
 
 ##### boiler plate code
 ```cpp
