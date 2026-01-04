@@ -497,8 +497,6 @@ if(ptr == nullptr) {
 ---
 
 ###### Data handling
-Below are **FULL, structured, exam-ready notes on Data Handling in C++**, written cleanly and beautifully, with **clear classification + flow-chart style hierarchy** (no code-heavy stuff).
-
 ---
 
 # 💎 Data Handling in C++
