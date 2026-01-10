@@ -501,19 +501,14 @@ if(ptr == nullptr) {
 
 # 💎 Data Handling in C++
 
-## 🔷 Data Handling
-
+* **Data Handling**
 * **Data handling** refers to **storing, processing, and manipulating data** in a program.
 * C++ handles data using **data types, variables, constants, and operators**.
 
 ---
 
-## 💎 Data Types in C++
-
-### 🔹 Definition
-
+###  Data Types in C++
 * **Data Type** specifies:
-
   * Type of data
   * Size in memory
   * Range of values
@@ -523,17 +518,15 @@ if(ptr == nullptr) {
 
 ## 🏗 Classification of Data Types in C++
 
-### 📌 1. Built-in (Core / Primitive)
-
-### 📌 2. Derived
-
-### 📌 3. User-defined
+ 1. Built-in (Core / Primitive)
+ 2. Derived
+ 3. User-defined
 
 ---
 
-## 💎 Core (Built-in) Data Types
+### 💎 Core (Built-in) Data Types
 
-### ✨ Characteristics
+ Characteristics
 
 * Predefined in C++
 * Fast and memory-efficient
