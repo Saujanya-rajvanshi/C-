@@ -23,6 +23,7 @@
 - [operator](#operator)
 - [panctuator](#panctuator)
 - [Barebones of c++ Program](#barebones-of-cpp-program)
+- [data handling](#data-handling)
 - [boiler plate code](#boile-plate-code)
 - [next line](#next-line)
 - [output & input](#output-and-input)
