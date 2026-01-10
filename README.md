@@ -1,5 +1,5 @@
 # C++
-C++ language 
+
 ### index 
 - [basics](#basics)
 - [Data handling](#Data-handling)
