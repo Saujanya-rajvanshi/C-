@@ -9,18 +9,377 @@
 - [basic maths codes](https://github.com/Saujanya-rajvanshi/basic-maths)
 
 ### basics
+- [History of C++](#histroy)
+- [features of c++](#features)
 - [character set](#character-set)
 - [tokens](#tokens)
-- [keywords](#keywords)
-- [identifier](#identifier)
-- [literals](#literals)
-- [operator](#operator)
-- [panctuator](#panctuator)
+- [tokens - keywords](#keywords)
+- [tokens - identifier](#identifier)
+- [tokens - literals](#literals)
+- [tokens - operator](#operator)
+- [tokens - panctuator](#panctuator)
 - [Barebones of c++ Program](#barebones-of-cpp-program)
+- [Data Types (overview)](#Data-Types-overview)
+- [Variables & Constants](#Variables-Constants)
+- [Type Modifiers](#Type-Modifiers)
+- [Type Conversion & Type Casting](#Type-Conversion-Type-Casting)
+- [sizeof operator](#sizeof-operator)
+- [Comments](#Comments)
 - [data handling](#data-handling)
 - [boiler plate code](#boile-plate-code)
 - [next line](#next-line)
+- [Escape Sequences]()
 - [output & input](#output-and-input)
+
+
+###### history
+### History of C++
+
+* **1979** – Bjarne Stroustrup at Bell Labs started working on a language called **“C with Classes”** to support object-oriented programming.
+* **Early 1980s** – Features like **classes, constructors, destructors, and data hiding** were added to C.
+* **1983** – The language was renamed **C++** (`++` means increment in C, indicating an improvement over C).
+* **1985** – First commercial release of C++ and the book **“The C++ Programming Language”** by Bjarne Stroustrup was published.
+* **1990** – C++ became widely popular for system and application development.
+* **1998** – First ISO standard released: **C++98**.
+* **2003** – Minor update released as **C++03**.
+* **2011** – Major update **C++11** introduced modern features like auto, nullptr, lambda expressions, and smart pointers.
+* **2014** – **C++14** refined and improved C++11 features.
+* **2017** – **C++17** added filesystem library and performance improvements.
+* **2020** – **C++20** introduced concepts, ranges, coroutines, and modules.
+* **2023** – **C++23** continued enhancements and standard library improvements.
+
+**C++ is a general-purpose, high-performance language** used in system software, game development, competitive programming, embedded systems, and large-scale applications.
+
+###### features
+### Features of C++
+
+* **Object-Oriented Programming (OOP)**
+  Supports classes, objects, inheritance, polymorphism, encapsulation, and abstraction.
+
+* **Fast and Efficient**
+  Close to hardware, suitable for system-level and high-performance applications.
+
+* **Based on C Language**
+  Backward compatible with most C programs.
+
+* **Compiled Language**
+  Programs are compiled, giving better performance and security.
+
+* **Rich Standard Library (STL)**
+  Provides containers, algorithms, iterators, and functions.
+
+* **Supports Multiple Programming Styles**
+  Procedural, object-oriented, and generic programming.
+
+* **Memory Management**
+  Uses pointers, dynamic memory allocation (`new`, `delete`).
+
+* **Platform Independent**
+  Same code can run on different platforms with little or no change.
+
+* **Function Overloading**
+  Allows multiple functions with the same name but different parameters.
+
+* **Operator Overloading**
+  Custom behavior for operators like `+`, `-`, `<<`, etc.
+
+* **Exception Handling**
+  Handles runtime errors using `try`, `catch`, and `throw`.
+
+* **Templates**
+  Supports generic programming for data types.
+
+* **High Security**
+  Data hiding using access specifiers (`private`, `protected`, `public`).
+
+
+
+
+## 2. Header Files & Namespaces
+
+* Standard Header Files
+* User-defined Header Files
+* `#include` types
+* `using namespace std`
+* Namespace creation
+* Scope Resolution Operator `::`
+
+---
+
+## 3. Data Handling
+
+* Variables
+* Constants (`const`, `#define`)
+* Storage Classes
+
+  * auto
+  * static
+  * register
+  * extern
+* Memory Layout (stack vs heap)
+* Data Type Sizes
+* `typedef` / `using`
+
+---
+
+## 4. Operators
+
+* Arithmetic Operators
+* Relational Operators
+* Logical Operators
+* Assignment Operators
+* Bitwise Operators
+* Increment / Decrement
+* Conditional Operator `?:`
+* `sizeof`
+* Operator Precedence & Associativity
+
+---
+
+## 5. Flow of Control
+
+### Decision Making
+
+* `if`
+* `if–else`
+* `else–if ladder`
+* Nested `if`
+* `switch`
+
+### Looping
+
+* `for`
+* `while`
+* `do–while`
+* Nested Loops
+
+### Jump Statements
+
+* `break`
+* `continue`
+* `goto`
+* `return`
+
+---
+
+## 6. Functions
+
+* Function Declaration & Definition
+* Function Call
+* Return Type
+* Void Functions
+* Call by Value
+* Call by Reference
+* Default Arguments
+* Inline Functions
+* Function Overloading
+* Recursion
+
+---
+
+## 7. Arrays
+
+* One-Dimensional Array
+* Two-Dimensional Array
+* Multi-Dimensional Array
+* Array Initialization
+* Passing Array to Function
+* Searching Algorithms
+* Sorting Algorithms
+* Static vs Dynamic Arrays
+
+---
+
+## 8. Strings
+
+### C-Style Strings
+
+* Character Arrays
+* `strlen`, `strcpy`, `strcmp`, `strcat`
+
+### String Class (`std::string`)
+
+* Declaration
+* Input / Output
+* String Functions
+* String Operations
+* String Traversal
+* Comparison
+* Substrings
+
+---
+
+## 9. Pointers
+
+* Pointer Basics
+* Pointer to Variable
+* Pointer Arithmetic
+* Pointer & Arrays
+* Pointer to Pointer
+* NULL vs nullptr
+* Dangling Pointer
+* Wild Pointer
+* Void Pointer
+
+---
+
+## 10. Dynamic Memory Allocation
+
+* `new`
+* `delete`
+* `new[]`
+* `delete[]`
+* Memory Leaks
+
+---
+
+## 11. Structures & Unions
+
+* Structure Declaration
+* Structure Initialization
+* Array of Structures
+* Structure vs Union
+* Nested Structures
+* `typedef` with Structure
+
+---
+
+## 12. Object-Oriented Programming (OOP)
+
+* OOP Concepts
+* Class & Object
+* Access Specifiers
+* Constructors
+* Destructors
+* `this` Pointer
+* Static Data Members
+* Static Member Functions
+
+---
+
+## 13. Inheritance
+
+* Single Inheritance
+* Multiple Inheritance
+* Multilevel Inheritance
+* Hierarchical Inheritance
+* Hybrid Inheritance
+* Virtual Base Class
+
+---
+
+## 14. Polymorphism
+
+* Function Overloading
+* Operator Overloading
+* Function Overriding
+* Virtual Functions
+* Compile-time vs Run-time Polymorphism
+
+---
+
+## 15. Abstraction & Encapsulation
+
+* Data Hiding
+* Abstract Class
+* Pure Virtual Function
+* Interfaces (conceptual)
+
+---
+
+## 16. Exception Handling
+
+* `try`
+* `catch`
+* `throw`
+* Multiple Catch Blocks
+* User-defined Exceptions
+
+---
+
+## 17. File Handling
+
+* File Streams
+* `ifstream`
+* `ofstream`
+* `fstream`
+* Reading from File
+* Writing to File
+* File Modes
+
+---
+
+## 18. Templates
+
+* Function Templates
+* Class Templates
+* Template Specialization
+
+---
+
+## 19. STL (Standard Template Library)
+
+### Containers
+
+* Vector
+* List
+* Deque
+* Stack
+* Queue
+* Priority Queue
+* Set
+* Multiset
+* Map
+* Multimap
+* Unordered Set / Map
+
+### Iterators
+
+* Types of Iterators
+* Iterator Functions
+
+### Algorithms
+
+* sort
+* reverse
+* find
+* count
+* binary_search
+* lower_bound
+* upper_bound
+
+---
+
+## 20. Advanced C++ Concepts
+
+* Lambda Expressions
+* Smart Pointers
+* Move Semantics
+* `auto` keyword
+* `constexpr`
+* `mutable`
+* `friend`
+
+---
+
+## 21. Competitive Programming / DSA Readiness
+
+* Time Complexity
+* Space Complexity
+* Recursion vs Iteration
+* Bit Manipulation
+* Input Optimization
+
+---
+
+## 22. Interview & Exam Focus
+
+* Difference-based Questions
+* Memory-based Questions
+* Output-based Questions
+* Common Traps in C++
+* Frequently Asked Programs
+
 
 ##### character set
 ```cpp
@@ -489,7 +848,124 @@ if(ptr == nullptr) {
 * Defined using `{ }`
 * Same braces = same scope
 
+
 ---
+
+## Data Types Overview
+
+Data types specify **what kind of data** a variable can store and **how much memory** is allocated.
+
+### Categories of Data Types
+
+* **Primitive (Built-in):** `int`, `float`, `double`, `char`, `bool`, `void`
+* **Derived:** array, pointer, reference, function
+* **User-defined:** `struct`, `union`, `enum`, `class`, `typedef`, `using`
+* **Library / STL Types:** `string`, `vector`, `map`, `set`
+
+### Important Concepts
+
+* Size and range are **compiler & system dependent**
+* **Signed vs Unsigned** affects range
+* **Memory alignment & padding** affect structure size
+* **POD (Plain Old Data)** vs non-POD types
+* **auto keyword** performs compile-time type deduction
+
+---
+
+## Variables Constants
+
+A **variable** stores data whose value can change, while a **constant** stores fixed data.
+
+### Variables
+
+* **Declaration vs Definition**
+* **Initialization vs Assignment**
+* **Scope:** local, global, block, namespace
+* **Lifetime & storage duration**
+* **Linkage:** internal (`static`) / external (`extern`)
+
+### Constants
+
+* `const` → read-only after initialization
+* `constexpr` → evaluated at **compile time**
+* `volatile` → value may change unexpectedly
+* `mutable` → allows modification in `const` objects
+
+---
+
+## Type Modifiers
+
+Type modifiers change the **range and storage size** of data types.
+
+### Common Modifiers
+
+* `short`, `long`, `long long`
+* `signed`, `unsigned`
+
+### Notes
+
+* Valid combinations depend on the base type
+* Overflow & underflow may cause **undefined behavior**
+* Integer promotion occurs in expressions
+
+---
+
+## Type Conversion Type Casting
+
+Type conversion changes one data type into another.
+
+### Implicit Conversion
+
+* Done automatically by compiler
+* May cause **data loss**
+
+### Explicit Conversion
+
+* Programmer controlled
+
+### Casting Types
+
+* **C-style cast**
+* **C++ casts:**
+
+  * `static_cast`
+  * `const_cast`
+  * `reinterpret_cast`
+  * `dynamic_cast`
+
+### Important Concepts
+
+* Narrowing conversions
+* User-defined conversion
+* Conversion constructors
+* `explicit` keyword prevents automatic conversion
+
+---
+
+## size of Operator
+
+`sizeof` is a **compile-time operator** used to find memory size.
+
+### Key Points
+
+* Returns value in bytes
+* Result type is `size_t`
+* `sizeof(array)` ≠ `sizeof(pointer)`
+* Structure padding affects result
+* No side effects
+* `sizeof(char) == 1`
+
+---
+
+## Comments
+
+Comments are used to **explain code** and are ignored by the compiler.
+
+### Types
+
+* **Single-line:** `//`
+* **Multi-line:** `/* */`
+
 
 ###### header
 
