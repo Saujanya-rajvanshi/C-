@@ -5,6 +5,7 @@
 - [header](#header)
 - [Data handling](#Data-handling)
 - [flow of control](#flow-of-control)
+- [function](#function)
 - [string manipulation](#string-manipulation)
 - [basic maths codes](https://github.com/Saujanya-rajvanshi/basic-maths)
 
@@ -93,78 +94,7 @@
   Data hiding using access specifiers (`private`, `protected`, `public`).
 
 
----
 
-## 3. Data Handling
-
-* Variables
-* Constants (`const`, `#define`)
-* Storage Classes
-
-  * auto
-  * static
-  * register
-  * extern
-* Memory Layout (stack vs heap)
-* Data Type Sizes
-* `typedef` / `using`
-
----
-
-## 4. Operators
-
-* Arithmetic Operators
-* Relational Operators
-* Logical Operators
-* Assignment Operators
-* Bitwise Operators
-* Increment / Decrement
-* Conditional Operator `?:`
-* `sizeof`
-* Operator Precedence & Associativity
-
----
-
-## 5. Flow of Control
-
-### Decision Making
-
-* `if`
-* `if–else`
-* `else–if ladder`
-* Nested `if`
-* `switch`
-
-### Looping
-
-* `for`
-* `while`
-* `do–while`
-* Nested Loops
-
-### Jump Statements
-
-* `break`
-* `continue`
-* `goto`
-* `return`
-
----
-
-## 6. Functions
-
-* Function Declaration & Definition
-* Function Call
-* Return Type
-* Void Functions
-* Call by Value
-* Call by Reference
-* Default Arguments
-* Inline Functions
-* Function Overloading
-* Recursion
-
----
 
 ## 7. Arrays
 
@@ -1778,6 +1708,211 @@ while (true) {
 ### One-line Definition:
 
 > Flow of control statements control the execution order of a program based on conditions, loops, and jumps.
+
+
+###### function
+---
+
+# 📘 Functions — C++
+
+A **function** is a block of code that performs a specific task and can be reused multiple times.
+
+---
+
+## 🔹 Function Declaration & Definition
+
+### Declaration (Prototype)
+
+* Tells compiler about function **name, return type, parameters**
+* No body included
+
+```cpp
+int add(int, int);
+```
+
+### Definition
+
+* Contains the actual **implementation**
+
+```cpp
+int add(int a, int b) {
+    return a + b;
+}
+```
+
+### Notes
+
+* Declaration must appear **before function call**
+* Multiple declarations allowed, **one definition only**
+
+---
+
+## 🔹 Function Call
+
+Used to execute a function.
+
+```cpp
+int result = add(2, 3);
+```
+
+### Points
+
+* Arguments are copied or referenced based on call type
+* Control returns after function execution
+
+---
+
+## 🔹 Return Type
+
+Specifies the type of value returned by the function.
+
+```cpp
+int sum();
+```
+
+### Notes
+
+* `return` statement ends function execution
+* Only **one value** can be returned (multiple via structures / references)
+* `return;` used in `void` functions
+
+---
+
+## 🔹 Void Functions
+
+Functions that **do not return any value**.
+
+```cpp
+void display() {
+    cout << "Hello";
+}
+```
+
+### Use Case
+
+* Printing, updating global variables, performing actions
+
+---
+
+## 🔹 Call by Value
+
+* Copy of actual argument is passed
+* Changes **do not affect original value**
+
+```cpp
+void fun(int x);
+```
+
+### Pros / Cons
+
+✔ Safe
+✖ Extra memory & time
+
+---
+
+## 🔹 Call by Reference
+
+* Reference (address) is passed
+* Changes **affect original variable**
+
+```cpp
+void fun(int &x);
+```
+
+### Notes
+
+* Faster
+* Used for swapping, updating values
+* Pointer-based reference also possible
+
+---
+
+## 🔹 Default Arguments
+
+Provide default values to parameters.
+
+```cpp
+int add(int a, int b = 10);
+```
+
+### Rules
+
+* Default arguments must be **from right to left**
+* Defined only once (usually in prototype)
+
+---
+
+## 🔹 Inline Functions
+
+Replaces function call with function code.
+
+```cpp
+inline int square(int x) {
+    return x * x;
+}
+```
+
+### Notes
+
+* Reduces function call overhead
+* Used for **small functions**
+* Compiler may ignore `inline`
+
+---
+
+## 🔹 Function Overloading
+
+Multiple functions with **same name but different parameters**.
+
+```cpp
+int add(int a, int b);
+float add(float a, float b);
+```
+
+### Rules
+
+* Different number or type of parameters
+* Return type alone is **not sufficient**
+* Achieves **compile-time polymorphism**
+
+---
+
+## 🔹 Recursion
+
+A function calling itself to solve a problem.
+
+```cpp
+int fact(int n) {
+    if(n == 0) return 1;
+    return n * fact(n - 1);
+}
+```
+
+### Key Concepts
+
+* **Base condition** (mandatory)
+* Uses **stack memory**
+* Can cause stack overflow if not controlled
+
+---
+
+## 🔹 Hidden / Exam Important Points
+
+* Functions use **call stack**
+* Parameter passing affects performance
+* Inline + recursion not allowed together
+* Overloading resolved at compile time
+* Tail recursion is optimized by compiler
+
+---
+
+## 🔹 Advantages of Functions
+
+* Code reusability
+* Modularity
+* Easy debugging
+* Better readability
+
 
 
 ##### string manipulation
