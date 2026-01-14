@@ -4,6 +4,7 @@
 - [basics](#basics)
 - [header](#header)
 - [Data handling](#Data-handling)
+- [basic maths codes](https://github.com/Saujanya-rajvanshi/basic-maths)
 
 
 ### basics
