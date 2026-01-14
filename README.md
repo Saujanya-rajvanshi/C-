@@ -2,6 +2,7 @@
 
 ### index 
 - [basics](#basics)
+- [header](#header)
 - [Data handling](#Data-handling)
 - [calculator](#calculator)
 - [number factors](#number-factor)
@@ -494,6 +495,77 @@ if(ptr == nullptr) {
 
 * Defined using `{ }`
 * Same braces = same scope
+
+---
+
+### **#include <bits/stdc++.h>**
+#include <bits/stdc++.h> is a non-standard header that includes almost all standard C++ libraries at once.
+
+* It is mainly used in competitive programming.
+* It pulls in headers like:
+<iostream>, <vector>, <algorithm>, <map>, <set>, <stack>, <queue>, <cmath>
+So you don’t need to include each one separately.
+
+
+## ❌ Libraries it does **NOT** include
+
+1. **Non-standard / compiler-specific headers**
+
+These are outside the C++ standard:
+
+* `<windows.h>`
+* `<conio.h>`
+* `<unistd.h>`
+* `<dos.h>`
+
+Reason: They are **OS/compiler specific**, not C++ STL.
+
+---
+
+2. **C headers without `c` prefix (sometimes)**
+
+It includes:
+
+* `<cstdio>`, `<cstring>`, `<cmath>`
+
+But **not guaranteed** to include:
+
+* `<stdio.h>`
+* `<string.h>`
+* `<math.h>`
+
+(Use the `c` versions in C++)
+
+---
+
+ 3. **Graphics / GUI libraries**
+
+* `<graphics.h>`
+* `<SFML/*>`
+* `<GL/gl.h>`
+* `<SDL.h>`
+
+These are **external libraries**, not STL.
+
+---
+
+4. **Threading / system-level libraries (sometimes missing)**
+
+May not reliably include:
+
+* `<thread>`
+* `<mutex>`
+* `<condition_variable>`
+* `<atomic>`
+
+(Some GCC versions include them, some don’t → **not safe to rely on**)
+
+---
+
+5. **Networking / modern C++ libs**
+
+* `<asio>`
+* `<boost/*>` (Boost is external)
 
 ---
 
