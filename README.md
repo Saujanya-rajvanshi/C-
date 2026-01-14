@@ -4,8 +4,8 @@
 - [basics](#basics)
 - [header](#header)
 - [Data handling](#Data-handling)
+- [flow of control](#flow-of-control)
 - [basic maths codes](https://github.com/Saujanya-rajvanshi/basic-maths)
-
 
 ### basics
 - [character set](#character-set)
@@ -760,5 +760,334 @@ Examples:
 
 ---
 
+##### flow of control
+---
+# Flow of Control in C++ – Complete Notes
 
+Flow of control refers to the **order in which statements in a C++ program are executed**. By default, execution is **sequential (top to bottom)**, but flow-control statements allow us to change this order based on **conditions, loops, or jumps**.
+
+---
+
+## 1. Types of Flow of Control in C++
+
+C++ flow of control is broadly classified into:
+
+1. **Sequential Statements**
+2. **Decision Making / Conditional Statements**
+3. **Looping / Iteration Statements**
+4. **Jump Statements**
+
+---
+
+## 2. Sequential Control
+
+* Statements execute **one after another** in the order written.
+* No condition or repetition involved.
+
+Example:
+
+```cpp
+int a = 10;
+int b = 20;
+int c = a + b;
+```
+
+---
+
+## 3. Decision Making Statements
+
+Used to **execute statements based on conditions**.
+
+### 3.1 if Statement
+
+* Executes a block **only if condition is true**.
+
+Syntax:
+
+```cpp
+if (condition) {
+    // statements
+}
+```
+
+Example:
+
+```cpp
+if (a > b) {
+    cout << "A is greater";
+}
+```
+
+---
+
+### 3.2 if–else Statement
+
+* Executes one block if condition is true, otherwise another.
+
+Syntax:
+
+```cpp
+if (condition) {
+    // true block
+} else {
+    // false block
+}
+```
+
+---
+
+### 3.3 if–else if–else Ladder
+
+* Used when **multiple conditions** are to be checked.
+
+Syntax:
+
+```cpp
+if (condition1) {
+}
+else if (condition2) {
+}
+else {
+}
+```
+
+---
+
+### 3.4 Nested if
+
+* An if statement inside another if.
+
+Example:
+
+```cpp
+if (a > b) {
+    if (a > c) {
+        cout << "A is largest";
+    }
+}
+```
+
+---
+
+### 3.5 switch Statement
+
+* Used to select one block from **multiple choices**.
+* Works with **int, char, enum** (not float or string).
+
+Syntax:
+
+```cpp
+switch(expression) {
+    case value1:
+        // code
+        break;
+    case value2:
+        // code
+        break;
+    default:
+        // code
+}
+```
+
+Important Points:
+
+* `break` prevents **fall-through**
+* `default` is optional
+
+---
+
+## 4. Looping Statements
+
+Used to **repeat a block of code** multiple times.
+
+### Types of Loops:
+
+1. while loop
+2. do–while loop
+3. for loop
+
+---
+
+### 4.1 while Loop (Entry Controlled)
+
+* Condition is checked **before** loop body execution.
+
+Syntax:
+
+```cpp
+while (condition) {
+    // loop body
+}
+```
+
+Example:
+
+```cpp
+int i = 1;
+while (i <= 5) {
+    cout << i;
+    i++;
+}
+```
+
+---
+
+### 4.2 do–while Loop (Exit Controlled)
+
+* Loop body executes **at least once**.
+
+Syntax:
+
+```cpp
+do {
+    // loop body
+} while (condition);
+```
+
+---
+
+### 4.3 for Loop
+
+* Best suited when number of iterations is known.
+
+Syntax:
+
+```cpp
+for (initialization; condition; increment) {
+    // loop body
+}
+```
+
+Example:
+
+```cpp
+for (int i = 1; i <= 5; i++) {
+    cout << i;
+}
+```
+
+---
+
+## 5. Nested Loops
+
+* One loop inside another.
+* Commonly used for **2D arrays and patterns**.
+
+Example:
+
+```cpp
+for (int i = 1; i <= 3; i++) {
+    for (int j = 1; j <= 3; j++) {
+        cout << "*";
+    }
+}
+```
+
+---
+
+## 6. Jump Statements
+
+Used to **transfer control abruptly**.
+
+### 6.1 break
+
+* Terminates loop or switch immediately.
+
+```cpp
+break;
+```
+
+---
+
+### 6.2 continue
+
+* Skips current iteration and moves to next.
+
+```cpp
+continue;
+```
+
+---
+
+### 6.3 goto (Not Recommended)
+
+* Transfers control to a labeled statement.
+
+Syntax:
+
+```cpp
+goto label;
+...
+label:
+```
+
+Reason to avoid:
+
+* Makes code **hard to read and debug**
+
+---
+
+### 6.4 return
+
+* Exits from a function and returns value.
+
+```cpp
+return 0;
+```
+
+---
+
+## 7. Conditional Operator (Ternary Operator)
+
+* Short form of if–else.
+
+Syntax:
+
+```cpp
+(condition) ? expr1 : expr2;
+```
+
+Example:
+
+```cpp
+int max = (a > b) ? a : b;
+```
+
+---
+
+## 8. Infinite Loops
+
+A loop that **never terminates**.
+
+Example:
+
+```cpp
+while (true) {
+}
+```
+
+---
+
+## 9. Common Mistakes
+
+* Missing `break` in switch
+* Infinite loops due to wrong condition
+* Using `=` instead of `==` in conditions
+
+---
+
+## 10. Exam-Oriented Summary
+
+* Flow of control defines execution order
+* Decision statements → if, else, switch
+* Looping → for, while, do–while
+* Jump → break, continue, goto, return
+
+---
+
+### One-line Definition:
+
+> Flow of control statements control the execution order of a program based on conditions, loops, and jumps.
+
+---
 
