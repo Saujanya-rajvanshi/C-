@@ -93,17 +93,6 @@
   Data hiding using access specifiers (`private`, `protected`, `public`).
 
 
-
-
-## 2. Header Files & Namespaces
-
-* Standard Header Files
-* User-defined Header Files
-* `#include` types
-* `using namespace std`
-* Namespace creation
-* Scope Resolution Operator `::`
-
 ---
 
 ## 3. Data Handling
@@ -1044,6 +1033,154 @@ World    C++
 
 
 ###### header
+---
+
+## 📘 Header Files & Namespaces — C++
+
+Header files contain **declarations** (functions, classes, variables, macros) that are shared across multiple source files.
+
+### Purpose
+
+* Code reusability
+* Faster development
+* Better modularity
+* Separation of declaration & definition
+
+---
+
+## 🔹 Standard Header Files
+
+Provided by the C++ Standard Library.
+
+### Examples
+
+* `<iostream>` → input/output
+* `<string>` → string handling
+* `<cmath>` → math functions
+* `<vector>`, `<map>`, `<algorithm>` → STL
+* `<cstdlib>`, `<cstdio>`, `<cstring>`
+
+### Key Points
+
+* Enclosed in **angle brackets `< >`**
+* Stored in system directories
+* Platform independent
+
+---
+
+## 🔹 User-Defined Header Files
+
+Created by the programmer for custom code.
+
+### Syntax
+
+```cpp
+#include "myfile.h"
+```
+
+### Notes
+
+* Enclosed in **double quotes**
+* Compiler searches **current directory first**
+* Used to share functions/classes across files
+* Should contain **declarations only**, not main logic
+
+---
+
+## 🔹 `#include` Types
+
+### 1️⃣ Angle Brackets
+
+```cpp
+#include <iostream>
+```
+
+→ Used for **standard headers**
+
+### 2️⃣ Double Quotes
+
+```cpp
+#include "file.h"
+```
+
+→ Used for **user-defined headers**
+
+---
+
+## 🔹 `using namespace std;`
+
+Used to avoid writing `std::` repeatedly.
+
+### Example
+
+```cpp
+using namespace std;
+cout << "Hello";
+```
+
+### Important Points
+
+* Saves typing
+* Should be **avoided in large projects**
+* Can cause **name conflicts**
+* Better alternative:
+
+```cpp
+std::cout << "Hello";
+```
+
+---
+
+## 🔹 Namespace Creation
+
+Namespaces group identifiers to avoid **name collision**.
+
+### Syntax
+
+```cpp
+namespace MySpace {
+    int x = 10;
+}
+```
+
+### Usage
+
+```cpp
+MySpace::x;
+```
+
+---
+
+## 🔹 Scope Resolution Operator `::`
+
+Used to access:
+
+* Namespace members
+* Class members
+* Global variables
+* Static class members
+
+### Examples
+
+```cpp
+std::cout << "Hello";
+MySpace::x;
+ClassName::function();
+::globalVar;
+```
+
+---
+
+## 🔹 Exam & Interview Points
+
+* Header guards prevent multiple inclusion
+* `#pragma once` is an alternative
+* Namespaces improve code scalability
+* `std` is a predefined namespace
+* `::` binds identifier to its scope
+
+---
+
 
 ### **#include <bits/stdc++.h>**
 #include <bits/stdc++.h> is a non-standard header that includes almost all standard C++ libraries at once.
