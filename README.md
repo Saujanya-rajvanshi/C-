@@ -6,7 +6,7 @@
 - [Data handling](#Data-handling)
 - [flow of control](#flow-of-control)
 - [function](#function)
-- [Array]()
+- [Array](https://github.com/Saujanya-rajvanshi/Arrays-)
 - [pointer]()
 - [dynamic memory allocation]()
 - [Structures & Unions]()
@@ -1927,6 +1927,832 @@ int fact(int n) {
 * Modularity
 * Easy debugging
 * Better readability
+
+###### pointer
+---
+
+# 📘 Pointers — C++
+
+A **pointer** is a variable that stores the **address of another variable**.
+
+---
+
+## 🔹 Pointer Declaration & Initialization
+
+```cpp
+int a = 10;
+int *p = &a;
+```
+
+* `*` → pointer variable
+* `&` → address-of operator
+* Pointer must match the **data type** it points to
+
+---
+
+## 🔹 Dereferencing Pointer
+
+```cpp
+cout << *p;
+```
+
+* `*p` accesses the **value at the stored address**
+* Dereferencing an uninitialized pointer causes **undefined behavior**
+
+---
+
+## 🔹 Types of Pointers
+
+### 1️⃣ Null Pointer
+
+```cpp
+int *p = NULL;   // or nullptr (preferred)
+```
+
+* Points to nothing
+* Prevents accidental access
+
+### 2️⃣ Void Pointer
+
+```cpp
+void *p;
+```
+
+* Can store address of any type
+* Must be **type-cast before dereferencing**
+
+### 3️⃣ Wild Pointer
+
+* Declared but **not initialized**
+* Dangerous, may crash program
+
+### 4️⃣ Dangling Pointer
+
+* Points to memory that has been **freed**
+* Causes runtime errors
+
+---
+
+## 🔹 Pointer Arithmetic
+
+* `p + 1` → moves by **size of data type**
+* Valid only within **array bounds**
+
+```cpp
+p++;
+p--;
+```
+
+---
+
+## 🔹 Pointer & Arrays
+
+* Array name is a **constant pointer**
+
+```cpp
+int a[5];
+int *p = a;
+```
+
+* `a[i] == *(a + i)`
+
+---
+
+## 🔹 Pointer to Pointer
+
+```cpp
+int **pp;
+```
+
+* Stores address of another pointer
+* Used in **dynamic memory & 2D arrays**
+
+---
+
+## 🔹 Call by Reference using Pointers
+
+```cpp
+void swap(int *a, int *b);
+```
+
+* Changes affect original variables
+* Used for efficiency
+
+---
+
+## 🔹 Dynamic Memory Allocation
+
+```cpp
+int *p = new int;
+delete p;
+```
+
+* Allocated at **runtime**
+* `new` → allocate
+* `delete` → deallocate
+
+---
+
+## 🔹 Smart Pointers (Modern C++)
+
+* `unique_ptr`
+* `shared_ptr`
+* `weak_ptr`
+
+✔ Automatic memory management
+✔ Prevent memory leaks
+
+---
+
+## 🔹 Common Mistakes (Exam Traps)
+
+* Dereferencing NULL pointer
+* Memory leak (missing `delete`)
+* Using freed pointer
+* Wrong pointer type
+
+---
+
+## 🔹 Advantages of Pointers
+
+* Efficient memory usage
+* Dynamic memory handling
+* Used in data structures (LL, Tree, Graph)
+* Enables call by reference
+
+---
+
+## 🔹 Disadvantages
+
+* Complex syntax
+* Error-prone
+* Security risks if misused
+---
+
+
+###### dynamic memory allocation
+---
+
+# 📘 Dynamic Memory Allocation — C++
+
+Dynamic Memory Allocation (DMA) allows memory to be **allocated and deallocated at runtime**, instead of compile time.
+
+---
+
+## 🔹 Why Dynamic Memory Allocation?
+
+* Size not known at compile time
+* Efficient memory usage
+* Required for **data structures** (Linked List, Tree, Graph)
+* Memory allocated from **Heap**
+
+---
+
+## 🔹 Memory Areas (Important)
+
+| Area  | Purpose                          |
+| ----- | -------------------------------- |
+| Stack | Function calls, local variables  |
+| Heap  | Dynamic memory (`new`, `delete`) |
+| Data  | Global & static variables        |
+| Code  | Program instructions             |
+
+---
+
+## 🔹 `new` Operator
+
+Allocates memory dynamically and returns its address.
+
+### Syntax
+
+```cpp
+int *p = new int;
+```
+
+### Initialization
+
+```cpp
+int *p = new int(10);
+```
+
+### Notes
+
+* Returns pointer of required type
+* Constructor is called (for objects)
+* Throws exception on failure
+
+---
+
+## 🔹 `delete` Operator
+
+Frees dynamically allocated memory.
+
+### Syntax
+
+```cpp
+delete p;
+```
+
+### Important
+
+* Prevents memory leak
+* Pointer becomes **dangling** after delete
+
+---
+
+## 🔹 Dynamic Array Allocation
+
+```cpp
+int *arr = new int[n];
+```
+
+### Deallocation
+
+```cpp
+delete[] arr;
+```
+
+### Notes
+
+* Use `delete[]` for arrays
+* `new[]` calls constructors for all elements
+
+---
+
+## 🔹 `new` vs `malloc`
+
+| Feature      | new           | malloc     |
+| ------------ | ------------- | ---------- |
+| Language     | C++           | C          |
+| Type-safe    | Yes           | No         |
+| Constructor  | Called        | Not called |
+| Return type  | Typed pointer | `void*`    |
+| Deallocation | delete        | free       |
+
+---
+
+## 🔹 `delete` vs `free`
+
+* `delete` → used with `new`
+* `free` → used with `malloc`
+* Mixing them causes **undefined behavior**
+
+---
+
+## 🔹 Smart Pointers (Modern C++)
+
+Automatically manage dynamic memory.
+
+### Types
+
+* `unique_ptr` → single ownership
+* `shared_ptr` → shared ownership
+* `weak_ptr` → non-owning reference
+
+### Advantage
+
+✔ No memory leaks
+✔ Exception safe
+
+---
+
+## 🔹 Common Errors (Exam Traps)
+
+* Memory leak (no delete)
+* Dangling pointer
+* Double delete
+* Using deleted memory
+* Using `delete` instead of `delete[]`
+
+---
+
+## 🔹 Advantages of DMA
+
+* Efficient memory utilization
+* Flexible data size
+* Essential for advanced data structures
+
+---
+
+## 🔹 Disadvantages
+
+* Manual management needed
+* Slower than stack allocation
+* Risk of memory leaks
+
+---
+
+## 🔹 Example
+
+```cpp
+int n;
+cin >> n;
+int *arr = new int[n];
+// use array
+delete[] arr;
+```
+
+###### Structures Unions
+---
+
+# 📘 Structures & Unions — C++
+
+---
+
+## 🔹 Structure (`struct`)
+
+A **structure** is a **user-defined data type** that groups **different data types** under one name.
+
+### Syntax
+
+```cpp
+struct Student {
+    int roll;
+    float marks;
+};
+```
+
+### Key Points
+
+* Members have **separate memory**
+* Accessed using **dot (`.`) operator**
+* Can contain **functions (methods)** in C++
+* Supports **arrays, pointers, nesting**
+* Objects can be created like classes
+
+---
+
+## 🔹 Structure Features
+
+* Memory allocated = **sum of all members**
+* Supports **data abstraction**
+* Can be passed to functions
+* Can be returned from functions
+* Can use **typedef / using**
+
+```cpp
+Student s1;
+```
+
+---
+
+## 🔹 Union (`union`)
+
+A **union** is a user-defined data type where **all members share the same memory location**.
+
+### Syntax
+
+```cpp
+union Data {
+    int i;
+    float f;
+};
+```
+
+### Key Points
+
+* Only **one member usable at a time**
+* Memory allocated = **size of largest member**
+* Saves memory
+* Writing one member overwrites others
+
+---
+
+## 🔹 Structure vs Union (Important Table)
+
+| Feature     | Structure                | Union               |
+| ----------- | ------------------------ | ------------------- |
+| Memory      | Separate for each member | Shared memory       |
+| Size        | Sum of members           | Largest member      |
+| Access      | All members at once      | One at a time       |
+| Data safety | High                     | Low                 |
+| Use case    | Complex data             | Memory optimization |
+
+---
+
+## 🔹 Accessing Members
+
+```cpp
+s1.roll = 10;
+```
+
+For pointers:
+
+```cpp
+Student *p;
+p->roll = 10;
+```
+
+---
+
+## 🔹 Nested Structure / Union
+
+```cpp
+struct Address {
+    int pin;
+};
+
+struct Student {
+    Address addr;
+};
+```
+
+---
+
+## 🔹 Structure with Functions
+
+```cpp
+struct Test {
+    int x;
+    void show() {
+        cout << x;
+    }
+};
+```
+
+---
+
+## 🔹 Typedef / using with Structure
+
+```cpp
+typedef struct Student {
+    int roll;
+} Stu;
+```
+
+OR
+
+```cpp
+using Stu = Student;
+```
+
+---
+
+## 🔹 When to Use What?
+
+* Use **structure** when:
+
+  * Multiple values needed together
+  * Data safety important
+
+* Use **union** when:
+
+  * Memory is limited
+  * Only one value needed at a time
+
+---
+
+## 🔹 Exam & Interview Traps
+
+* Union members overwrite each other
+* Structure size affected by **padding**
+* C++ struct = class (default public)
+* Union cannot have non-static data members with constructors (older C++)
+
+---
+
+## 🔹 Advantages
+
+### Structure
+
+✔ Organized data
+✔ Easy data handling
+
+### Union
+
+✔ Memory efficient
+
+---
+
+###### Inheritance
+---
+
+# 📘 Inheritance — C++
+
+**Inheritance** is an OOP concept where a **derived (child) class** acquires properties and behaviors of a **base (parent) class**.
+
+---
+
+## 🔹 Why Inheritance?
+
+* Code reusability
+* Reduced redundancy
+* Easy maintenance
+* Supports polymorphism
+* Logical class hierarchy
+
+---
+
+## 🔹 Basic Syntax
+
+```cpp
+class Base {
+public:
+    int x;
+};
+
+class Derived : public Base {
+public:
+    int y;
+};
+```
+
+---
+
+## 🔹 Types of Inheritance
+
+### 1️⃣ Single Inheritance
+
+One base → one derived class
+
+```cpp
+class B {};
+class D : public B {};
+```
+
+---
+
+### 2️⃣ Multiple Inheritance
+
+Derived class inherits from **multiple base classes**
+
+```cpp
+class A {};
+class B {};
+class C : public A, public B {};
+```
+
+⚠ Can cause **ambiguity problem**
+
+---
+
+### 3️⃣ Multilevel Inheritance
+
+Chain of inheritance
+
+```cpp
+class A {};
+class B : public A {};
+class C : public B {};
+```
+
+---
+
+### 4️⃣ Hierarchical Inheritance
+
+Multiple derived classes from one base
+
+```cpp
+class A {};
+class B : public A {};
+class C : public A {};
+```
+
+---
+
+### 5️⃣ Hybrid Inheritance
+
+Combination of two or more types
+
+```cpp
+class A {};
+class B : virtual public A {};
+class C : virtual public A {};
+class D : public B, public C {};
+```
+
+---
+
+## 🔹 Virtual Base Class
+
+Used to **avoid ambiguity** in multiple inheritance (Diamond Problem).
+
+```cpp
+class A {};
+class B : virtual public A {};
+class C : virtual public A {};
+```
+
+✔ Only **one copy** of base class exists
+
+---
+
+## 🔹 Modes of Inheritance
+
+| Mode      | Base Public | Base Protected | Base Private   |
+| --------- | ----------- | -------------- | -------------- |
+| public    | public      | protected      | not accessible |
+| protected | protected   | protected      | not accessible |
+| private   | private     | private        | not accessible |
+
+---
+
+## 🔹 Access Specifiers Impact
+
+* **public inheritance** → IS-A relationship
+* **protected/private inheritance** → implementation inheritance
+
+---
+
+## 🔹 Constructor & Destructor Order
+
+* **Constructor:** Base → Derived
+* **Destructor:** Derived → Base
+
+---
+
+## 🔹 Important Points (Exam Focus)
+
+* Private members are **not inherited**
+* Protected members are accessible in derived class
+* Supports **code reuse**
+* Enables **runtime polymorphism**
+* Virtual base class solves diamond problem
+
+---
+
+## 🔹 Advantages
+
+✔ Code reuse
+✔ Reduced development time
+✔ Better organization
+
+---
+
+## 🔹 Disadvantages
+
+✖ Tight coupling
+✖ Complexity in multiple inheritance
+✖ Ambiguity issues
+
+---
+
+## 🔹 Difference: Inheritance vs Composition
+
+| Inheritance       | Composition        |
+| ----------------- | ------------------ |
+| IS-A relationship | HAS-A relationship |
+| Tight coupling    | Loose coupling     |
+
+---
+
+###### Polymorphism
+---
+
+# 📘 Polymorphism — C++
+
+**Polymorphism** means **“one name, many forms”**.
+It allows the same function or operator to behave **differently** in different situations.
+
+---
+
+## 🔹 Why Polymorphism?
+
+* Improves **flexibility**
+* Enhances **code reusability**
+* Supports **dynamic binding**
+* Core concept of **OOP**
+
+---
+
+## 🔹 Types of Polymorphism
+
+### 1️⃣ Compile-Time Polymorphism
+
+(Static Binding / Early Binding)
+
+Resolved **at compile time**.
+
+#### a) Function Overloading
+
+Same function name, different parameters.
+
+```cpp
+int add(int a, int b);
+float add(float a, float b);
+```
+
+**Rules**
+
+* Parameter list must differ
+* Return type alone is not sufficient
+
+---
+
+#### b) Operator Overloading
+
+Redefines meaning of operators for user-defined types.
+
+```cpp
+class A {
+public:
+    int x;
+    A operator+(A obj) {
+        A temp;
+        temp.x = x + obj.x;
+        return temp;
+    }
+};
+```
+
+---
+
+### 2️⃣ Run-Time Polymorphism
+
+(Dynamic Binding / Late Binding)
+
+Resolved **at runtime** using **virtual functions**.
+
+#### a) Function Overriding
+
+Derived class redefines base class function.
+
+```cpp
+class Base {
+public:
+    virtual void show() {
+        cout << "Base";
+    }
+};
+
+class Derived : public Base {
+public:
+    void show() {
+        cout << "Derived";
+    }
+};
+```
+
+✔ Requires **inheritance**
+✔ Uses **base class pointer**
+
+---
+
+#### b) Virtual Functions
+
+* Declared using `virtual` keyword
+* Function call decided at **runtime**
+* Enables **dynamic dispatch**
+
+```cpp
+Base *b;
+Derived d;
+b = &d;
+b->show();   // calls Derived's show()
+```
+
+---
+
+## 🔹 Compile-Time vs Run-Time Polymorphism
+
+| Feature         | Compile-Time | Run-Time        |
+| --------------- | ------------ | --------------- |
+| Binding         | Early        | Late            |
+| Achieved by     | Overloading  | Overriding      |
+| Inheritance     | Not required | Required        |
+| Virtual keyword | No           | Yes             |
+| Speed           | Faster       | Slightly slower |
+
+---
+
+## 🔹 Important Concepts (Exam Focus)
+
+* Overloading ≠ Overriding
+* Virtual functions use **V-table**
+* Constructors cannot be virtual
+* Destructors should be virtual in base class
+* Static functions cannot be virtual
+
+---
+
+## 🔹 Advantages
+
+✔ Flexible design
+✔ Code extensibility
+✔ Easy maintenance
+
+---
+
+## 🔹 Disadvantages
+
+✖ Runtime overhead
+✖ Complex debugging
+
+---
+
+## 🔹 Real-World Example
+
+* Shape → area()
+* Animal → sound()
+* Bank → interest()
+
+---
+
+
+
+
+
+
 
 
 
