@@ -28,7 +28,7 @@
 - [data handling](#data-handling)
 - [boiler plate code](#boile-plate-code)
 - [next line](#next-line)
-- [Escape Sequences]()
+- [Escape Sequences](#Escape-Sequences)
 - [output & input](#output-and-input)
 
 
@@ -965,6 +965,82 @@ Comments are used to **explain code** and are ignored by the compiler.
 
 * **Single-line:** `//`
 * **Multi-line:** `/* */`
+
+
+
+---
+
+## Escape Sequences 
+
+Escape sequences are **special character combinations** used inside **character and string literals** to represent **non-printable or special characters**.
+
+They always start with a **backslash (`\`)**.
+
+---
+
+## 🔹 Common Escape Sequences
+
+| Escape | Meaning            |
+| ------ | ------------------ |
+| `\n`   | New line           |
+| `\t`   | Horizontal tab     |
+| `\v`   | Vertical tab       |
+| `\b`   | Backspace          |
+| `\r`   | Carriage return    |
+| `\f`   | Form feed          |
+| `\a`   | Alert (beep sound) |
+| `\\`   | Backslash          |
+| `\'`   | Single quote       |
+| `\"`   | Double quote       |
+| `\?`   | Question mark      |
+| `\0`   | Null character     |
+
+---
+
+## 🔹 Numeric Escape Sequences
+
+* **Octal** → `\nnn` (e.g., `\101` → `A`)
+* **Hexadecimal** → `\xhh` (e.g., `\x41` → `A`)
+* **Unicode**:
+
+  * `\uXXXX` (16-bit)
+  * `\UXXXXXXXX` (32-bit)
+
+---
+
+## 🔹 Important Concepts
+
+* Used inside **single (`' '`) and double (`" "`) quotes**
+* Interpreted at **compile time**
+* Helpful in **formatting output**
+* `\0` marks end of C-style strings
+* Invalid escape sequences cause **compiler warnings**
+
+---
+
+## 🔹 Example
+
+```cpp
+cout << "Hello\nWorld\tC++";
+```
+
+**Output**
+
+```
+Hello
+World    C++
+```
+
+---
+
+## 🔹 Exam & Interview Points
+
+* Escape sequences are **character literals**
+* `\n` moves cursor to next line, `\r` returns to start
+* `\t` spacing depends on environment
+* Used heavily in **string formatting**
+
+---
 
 
 ###### header
