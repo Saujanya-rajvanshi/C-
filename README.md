@@ -13,7 +13,7 @@
 - [Object-Oriented Programming (OOP)](https://github.com/Saujanya-rajvanshi/THEORY?tab=readme-ov-file#Oops)
 - [Inheritance](#Inheritance)
 - [Polymorphism](#Polymorphism)
-- [Abstraction & Encapsulation]()
+- [Abstraction & Encapsulation](#abstraction-and-encapsulation)
 - [Exception Handling]()
 - [File Handling]()
 - [Templates]()
@@ -2746,7 +2746,1389 @@ b->show();   // calls Derived's show()
 * Animal → sound()
 * Bank → interest()
 
+
+#### abstraction and encapsulation
 ---
+
+# 📘 Abstraction & Encapsulation — C++
+
+Both are **core OOP principles** used to manage **complexity, security, and maintainability**.
+
+---
+
+## 🔹 Abstraction
+
+**Abstraction** means **showing only essential details** and **hiding internal implementation**.
+
+### How Abstraction is Achieved in C++
+
+* **Abstract Classes**
+* **Pure Virtual Functions**
+* **Interfaces (conceptual)**
+
+---
+
+### 🔸 Abstract Class
+
+A class that contains **at least one pure virtual function**.
+
+```cpp
+class Shape {
+public:
+    virtual void draw() = 0;  // pure virtual
+};
+```
+
+### Key Points
+
+* Cannot create object of abstract class
+* Used as **base class**
+* Supports runtime polymorphism
+
+---
+
+### 🔸 Pure Virtual Function
+
+```cpp
+virtual void show() = 0;
+```
+
+* Has **no definition** in base class
+* Must be overridden in derived class
+* Enforces method implementation
+
+---
+
+### 🔸 Interfaces (Conceptual)
+
+* Achieved using **only pure virtual functions**
+* No data members
+* Provides **100% abstraction**
+
+---
+
+### 🔸 Advantages of Abstraction
+
+✔ Reduces complexity
+✔ Improves security
+✔ Enhances flexibility
+
+---
+
+## 🔹 Encapsulation
+
+**Encapsulation** means **binding data and methods together** and **restricting direct access**.
+
+### Achieved Using
+
+* Classes
+* Access specifiers: `private`, `protected`, `public`
+
+---
+
+### 🔸 Example
+
+```cpp
+class Student {
+private:
+    int roll;
+public:
+    void set(int r) { roll = r; }
+    int get() { return roll; }
+};
+```
+
+### Key Points
+
+* Data hiding using `private`
+* Access via **getter & setter**
+* Prevents unauthorized access
+
+---
+
+## 🔹 Data Hiding
+
+* A part of encapsulation
+* Protects internal data
+* Achieved using `private` members
+
+---
+
+## 🔹 Abstraction vs Encapsulation
+
+| Feature     | Abstraction         | Encapsulation        |
+| ----------- | ------------------- | -------------------- |
+| Focus       | What                | How                  |
+| Purpose     | Hide implementation | Protect data         |
+| Achieved by | Abstract class      | Access specifiers    |
+| Level       | Design level        | Implementation level |
+
+---
+
+## 🔹 Important Exam Points
+
+* Abstraction uses **interfaces**
+* Encapsulation uses **classes**
+* Encapsulation can exist without abstraction
+* Abstraction requires inheritance
+
+---
+
+## 🔹 Advantages
+
+### Abstraction
+
+✔ Clean interface
+✔ Flexible design
+
+### Encapsulation
+
+✔ Data security
+✔ Better control
+
+---
+
+## 🔹 Real-World Example
+
+* **Abstraction:** ATM machine interface
+* **Encapsulation:** Bank account with PIN protection
+
+---
+
+##### eception handling
+---
+
+# 📘 Exception Handling — C++
+
+**Exception Handling** is a mechanism to handle **runtime errors** and maintain **normal program flow**.
+
+---
+
+## 🔹 Why Exception Handling?
+
+* Prevents abnormal program termination
+* Separates **error-handling code** from logic
+* Improves reliability & debugging
+
+---
+
+## 🔹 Keywords Used
+
+| Keyword | Purpose                         |
+| ------- | ------------------------------- |
+| `try`   | Wraps code that may cause error |
+| `catch` | Handles exception               |
+| `throw` | Generates exception             |
+
+---
+
+## 🔹 Basic Syntax
+
+```cpp
+try {
+    // risky code
+    throw 10;
+}
+catch(int e) {
+    cout << e;
+}
+```
+
+---
+
+## 🔹 Flow of Control
+
+1. Code inside `try` executes
+2. Exception occurs → `throw`
+3. Control jumps to matching `catch`
+4. Remaining `try` code is skipped
+
+---
+
+## 🔹 Multiple Catch Blocks
+
+```cpp
+try {
+    throw 5.5;
+}
+catch(int e) { }
+catch(double d) { }
+catch(...) { }   // default catch
+```
+
+### Rules
+
+* Order matters (derived → base)
+* `catch(...)` must be last
+
+---
+
+## 🔹 Catch All Handler
+
+```cpp
+catch(...) {
+    cout << "Unknown Exception";
+}
+```
+
+* Handles all types
+* Used as fallback
+
+---
+
+## 🔹 User-Defined Exceptions
+
+### Using Class
+
+```cpp
+class MyException {
+};
+
+try {
+    throw MyException();
+}
+catch(MyException e) {
+    cout << "Custom Exception";
+}
+```
+
+---
+
+## 🔹 Throwing Objects
+
+```cpp
+throw runtime_error("Error occurred");
+```
+
+* Supports object-oriented error handling
+
+---
+
+## 🔹 Standard Exception Classes (`<exception>`)
+
+| Class           | Meaning                   |
+| --------------- | ------------------------- |
+| `exception`     | Base class                |
+| `runtime_error` | Runtime error             |
+| `logic_error`   | Logical error             |
+| `bad_alloc`     | Memory allocation failure |
+
+---
+
+## 🔹 Re-throwing an Exception
+
+```cpp
+catch(...) {
+    throw;
+}
+```
+
+* Sends exception to outer `catch`
+
+---
+
+## 🔹 Nested try-catch
+
+```cpp
+try {
+    try {
+        throw 1;
+    }
+    catch(int e) {
+        throw;
+    }
+}
+catch(int e) {
+    cout << "Handled";
+}
+```
+
+---
+
+## 🔹 Exception vs Error
+
+| Exception      | Error             |
+| -------------- | ----------------- |
+| Recoverable    | Not recoverable   |
+| Runtime        | Compile/system    |
+| Can be handled | Cannot be handled |
+
+---
+
+## 🔹 Stack Unwinding
+
+* Automatic destruction of local objects
+* Happens when exception is thrown
+* Ensures no memory leaks
+
+---
+
+## 🔹 Destructor & Exception
+
+* Destructors are called during stack unwinding
+* Never throw exceptions from destructors
+
+---
+
+## 🔹 Function Exception Specification (Deprecated)
+
+```cpp
+void fun() throw(int);
+```
+
+❌ Avoid — replaced by `noexcept`
+
+---
+
+## 🔹 `noexcept`
+
+```cpp
+void fun() noexcept;
+```
+
+* Guarantees no exception
+* Improves optimization
+
+---
+
+## 🔹 Exception Handling Best Practices
+
+✔ Throw by value
+✔ Catch by reference
+✔ Avoid using exceptions for flow control
+✔ Handle resources using RAII
+
+---
+
+## 🔹 Common Traps (Exam)
+
+* `catch` without `try` ❌
+* Base class `catch` before derived ❌
+* Ignoring `catch(...)`
+* Throwing pointer instead of object
+
+---
+
+## 🔹 Real-World Example
+
+* Division by zero
+* File not found
+* Memory allocation failure
+
+---
+
+## 🔹 Short Definition (1-Line)
+
+> Exception handling is a technique to handle runtime errors using `try`, `catch`, and `throw`.
+
+
+
+##### file handling
+---
+
+# 📁 File Handling — C++
+
+**File Handling** allows a program to **store data permanently** in files and **retrieve it later**.
+
+---
+
+## 🔹 Why File Handling?
+
+* Data persistence
+* Large data storage
+* Data sharing between programs
+* Backup & recovery
+
+---
+
+## 🔹 Header File
+
+```cpp
+#include <fstream>
+```
+
+---
+
+## 🔹 File Stream Classes
+
+| Class      | Purpose        |
+| ---------- | -------------- |
+| `ifstream` | Read from file |
+| `ofstream` | Write to file  |
+| `fstream`  | Read + Write   |
+
+---
+
+## 🔹 File Object Creation
+
+```cpp
+ifstream fin;
+ofstream fout;
+fstream file;
+```
+
+---
+
+## 🔹 Opening a File
+
+### Method 1: Constructor
+
+```cpp
+ofstream fout("data.txt");
+```
+
+### Method 2: `open()`
+
+```cpp
+fout.open("data.txt");
+```
+
+---
+
+## 🔹 Closing a File
+
+```cpp
+fout.close();
+```
+
+✔ Always close to avoid data loss
+
+---
+
+## 🔹 Writing to a File
+
+```cpp
+ofstream fout("data.txt");
+fout << "Hello File";
+```
+
+---
+
+## 🔹 Reading from a File
+
+### Using `>>`
+
+```cpp
+ifstream fin("data.txt");
+string s;
+fin >> s;
+```
+
+### Using `getline()`
+
+```cpp
+getline(fin, s);
+```
+
+---
+
+## 🔹 File Open Modes
+
+| Mode          | Meaning             |
+| ------------- | ------------------- |
+| `ios::in`     | Read                |
+| `ios::out`    | Write               |
+| `ios::app`    | Append              |
+| `ios::ate`    | Move pointer to end |
+| `ios::trunc`  | Clear file          |
+| `ios::binary` | Binary mode         |
+
+### Example
+
+```cpp
+fstream file("data.txt", ios::in | ios::out);
+```
+
+---
+
+## 🔹 Append vs Write
+
+* `ios::out` → overwrites
+* `ios::app` → adds data at end
+
+---
+
+## 🔹 Checking File Open Status
+
+```cpp
+if(!file) {
+    cout << "File not opened";
+}
+```
+
+---
+
+## 🔹 End of File (EOF)
+
+```cpp
+while(!fin.eof()) {
+    fin >> s;
+}
+```
+
+⚠ `eof()` becomes true **after** reading fails
+
+---
+
+## 🔹 File Pointers
+
+| Pointer | Purpose       |
+| ------- | ------------- |
+| `get`   | Read pointer  |
+| `put`   | Write pointer |
+
+---
+
+## 🔹 Pointer Functions
+
+```cpp
+file.seekg(pos);   // move read pointer
+file.seekp(pos);   // move write pointer
+file.tellg();      // current read position
+file.tellp();      // current write position
+```
+
+---
+
+## 🔹 Random Access in File
+
+```cpp
+file.seekg(5);
+file.seekp(10);
+```
+
+✔ Used in binary files
+
+---
+
+## 🔹 Binary File Handling
+
+```cpp
+ofstream fout("data.bin", ios::binary);
+```
+
+### Writing Object
+
+```cpp
+fout.write((char*)&obj, sizeof(obj));
+```
+
+### Reading Object
+
+```cpp
+fin.read((char*)&obj, sizeof(obj));
+```
+
+---
+
+## 🔹 Text File vs Binary File
+
+| Text File      | Binary File      |
+| -------------- | ---------------- |
+| Human readable | Machine readable |
+| Slow           | Fast             |
+| Larger size    | Smaller size     |
+
+---
+
+## 🔹 File Handling with Objects
+
+* Direct storage of objects
+* Used in databases
+* Requires binary mode
+
+---
+
+## 🔹 Error Handling in Files
+
+* File not found
+* Permission denied
+* Disk full
+
+Use:
+
+```cpp
+if(file.fail())
+```
+
+---
+
+## 🔹 Common Mistakes (Exam)
+
+❌ Forgetting `close()`
+❌ Using wrong open mode
+❌ Using `eof()` incorrectly
+❌ Mixing text & binary modes
+
+---
+
+## 🔹 Real-Life Uses
+
+* Student records
+* Log files
+* Configuration files
+* Databases
+
+---
+
+## 🔹 One-Line Definition
+
+> File handling is the process of storing and retrieving data permanently using files.
+
+---
+
+## 🔹 Diagram (Conceptual)
+
+```
+Program → File Stream → File
+```
+
+##### templates
+---
+
+# 📦 Templates — C++
+
+**Templates** allow writing **generic programs**, so the **same code works for different data types**.
+
+---
+
+## 🔹 Why Templates?
+
+* Avoid code duplication
+* Type-safe generic programming
+* Reusability
+* Faster development
+
+---
+
+## 🔹 Types of Templates
+
+1. **Function Templates**
+2. **Class Templates**
+
+---
+
+## 🔹 Function Templates
+
+### Definition
+
+A **function template** works for **any data type**.
+
+### Syntax
+
+```cpp
+template <class T>
+T add(T a, T b) {
+    return a + b;
+}
+```
+
+### Usage
+
+```cpp
+add<int>(2, 3);
+add<float>(2.5, 3.5);
+```
+
+✔ Compiler generates **separate functions** for each type
+
+---
+
+## 🔹 Template Parameters
+
+```cpp
+template <typename T>
+```
+
+`class` and `typename` are **same**
+
+---
+
+## 🔹 Multiple Template Parameters
+
+```cpp
+template <class T, class U>
+void display(T a, U b) {
+    cout << a << " " << b;
+}
+```
+
+---
+
+## 🔹 Class Templates
+
+### Syntax
+
+```cpp
+template <class T>
+class Box {
+    T data;
+public:
+    Box(T d) {
+        data = d;
+    }
+    void show() {
+        cout << data;
+    }
+};
+```
+
+### Object Creation
+
+```cpp
+Box<int> b1(10);
+Box<float> b2(5.5);
+```
+
+---
+
+## 🔹 Default Template Arguments
+
+```cpp
+template <class T = int>
+class Sample {
+    T x;
+};
+```
+
+Usage:
+
+```cpp
+Sample<> s;     // int
+Sample<float> f;
+```
+
+---
+
+## 🔹 Template Specialization
+
+Used to **change behavior for a specific type**
+
+### Function Specialization
+
+```cpp
+template <>
+void display<int>(int a) {
+    cout << "Integer: " << a;
+}
+```
+
+---
+
+### Class Specialization
+
+```cpp
+template <>
+class Box<char> {
+public:
+    void show() {
+        cout << "Char Box";
+    }
+};
+```
+
+---
+
+## 🔹 Partial Specialization (Class Only)
+
+```cpp
+template <class T, class U>
+class Test { };
+
+template <class T>
+class Test<T, int> { };
+```
+
+✔ Not allowed for function templates
+
+---
+
+## 🔹 Template Overloading
+
+Templates can be **overloaded like functions**
+
+```cpp
+template <class T>
+void fun(T a);
+
+void fun(int a);
+```
+
+✔ Non-template has higher priority
+
+---
+
+## 🔹 Compile-Time Polymorphism
+
+Templates achieve **compile-time polymorphism**
+
+✔ Faster than run-time
+✔ No virtual table
+
+---
+
+## 🔹 Template vs Macro
+
+| Template            | Macro         |
+| ------------------- | ------------- |
+| Type-safe           | Not type-safe |
+| Checked by compiler | No checking   |
+| Debuggable          | Hard to debug |
+
+---
+
+## 🔹 STL & Templates
+
+STL containers use templates:
+
+```cpp
+vector<int>
+map<int, string>
+```
+
+---
+
+## 🔹 Hidden / Advanced Concepts
+
+### ✔ Template Instantiation
+
+* Compiler creates code when used
+
+### ✔ Code Bloat
+
+* Too many types → larger executable
+
+### ✔ Header-Only Templates
+
+* Templates must be in `.h` file
+
+---
+
+## 🔹 Common Errors (Exam)
+
+❌ Missing `< >` while object creation
+❌ Defining template functions in `.cpp`
+❌ Confusing specialization with overloading
+
+---
+
+## 🔹 One-Line Definition (Exam)
+
+> Templates enable generic programming by allowing functions and classes to operate with any data type.
+
+--- 
+
+## 🔹 Very Important Questions
+
+* Why templates are header-only?
+* Difference between template and function overloading
+* Template specialization vs overloading
+* Why partial specialization not allowed for functions?
+
+---
+
+## 🔹 Diagram (Concept)
+
+```
+Template Code
+     ↓
+Compiler Instantiation
+     ↓
+Type-Specific Code
+```
+
+---
+
+#### advance concept
+---
+
+# 🚀 Advanced C++ Concepts
+
+---
+
+## 1️⃣ Lambda Expressions
+
+### Definition
+
+Anonymous (unnamed) functions used for **short operations**.
+
+### Syntax
+
+```cpp
+[capture](parameters) -> return_type {
+    body;
+};
+```
+
+### Example
+
+```cpp
+auto sum = [](int a, int b) {
+    return a + b;
+};
+```
+
+### Capture List
+
+| Capture | Meaning                  |
+| ------- | ------------------------ |
+| `[ ]`   | No capture               |
+| `[=]`   | Capture all by value     |
+| `[&]`   | Capture all by reference |
+| `[x]`   | Capture x by value       |
+| `[&x]`  | Capture x by reference   |
+
+✔ Used heavily in **STL algorithms**
+
+---
+
+## 2️⃣ Smart Pointers
+
+### Why?
+
+Avoid **memory leaks** and **dangling pointers**
+
+---
+
+### Types of Smart Pointers
+
+| Pointer      | Ownership            |
+| ------------ | -------------------- |
+| `unique_ptr` | Single owner         |
+| `shared_ptr` | Multiple owners      |
+| `weak_ptr`   | Non-owning reference |
+
+---
+
+### unique_ptr
+
+```cpp
+unique_ptr<int> p = make_unique<int>(10);
+```
+
+✔ Cannot be copied
+✔ Can be moved
+
+---
+
+### shared_ptr
+
+```cpp
+shared_ptr<int> p1 = make_shared<int>(10);
+shared_ptr<int> p2 = p1;
+```
+
+✔ Reference counting
+
+---
+
+### weak_ptr
+
+* Prevents **circular dependency**
+* No ownership
+
+---
+
+## 3️⃣ Move Semantics
+
+### Why?
+
+Avoid **deep copy** → improves performance
+
+---
+
+### Move Constructor
+
+```cpp
+MyClass(MyClass&& obj);
+```
+
+✔ Uses **rvalue references (`&&`)**
+✔ Transfers resources
+
+---
+
+### std::move
+
+```cpp
+obj2 = std::move(obj1);
+```
+
+✔ Converts lvalue → rvalue
+
+---
+
+## 4️⃣ auto Keyword
+
+### Purpose
+
+Compiler **automatically deduces data type**
+
+```cpp
+auto x = 10;
+auto y = 5.5;
+```
+
+✔ Mandatory with lambdas iterators
+❌ Cannot be used without initialization
+
+---
+
+## 5️⃣ constexpr
+
+### Meaning
+
+Value evaluated at **compile time**
+
+```cpp
+constexpr int square(int x) {
+    return x * x;
+}
+```
+
+✔ Faster execution
+✔ Used for constants & functions
+
+---
+
+## 6️⃣ mutable Keyword
+
+### Purpose
+
+Allows modification inside **const object**
+
+```cpp
+class Test {
+    mutable int x;
+public:
+    void change() const {
+        x++;
+    }
+};
+```
+
+✔ Breaks const restriction safely
+
+---
+
+## 7️⃣ friend Keyword
+
+### Meaning
+
+Allows **non-member access to private data**
+
+---
+
+### Friend Function
+
+```cpp
+friend void show(Test&);
+```
+
+---
+
+### Friend Class
+
+```cpp
+friend class Demo;
+```
+
+✔ Friendship is **not inherited**
+✔ Not transitive
+
+---
+
+## 8️⃣ nullptr
+
+### Why?
+
+Replaces `NULL`
+
+```cpp
+int* p = nullptr;
+```
+
+✔ Type-safe
+✔ Avoids ambiguity
+
+---
+
+## 9️⃣ enum class (Scoped Enum)
+
+```cpp
+enum class Color { Red, Blue };
+```
+
+✔ Strongly typed
+✔ Avoids name conflicts
+
+---
+
+## 🔟 Deleted & Default Functions
+
+```cpp
+Test() = default;
+Test(const Test&) = delete;
+```
+
+✔ Control object behavior
+✔ Important for safety
+
+---
+
+## 🔹 Compile-Time vs Run-Time
+
+| Feature          | Time    |
+| ---------------- | ------- |
+| Templates        | Compile |
+| Inline           | Compile |
+| Virtual Function | Run     |
+
+---
+
+## 🔹 Hidden Exam Points
+
+✔ Lambdas are **function objects**
+✔ Smart pointers are in `<memory>`
+✔ Move semantics reduces copy overhead
+✔ constexpr ≠ const
+
+---
+
+## 🔹 One-Line Exam Definition
+
+> Advanced C++ concepts enhance performance, safety, and expressiveness of programs.
+
+---
+
+## 🔹 Very Important Questions
+
+* Difference: auto vs decltype
+* shared_ptr vs unique_ptr
+* Move vs copy constructor
+* constexpr vs const
+* Why weak_ptr is needed?
+
+---
+
+
+###### competitive programming
+---
+
+# ⚔️ Competitive Programming / DSA Readiness (Google-Level Notes)
+
+---
+
+## 1️⃣ Time Complexity (Big-O Thinking)
+
+### What Google Cares About
+
+→ **Scalability**, not syntax
+
+✔ Focus on **worst-case**
+✔ Ignore constants & lower terms
+✔ Understand how input grows
+
+### Common Orders
+
+```
+O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2ⁿ)
+```
+
+### Google Tip
+
+> If your solution is worse than **O(n log n)**, rethink.
+
+---
+
+## 2️⃣ Space Complexity (Memory Awareness)
+
+### Types
+
+* **Auxiliary space** (extra memory)
+* **Stack space** (recursion)
+
+✔ In-place preferred
+✔ Avoid unnecessary arrays
+
+### Example
+
+```cpp
+Merge Sort → O(n) space
+Quick Sort → O(log n) stack
+```
+
+---
+
+## 3️⃣ Recursion vs Iteration (Production View)
+
+| Recursion              | Iteration     |
+| ---------------------- | ------------- |
+| Cleaner                | Faster        |
+| Risk of stack overflow | Memory safe   |
+| Used in trees/graphs   | Used in loops |
+
+✔ Google prefers **iteration** unless recursion is natural
+✔ Tail recursion ≠ optimized in C++
+
+---
+
+## 4️⃣ Input / Output Optimization
+
+### Why It Matters
+
+Slow I/O = **Rejected solution**
+
+### Best Practice
+
+```cpp
+ios::sync_with_stdio(false);
+cin.tie(nullptr);
+```
+
+✔ Avoid `endl`
+✔ Use `\n`
+✔ Batch output when possible
+
+---
+
+## 5️⃣ Bit Manipulation (Google Favorite)
+
+### Why?
+
+→ Faster, elegant, low-level control
+
+### Key Patterns
+
+| Task       | Trick                   |         |
+| ---------- | ----------------------- | ------- |
+| Check odd  | `n & 1`                 |         |
+| Set bit    | `n                      | (1<<i)` |
+| Clear bit  | `n & ~(1<<i)`           |         |
+| Toggle     | `n ^ (1<<i)`            |         |
+| Count bits | `__builtin_popcount(n)` |         |
+
+✔ Used in **optimization**, **masking**, **DP**
+
+---
+
+## 6️⃣ Core Data Structures (Must-Know)
+
+| DS      | Why Google Uses    |
+| ------- | ------------------ |
+| Vector  | Cache-friendly     |
+| Stack   | Expression parsing |
+| Queue   | BFS                |
+| Deque   | Sliding window     |
+| Heap    | Top-K problems     |
+| HashMap | O(1) lookup        |
+| Set     | Ordered data       |
+
+✔ Know **trade-offs**, not just usage
+
+---
+
+## 7️⃣ Algorithms Google Expects
+
+### Searching
+
+* Binary search (all variants)
+* Lower/Upper bound
+
+### Sorting
+
+* Quick (average)
+* Merge (stable)
+* Heap (memory control)
+
+### Graphs
+
+* BFS (shortest path)
+* DFS (components)
+* Topological sort
+
+### Optimization
+
+* Greedy
+* Dynamic Programming
+* Divide & Conquer
+
+---
+
+## 8️⃣ Pattern-Based Thinking (VERY IMPORTANT)
+
+| Pattern                 | Example          |
+| ----------------------- | ---------------- |
+| Two Pointers            | Sorted arrays    |
+| Sliding Window          | Subarrays        |
+| Binary Search on Answer | Min/max problems |
+| Prefix Sum              | Range queries    |
+| Monotonic Stack         | Next greater     |
+
+✔ Google cares about **patterns**, not memorization
+
+---
+
+## 9️⃣ Mathematical Readiness
+
+✔ Modular arithmetic
+✔ Power in log time
+✔ GCD / LCM
+✔ Overflow handling (`long long`)
+
+```cpp
+(a * b) % mod  // avoid overflow
+```
+
+---
+
+## 🔟 Common Google Mistakes (Avoid)
+
+❌ Brute force
+❌ Ignoring constraints
+❌ Wrong data type
+❌ Overusing recursion
+❌ Not explaining logic
+
+---
+
+## 🔹 Google Interview Rule
+
+> Correct + Optimal + Clean code + Explanation
+
+---
+
+## 🔹 What Google REALLY Tests
+
+✔ Problem-solving ability
+✔ Trade-off understanding
+✔ Code clarity
+✔ Edge case handling
+✔ Communication
+
+---
+
+## 🔹 Must-Practice Problems
+
+* Two Sum
+* Sliding Window Maximum
+* Merge Intervals
+* Kth Largest Element
+* BFS in Matrix
+* Subarray Sum = K
+
+---
+
+## 🔹 One-Line Summary
+
+> Competitive programming readiness for Google means solving scalable problems using optimal data structures, algorithms, and clean thinking.
+
+---
+
+
+
+
+
 
 
 
