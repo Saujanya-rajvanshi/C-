@@ -1,6 +1,8 @@
 # C++
 
 ### index 
+- [History of C++](#history)
+- [features of c++](#features)
 - [basics](#basics)
 - [header](#header)
 - [Data handling](#Data-handling)
@@ -21,8 +23,6 @@
 - [basic maths codes](https://github.com/Saujanya-rajvanshi/basic-maths)
 
 ### basics
-- [History of C++](#history)
-- [features of c++](#features)
 - [character set](#character-set)
 - [tokens](#tokens)
 - [tokens - keywords](#keywords)
