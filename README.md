@@ -241,7 +241,6 @@ Floating-point numbers are stored in **IEEE 754 format** using:
 | **Single** | 32         | 1    | 8        | 23       | **127**  |
 | **Double** | 64         | 1    | 11       | 52       | **1023** |
 
----
 
 #### STEPS (Same for both)
 
@@ -250,22 +249,16 @@ Floating-point numbers are stored in **IEEE 754 format** using:
 Split → integer + fraction
 Example: **13.25 → 1101.01**
 
----
-
 * **Step 2: Normalize**
 
 ```
 1101.01 = 1.10101 × 2³
 ```
 
----
-
 * **Step 3: Sign bit**
 
 * +ve → **0**
 * −ve → **1**
-
----
 
 * **Step 4: Exponent**
 
@@ -275,8 +268,6 @@ Exponent = Power + Bias
 
 * Single: `3 + 127 = 130 → 10000010`
 * Double: `3 + 1023 = 1026 → 10000000010`
-
----
 
 * **Step 5: Mantissa**
 
@@ -289,7 +280,6 @@ Take bits **after leading 1**
 * Single → 23 bits
 * Double → 52 bits
 
----
 
 * **FINAL FORMAT**
 * **Single Precision (32-bit)**
@@ -305,7 +295,9 @@ Sign | Exponent(8) | Mantissa(23)
 Sign | Exponent(11) | Mantissa(52)
 0 | 10000000010 | 1010100000000000000000000000000000000000000000000000
 ```
+
 ---
+
 
 ##### characters
 ---
@@ -338,6 +330,8 @@ Sign | Exponent(11) | Mantissa(52)
 * `tolower()` → convert to lowercase
 ---
 
+
+
 ##### string
 ---
 
@@ -347,50 +341,49 @@ Sign | Exponent(11) | Mantissa(52)
 * **Type**: `string` (STL)
 * **Header**: `<string>`
 
-* **Features**
+* 🔹 **Features**
 * Dynamic size
 * Stores text data
 * Uses contiguous memory
 
-* **Common Operations**
+* 🔹 **Common Operations**
 * **Length** → `length()` / `size()`
 * **Access** → `at(i)` / `[]`
 * **Add** → `append()` / `+`
 * **Remove** → `erase()`
 * **Clear** → `clear()`
 
-* **Input / Output**
+* 🔹 **Input / Output**
 * `cin` → single word
 * `getline()` → full line
 
-* **Important Points**
+* 🔹 **Important Points**
 * Indexing starts from 0
 * Strings are mutable
 * Safer than C-style strings
 
 ---
 
+
 #####  boolean
 ---
 
-## 💎 Boolean
+## Boolean
 
-* **💠 Boolean**: stores truth values
-* **💠 Type**: `bool`
-* **💠 Size**: usually 1 byte
-* **💠 Values**: `true` / `false`
+* **Boolean**: stores truth values
+* **Type**: `bool`
+* **Size**: usually 1 byte
+* **Values**: `true` / `false`
 
-### ✨ Usage
+* 🔹 **Usage**
+*  Used in **conditions**, **flags**, and **logical operations**
 
-* 🔹 Used in **conditions**, **flags**, and **logical operations**
+* 🔹 **Common Operators**
+*  `!` → NOT
+*  `&&` → AND
+*  `||` → OR
 
-### 🛠 Common Operators
-
-* 🔹 `!` → NOT
-* 🔹 `&&` → AND
-* 🔹 `||` → OR
-
-### 📝 Example
+* **Example**
 
 ```cpp
 bool isOn = true;
@@ -399,28 +392,25 @@ if(!isOn) {
 }
 ```
 
-### ⚡ Important Points
-
-* 🔹 Only two values: `true` or `false`
-* 🔹 Can be used in arithmetic: `true = 1`, `false = 0`
+* 🔹 **Important Points**
+* Only two values: `true` or `false`
+* Can be used in arithmetic: `true = 1`, `false = 0`
 
 ---
+
 
 ##### null
 ---
 
-## 💎 Null Pointer
+* **Null Pointer**: a pointer that points to nothing
+* **Type**: any pointer type (e.g., `int*`, `char*`)
+* **Value**: `nullptr` (C++11 and later)
 
-* **💠 Null Pointer**: a pointer that points to nothing
-* **💠 Type**: any pointer type (e.g., `int*`, `char*`)
-* **💠 Value**: `nullptr` (C++11 and later)
+* **Usage**
+* Indicates that the pointer **does not point to any valid memory**
+* Helps **avoid dangling pointers**
 
-### ✨ Usage
-
-* 🔹 Indicates that the pointer **does not point to any valid memory**
-* 🔹 Helps **avoid dangling pointers**
-
-### 🛠 Example
+* **Example**
 
 ```cpp
 int* ptr = nullptr;  // pointer points to nothing
@@ -429,13 +419,12 @@ if(ptr == nullptr) {
 }
 ```
 
-### ⚡ Important Points
-
-* 🔹 `NULL` is older, `nullptr` is preferred in modern C++
-* 🔹 Always initialize pointers to `nullptr` if not assigned
-* 🔹 Dereferencing a null pointer → **runtime error**
-
+* 🔹 **Important Points**
+* `NULL` is older, `nullptr` is preferred in modern C++
+* Always initialize pointers to `nullptr` if not assigned
+* Dereferencing a null pointer → **runtime error**
 ---
+
 
 ##### operator
 ---
