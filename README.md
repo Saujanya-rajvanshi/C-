@@ -93,7 +93,7 @@
 
 ###### basics
 ## 🎗 BASICS
-🧩 - [character set](#character-set)
+🧩 character set - [character set](#character-set)
 - [tokens](#tokens)
 - [Barebones of c++ Program](#barebones-of-cpp-program)
 - [Data Types (overview)](#Data-Types-overview)
