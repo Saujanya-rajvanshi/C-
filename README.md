@@ -148,7 +148,7 @@
 
 An **identifier** is the **name given to a variable, function, class, or object** in a C++ program.
 
-* **Rules for identifiers**
+* 🔹 **Rules for identifiers**
 * Must start with a letter (A–Z / a–z) or **underscore (_)
 * Can contain **letters, digits, and underscores
 * Cannot start with a digit
@@ -160,7 +160,7 @@ An **identifier** is the **name given to a variable, function, class, or object*
 
 Literals are fixed constant values used directly in a program.
 
-* **Types of literals**
+* 🔹 **Types of literals**
 * **Integer literals :** 10, -5, 0, 100  - [integer](#integer)
 * **Floating-point literals :** 3.14, 0.5, 2.0 - [Floating-point](#Floating-point)
 * **Character literals :** 'a', 'Z', '9' -[Character](#Characters)
@@ -174,22 +174,22 @@ Literals are fixed constant values used directly in a program.
 
 Integer Literals in C++ (Sub-types)
 
-* **Decimal :** base 10 → digits 0–9
+* 🔹 **Decimal :** base 10 → digits 0–9
 *  Examples: 10, 25, 100
 
-* **Octal :** base 8 → starts with 0
+* 🔹 **Octal :** base 8 → starts with 0
 * Digits: 0–7
 *  Examples: 012, 075
 
-* **Hexadecimal :** base 16 → starts with 0x or 0X
+* 🔹 **Hexadecimal :** base 16 → starts with 0x or 0X
 * Digits: 0–9, A–F
 * Examples: 0x1A, 0XFF
 
-* **Binary (C++14 onwards) :** base 2 → starts with 0b or 0B
+* 🔹 **Binary (C++14 onwards) :** base 2 → starts with 0b or 0B
 * Digits: 0 and 1
 * Examples: 0b1010, 0B1101
 
-* **conversion**
+* 🔹 **conversion**
 ```
 1. decimal to binary(2)/octal(8)/hexadecimal(16)
       A.B  devide A -|-- by 2/8/16   B  multiply 0.---*2/8/16
@@ -204,33 +204,107 @@ Integer Literals in C++ (Sub-types)
 ## floating point numbers literals
 Floating-point numbers are numbers that **contain a decimal point** or are written in **exponential form**.
 
-* **Types in C++**
+* 🔹 **Types in C++**
 * `float` → single precision
 * `double` → double precision (more accurate)
 * `long double` → extended precision
 
-* Examples -> `3.14` , `-0.5` , `2.5e3` (means 2.5 × 10³)
+* **Examples** -> `3.14` , `-0.5` , `2.5e3` (means 2.5 × 10³)
 
-* **Storage**
+* 🔹 **Storage**
 Floating-point numbers are stored in **IEEE 754 format** using:
 * Sign
 * Exponent
 * Mantissa (fraction)
 
-* **Precision**
+* 🔹 **Precision**
 * `float` → ~6–7 decimal digits
 * `double` → ~15–16 decimal digits
 
-*  **Important Points**
+* 🔹 **Important Points**
 * Floating-point values are **approximate**, not exact
 * Direct comparison (`==`) is unsafe
 * Use a small **epsilon** for comparison
 
-* **Common Issues**
+* 🔹 **Common Issues**
 * Rounding errors
 * Precision loss
 * Overflow / underflow
 
+
+---
+
+### IEEE-754 FORMAT
+
+| Type       | Total Bits | Sign | Exponent | Mantissa | Bias     |
+| ---------- | ---------- | ---- | -------- | -------- | -------- |
+| **Single** | 32         | 1    | 8        | 23       | **127**  |
+| **Double** | 64         | 1    | 11       | 52       | **1023** |
+
+---
+
+#### STEPS (Same for both)
+
+* **Step 1: Convert number to binary**
+
+Split → integer + fraction
+Example: **13.25 → 1101.01**
+
+---
+
+* **Step 2: Normalize**
+
+```
+1101.01 = 1.10101 × 2³
+```
+
+---
+
+* **Step 3: Sign bit**
+
+* +ve → **0**
+* −ve → **1**
+
+---
+
+* **Step 4: Exponent**
+
+```
+Exponent = Power + Bias
+```
+
+* Single: `3 + 127 = 130 → 10000010`
+* Double: `3 + 1023 = 1026 → 10000000010`
+
+---
+
+* **Step 5: Mantissa**
+
+Take bits **after leading 1**
+
+```
+10101 + zeros
+```
+
+* Single → 23 bits
+* Double → 52 bits
+
+---
+
+* **FINAL FORMAT**
+* **Single Precision (32-bit)**
+
+```
+Sign | Exponent(8) | Mantissa(23)
+0 | 10000010 | 10101000000000000000000
+```
+
+* **Double Precision (64-bit)**
+
+```
+Sign | Exponent(11) | Mantissa(52)
+0 | 10000000010 | 1010100000000000000000000000000000000000000000000000
+```
 ---
 
 ##### characters
@@ -242,22 +316,22 @@ Floating-point numbers are stored in **IEEE 754 format** using:
 * **Size**: 1 byte
 * **Written in**: single quotes `'A'`
 
-* **Includes**
+* 🔹 **Includes**
 * **Letters** → `A–Z`, `a–z`
 * **Digits** → `0–9`
 * **Special symbols** → `@ # $ %`
 * **Whitespace** → space, tab, newline
 
-* **ASCII-based Storage**
+* 🔹 **ASCII-based Storage**
 * `'A'` = 65, `'a'` = 97, `'0'` = 48
 
-* **Escape Characters**
+* 🔹 **Escape Characters**
 * `\n` → newline
 * `\t` → tab
 * `\\` → backslash
 * `\'` → single quote
 
-* **Common Functions**
+* 🔹 **Common Functions**
 * `isalpha()` → check letter
 * `isdigit()` → check digit
 * `toupper()` → convert to uppercase
