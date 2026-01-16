@@ -112,11 +112,7 @@
 
 
 
-
-
-
 ##### character set
-```cpp
 C++ Character Set
 
 🌸 Letters: A–Z, a–z
@@ -127,9 +123,8 @@ C++ Character Set
 
 🌸 Whitespace characters:** space, tab (`\t`), newline (`\n`), carriage return (`\r`)
 
-```
+
 ##### tokens
-```cpp
 Tokens in C++
 
 🌸 Tokens are the **smallest units** of a C++ program.
@@ -144,9 +139,8 @@ Tokens in C++
 
 🌸 Separators (punctuators):** `; , ( ) { } [ ]
 
-```
+
 ##### keywords
-```cpp
 C++ Keywords
 
 1. Basic & Data types
@@ -182,7 +176,7 @@ inline, explicit, constexpr, decltype, operator, nullptr, true, false, asm
 
 Interview one-liner
 “Keywords are reserved words in C++ with predefined meaning and cannot be used as variable or function names.”
-```
+
 
 ##### identifier
 ---
