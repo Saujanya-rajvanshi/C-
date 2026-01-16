@@ -21,7 +21,7 @@
 - [basic maths codes](https://github.com/Saujanya-rajvanshi/basic-maths)
 
 ### basics
-- [History of C++](#histroy)
+- [History of C++](#history)
 - [features of c++](#features)
 - [character set](#character-set)
 - [tokens](#tokens)
