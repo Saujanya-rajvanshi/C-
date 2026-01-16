@@ -22,7 +22,8 @@
 - [string manipulation](#string-manipulation)
 - [basic maths codes](https://github.com/Saujanya-rajvanshi/basic-maths)
 
-### 🎗 basics
+###### basics
+### 🎗 BASICS
 - [character set](#character-set)
 - [tokens](#tokens)
 - [Barebones of c++ Program](#barebones-of-cpp-program)
@@ -39,7 +40,9 @@
 - [output & input](#output-and-input)
 
 
-## History
+###### History
+## 🎗 HISTORY
+
 * The C++ language is an object-oriented programming language & is a combination of both low-level & high-level language - a Middle-Level Language.
 * created, designed & developed by a Danish Computer Scientist - Bjarne Stroustrup at Bell Telephone Laboratories (now known as Nokia Bell Labs) in Murray Hill, New Jersey.
 * **1979** – Bjarne Stroustrup at Bell Labs started working on a language called **“C with Classes”** to support object-oriented programming.
@@ -64,7 +67,8 @@
 
 **C++ is a general-purpose, high-performance language** used in system software, game development, competitive programming, embedded systems, and large-scale applications.
 
-## Features
+###### Features
+## 🎗 FEATURES
 
 * **Object-Oriented Programming (OOP)**
   Supports classes, objects, inheritance, polymorphism, encapsulation, and abstraction.
