@@ -1,8 +1,8 @@
 # C++
 
 ### index 
-- [History of C++](#history)
-- [features of c++](#features)
+- [History of C++](#History)
+- [features of c++](#Features)
 - [basics](#basics)
 - [header](#header)
 - [Data handling](#Data-handling)
@@ -44,8 +44,7 @@
 - [output & input](#output-and-input)
 
 
-###### history
-### History of C++
+## History
 * The C++ language is an object-oriented programming language & is a combination of both low-level & high-level language - a Middle-Level Language.
 * created, designed & developed by a Danish Computer Scientist - Bjarne Stroustrup at Bell Telephone Laboratories (now known as Nokia Bell Labs) in Murray Hill, New Jersey.
 * **1979** – Bjarne Stroustrup at Bell Labs started working on a language called **“C with Classes”** to support object-oriented programming.
@@ -70,8 +69,7 @@
 
 **C++ is a general-purpose, high-performance language** used in system software, game development, competitive programming, embedded systems, and large-scale applications.
 
-###### features
-### Features of C++
+## Features
 
 * **Object-Oriented Programming (OOP)**
   Supports classes, objects, inheritance, polymorphism, encapsulation, and abstraction.
@@ -112,8 +110,7 @@
 
 
 
-##### character set
-### C++ Character Set
+## character set
 
 * **Letters:** A–Z, a–z
 * **Digits :** 0–9
@@ -121,8 +118,8 @@
 * **Whitespace characters:** space, tab (`\t`), newline (`\n`), carriage return (`\r`)
 
 
-##### tokens
-### Tokens in C++
+## tokens
+
  Tokens are the **smallest units** of a C++ program.
 * **Keywords:** `int`, `float`, `if`, `else`, `for`, `while`, `return`, etc.
 * **Identifiers:** names of variables, functions, classes (e.g. `sum`, `main`, `count`)
@@ -130,8 +127,7 @@
 * **Operators:** `+ - * / % = == < > && ||
 *  **Separators (punctuators):** `; , ( ) { } [ ]
 
-##### keywords
-C++ Keywords
+## keywords
 
 * **1. Basic & Data types :**  int, float, double, char, void, bool, short, long, signed, unsigned, wchar_t
 * **Control statements :** if, else, switch, case, default, for, while, do, break, continue, goto, return
@@ -147,11 +143,8 @@ C++ Keywords
  * Keywords cannot be used as identifiers
  * Total keywords ≈ 95 (C++20)
 
-
-
-##### identifier
 ---
-### Identifier in C++
+## identifier
 
 An **identifier** is the **name given to a variable, function, class, or object** in a C++ program.
 
@@ -163,10 +156,7 @@ An **identifier** is the **name given to a variable, function, class, or object*
 * Case-sensitive
 
 ---
-
-##### literals
----
-## Literals
+## literals
 
 Literals are fixed constant values used directly in a program.
 
@@ -180,35 +170,33 @@ Literals are fixed constant values used directly in a program.
 
 
 ---
-
-###### integer 
----
-## integers 
+## integer 
 
 Integer Literals in C++ (Sub-types)
 
-🌸 Decimal: base 10 → digits 0–9
-    Examples: 10, 25, 100
+* **Decimal :** base 10 → digits 0–9
+*  Examples: 10, 25, 100
 
-🌸 Octal: base 8 → starts with 0
-    Digits: 0–7
-    Examples: 012, 075
+* **Octal :** base 8 → starts with 0
+* Digits: 0–7
+*  Examples: 012, 075
 
-🌸 Hexadecimal: base 16 → starts with 0x or 0X
-    Digits: 0–9, A–F
-    Examples: 0x1A, 0XFF
+* **Hexadecimal :** base 16 → starts with 0x or 0X
+* Digits: 0–9, A–F
+* Examples: 0x1A, 0XFF
 
-🌸 Binary (C++14 onwards): base 2 → starts with 0b or 0B
-    Digits: 0 and 1
-    Examples: 0b1010, 0B1101
+* **Binary (C++14 onwards) :** base 2 → starts with 0b or 0B
+* Digits: 0 and 1
+* Examples: 0b1010, 0B1101
 
-conversion/
+* **conversion**
+```
 1. decimal to binary(2)/octal(8)/hexadecimal(16)
       A.B  devide A -|-- by 2/8/16   B  multiply 0.---*2/8/16
 
 2. binary(2)/octal(8)/hexadecimal(16) to decimal
      A * (2/8/16) power n 
-
+```
 ---
 
 ##### Floating-point
