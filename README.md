@@ -92,7 +92,7 @@
 
 
 ###### basics
-### 🎗 BASICS
+## 🎗 BASICS
 - [character set](#character-set)
 - [tokens](#tokens)
 - [Barebones of c++ Program](#barebones-of-cpp-program)
@@ -109,7 +109,7 @@
 - [output & input](#output-and-input)
 
 
-## character set
+## 🧩 character set
 
 * **Letters:** A–Z, a–z
 * **Digits :** 0–9
@@ -117,7 +117,7 @@
 * **Whitespace characters:** space, tab (`\t`), newline (`\n`), carriage return (`\r`)
 
 
-## tokens
+## 🧩 tokens
 
  Tokens are the **smallest units** of a C++ program.
 * **Keywords:** `int`, `float`, `if`, `else`, `for`, `while`, `return`, etc.
@@ -532,7 +532,7 @@ if(ptr == nullptr) {
 ###### barebones of cpp program
 ---
 
-## 💎 Barebones of C++ Program
+## 🎗 Barebones of C++ Program
 
 ### 🔹 Program Structure
 
@@ -558,9 +558,8 @@ if(ptr == nullptr) {
 
 * Defined using `{ }`
 * Same braces = same scope
-
-
 ---
+
 
 ## Data Types Overview
 
