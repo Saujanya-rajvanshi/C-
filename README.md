@@ -25,11 +25,6 @@
 ### basics
 - [character set](#character-set)
 - [tokens](#tokens)
-- [tokens - keywords](#keywords)
-- [tokens - identifier](#identifier)
-- [tokens - literals](#literals)
-- [tokens - operator](#operator)
-- [tokens - panctuator](#panctuator)
 - [Barebones of c++ Program](#barebones-of-cpp-program)
 - [Data Types (overview)](#Data-Types-overview)
 - [Variables & Constants](#Variables-Constants)
@@ -122,10 +117,16 @@
 
  Tokens are the **smallest units** of a C++ program.
 * **Keywords:** `int`, `float`, `if`, `else`, `for`, `while`, `return`, etc.
+* - [tokens - keywords](#keywords)
 * **Identifiers:** names of variables, functions, classes (e.g. `sum`, `main`, `count`)
+* - [tokens - identifier](#identifier)
 * **Constants (literals):** fixed values like `10`, `3.14`, `'a'`, `"hello"`
+* - [tokens - literals](#literals)
 * **Operators:** `+ - * / % = == < > && ||
+* - [tokens - operator](#operator)
 *  **Separators (punctuators):** `; , ( ) { } [ ]
+*  - [tokens - panctuator](#panctuator)
+
 
 ## keywords
 
