@@ -22,7 +22,7 @@
 - [string manipulation](#string-manipulation)
 - [basic maths codes](https://github.com/Saujanya-rajvanshi/basic-maths)
 
-### basics
+### 🎗 basics
 - [character set](#character-set)
 - [tokens](#tokens)
 - [Barebones of c++ Program](#barebones-of-cpp-program)
@@ -128,7 +128,7 @@
 *  - [tokens - panctuator](#panctuator)
 
 
-## keywords
+## 💎 keywords
 
 * **1. Basic & Data types :**  int, float, double, char, void, bool, short, long, signed, unsigned, wchar_t
 * **Control statements :** if, else, switch, case, default, for, while, do, break, continue, goto, return
@@ -145,7 +145,7 @@
  * Total keywords ≈ 95 (C++20)
 
 ---
-## identifier
+## 💎 identifier
 
 An **identifier** is the **name given to a variable, function, class, or object** in a C++ program.
 
@@ -157,7 +157,7 @@ An **identifier** is the **name given to a variable, function, class, or object*
 * Case-sensitive
 
 ---
-## literals
+## 💎 literals
 
 Literals are fixed constant values used directly in a program.
 
@@ -171,7 +171,7 @@ Literals are fixed constant values used directly in a program.
 
 
 ---
-## integer 
+## 💎 integer 
 
 Integer Literals in C++ (Sub-types)
 
@@ -200,7 +200,7 @@ Integer Literals in C++ (Sub-types)
 ```
 ---
 
-##### Floating-point
+##### 💎 Floating-point
 ---
 ## floating point numbers literals
 Floating-point numbers are numbers that **contain a decimal point** or are written in **exponential form**.
@@ -302,7 +302,7 @@ Sign | Exponent(11) | Mantissa(52)
 
 ##### characters
 ---
-## Character Literals
+## 💎 Character Literals
 
 * **Character**: stores a single symbol
 * **Type**: `char`
@@ -336,7 +336,7 @@ Sign | Exponent(11) | Mantissa(52)
 ##### string
 ---
 
-## String 
+## 💎 String 
 
 * **String**: collection of characters
 * **Type**: `string` (STL)
@@ -369,7 +369,7 @@ Sign | Exponent(11) | Mantissa(52)
 #####  boolean
 ---
 
-## Boolean
+## 💎 Boolean
 
 * **Boolean**: stores truth values
 * **Type**: `bool`
