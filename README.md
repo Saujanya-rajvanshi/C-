@@ -432,22 +432,21 @@ if(ptr == nullptr) {
 
 ## 💎 C++ Operators
 
-### ✨ Categories
-
-* **💠 Arithmetic** → `+`, `-`, `*`, `/`, `%`
-* **💠 Relational** → `==`, `!=`, `<`, `>`, `<=`, `>=`
-* **💠 Logical** → `&&`, `||`, `!`
-* **💠 Bitwise** → `&`, `|`, `^`, `~`, `<<`, `>>`
-* **💠 Assignment** → `=`, `+=`, `-=`, `*=`, `/=`, `%=` …
-* **💠 Increment / Decrement** → `++`, `--`
-* **💠 Conditional / Ternary** → `?:`
-* **💠 Comma** → `,`
-* **💠 Pointer / Reference** → `*`, `&`, `->`
-* **💠 Member / Scope** → `.`, `::`
+### Categories
+* **Arithmetic** → `+`, `-`, `*`, `/`, `%`
+* **Relational** → `==`, `!=`, `<`, `>`, `<=`, `>=`
+* **Logical** → `&&`, `||`, `!`
+* **Bitwise** → `&`, `|`, `^`, `~`, `<<`, `>>`
+* **Assignment** → `=`, `+=`, `-=`, `*=`, `/=`, `%=` …
+* **Increment / Decrement** → `++`, `--`
+* **Conditional / Ternary** → `?:`
+* **Comma** → `,`
+* **Pointer / Reference** → `*`, `&`, `->`
+* **Member / Scope** → `.`, `::`
 
 ---
 
-### 🏆 Operator Precedence & Associativity
+### Operator Precedence & Associativity
 
 | **Precedence** | **Operator**                                                                 | **Description**                  | **Associativity** |            |              |
 | -------------- | ---------------------------------------------------------------------------- | -------------------------------- | ----------------- | ---------- | ------------ |
@@ -469,27 +468,28 @@ if(ptr == nullptr) {
 
 ---
 
-### ⚡ Notes
+### Notes
 
-* 🔹 Higher precedence → evaluated first
-* 🔹 Associativity → resolves **operators with same precedence**
-* 🔹 Unary operators have **right-to-left** associativity
-* 🔹 Always use parentheses `()` to avoid ambiguity
+* Higher precedence → evaluated first
+* Associativity → resolves **operators with same precedence**
+* binary operators have **right-to-left** associativity
+* always use parentheses `()` to avoid ambiguity
 
 ---
+
 
 ##### panctuator
 ---
 
 ## 💎 Punctuators (C++)
 
-* **💠 Punctuators**: symbols used to **separate, group, or structure** code
-* **💠 Role**: define **syntax and program flow**
-* **💠 Do not perform operations** like operators
+* **Punctuators**: symbols used to **separate, group, or structure** code
+* **Role**: define **syntax and program flow**
+* **Do not perform operations** like operators
 
 ---
 
-### ✨ Common Punctuators
+### Common Punctuators
 
 | **Punctuator** | **Purpose**                       |
 | -------------- | --------------------------------- |
@@ -507,7 +507,7 @@ if(ptr == nullptr) {
 
 ---
 
-### ⚡ Examples
+### Examples
 
 * `;` → ends a statement
 * `{ }` → defines scope of loops / functions
@@ -516,12 +516,12 @@ if(ptr == nullptr) {
 
 ---
 
-### 📝 Important Points
+### Important Points
 
-* 🔹 Punctuators **do not produce values**
-* 🔹 Used to **organize and structure** code
-* 🔹 Essential for **syntax correctness**
-* 🔹 Different from operators, but some symbols overlap
+* Punctuators **do not produce values**
+* Used to **organize and structure** code
+* Essential for **syntax correctness**
+* Different from operators, but some symbols overlap
 
 ---
 
