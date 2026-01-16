@@ -113,91 +113,54 @@
 
 
 ##### character set
-C++ Character Set
+### C++ Character Set
 
-🌸 Letters: A–Z, a–z
-
-🌸 Digits: 0–9
-
-🌸 Special symbols:** `+  -  *  /  %  =  <  >  !  &  |  ^  ~  ?  :  ;  ,  .  '  "  #  $  @  _  ( )  { }  [ ]
-
-🌸 Whitespace characters:** space, tab (`\t`), newline (`\n`), carriage return (`\r`)
+* **Letters:** A–Z, a–z
+* **Digits :** 0–9
+* **Special symbols:** `+  -  *  /  %  =  <  >  !  &  |  ^  ~  ?  :  ;  ,  .  '  "  #  $  @  _  ( )  { }  [ ]
+* **Whitespace characters:** space, tab (`\t`), newline (`\n`), carriage return (`\r`)
 
 
 ##### tokens
-Tokens in C++
-
-🌸 Tokens are the **smallest units** of a C++ program.
-
-🌸 Keywords:** `int`, `float`, `if`, `else`, `for`, `while`, `return`, etc.
-
-🌸 Identifiers:** names of variables, functions, classes (e.g. `sum`, `main`, `count`)
-
-🌸 Constants (literals):** fixed values like `10`, `3.14`, `'a'`, `"hello"`
-
-🌸 Operators:** `+ - * / % = == < > && ||
-
-🌸 Separators (punctuators):** `; , ( ) { } [ ]
-
+### Tokens in C++
+ Tokens are the **smallest units** of a C++ program.
+* **Keywords:** `int`, `float`, `if`, `else`, `for`, `while`, `return`, etc.
+* **Identifiers:** names of variables, functions, classes (e.g. `sum`, `main`, `count`)
+* **Constants (literals):** fixed values like `10`, `3.14`, `'a'`, `"hello"`
+* **Operators:** `+ - * / % = == < > && ||
+*  **Separators (punctuators):** `; , ( ) { } [ ]
 
 ##### keywords
 C++ Keywords
 
-1. Basic & Data types
-int, float, double, char, void, bool, short, long, signed, unsigned, wchar_t
-
-2. Control statements
-if, else, switch, case, default, for, while, do, break, continue, goto, return
-
-3. Storage classes
-auto, register, static, extern, mutable
-
-4. Type modifiers & casting
-const, volatile, typedef, using, sizeof, typeid
-
-5. OOP related
-class, struct, union, public, private, protected, this, new, delete, virtual, override, final, friend
-
-6. Inheritance & polymorphism
-inherit, (no direct keyword), virtual, dynamic_cast, static_cast, reinterpret_cast, const_cast
-
-7. Templates & namespaces
-template, typename, namespace, export
-
-8. Exception handling
-try, catch, throw, noexcept
-
-9. Others / advanced
-inline, explicit, constexpr, decltype, operator, nullptr, true, false, asm
+* **1. Basic & Data types :**  int, float, double, char, void, bool, short, long, signed, unsigned, wchar_t
+* **Control statements :** if, else, switch, case, default, for, while, do, break, continue, goto, return
+* **Storage classes :** auto, register, static, extern, mutable
+* **Type modifiers & casting :** const, volatile, typedef, using, sizeof, typeid
+* **OOP related :** class, struct, union, public, private, protected, this, new, delete, virtual, override, final, friend
+* **Inheritance and polymorphism :** inherit, (no direct keyword), virtual, dynamic_cast, static_cast, reinterpret_cast, const_cast
+* **Templates & namespaces :** template, typename, namespace, export
+* **Exception handling :** try, catch, throw, noexcept
+* **Others / advanced :** inline, explicit, constexpr, decltype, operator, nullptr, true, false, asm
 
 📌 Important note
  * Keywords cannot be used as identifiers
  * Total keywords ≈ 95 (C++20)
 
-Interview one-liner
-“Keywords are reserved words in C++ with predefined meaning and cannot be used as variable or function names.”
 
 
 ##### identifier
 ---
-Identifier in C++
+### Identifier in C++
 
 An **identifier** is the **name given to a variable, function, class, or object** in a C++ program.
 
-🌸 Rules for identifiers
-
+* **Rules for identifiers**
 * Must start with a letter (A–Z / a–z) or **underscore (_)
 * Can contain **letters, digits, and underscores
 * Cannot start with a digit
 * Cannot be a keyword
 * Case-sensitive
-
-🌸 Examples
-
-✔ Valid: `sum`, `total_marks`, `_count`, `main`
-❌ Invalid: `1num`, `float`, `total-marks`
-
-👉 Identifiers are used to **identify program elements uniquely**.
 
 ---
 
@@ -206,21 +169,15 @@ An **identifier** is the **name given to a variable, function, class, or object*
 ## Literals
 
 Literals are fixed constant values used directly in a program.
-Types of literals
 
-🌸 Integer literals: 10, -5, 0, 100  - [integer](#integer)
+* **Types of literals**
+* **Integer literals :** 10, -5, 0, 100  - [integer](#integer)
+* **Floating-point literals :** 3.14, 0.5, 2.0 - [Floating-point](#Floating-point)
+* **Character literals :** 'a', 'Z', '9' -[Character](#Characters)
+* **String literals :** "Hello", "C++" -[string](#string)
+* **Boolean literals :** true, false -[boolean](#boolean)
+* **Null pointer literal :** nullptr -[null pointer](#null)
 
-🌸 Floating-point literals: 3.14, 0.5, 2.0 - [Floating-point](#Floating-point)
-
-🌸 Character literals: 'a', 'Z', '9' -[Character](#Characters)
-
-🌸 String literals: "Hello", "C++" -[string](#string)
-
-🌸 Boolean literals: true, false -[boolean](#boolean)
-
-🌸 Null pointer literal: nullptr -[null pointer](#null)
-
-👉 Literals represent constant values that do not change during program execution.
 
 ---
 
