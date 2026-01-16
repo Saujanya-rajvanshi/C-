@@ -202,124 +202,97 @@ Integer Literals in C++ (Sub-types)
 ##### Floating-point
 ---
 ## floating point numbers literals
-### 🔸 Definition
-
 Floating-point numbers are numbers that **contain a decimal point** or are written in **exponential form**.
 
-### 🔸 Types in C++
-
+* **Types in C++**
 * `float` → single precision
 * `double` → double precision (more accurate)
 * `long double` → extended precision
 
-### 🔸 Examples
+* Examples -> `3.14` , `-0.5` , `2.5e3` (means 2.5 × 10³)
 
-* `3.14`
-* `-0.5`
-* `2.5e3` (means 2.5 × 10³)
-
-### 🔸 Storage
-
+* **Storage**
 Floating-point numbers are stored in **IEEE 754 format** using:
-
 * Sign
 * Exponent
 * Mantissa (fraction)
 
-### 🔸 Precision
-
+* **Precision**
 * `float` → ~6–7 decimal digits
 * `double` → ~15–16 decimal digits
 
-### 🔸 Important Points
-
+*  **Important Points**
 * Floating-point values are **approximate**, not exact
 * Direct comparison (`==`) is unsafe
 * Use a small **epsilon** for comparison
 
-### 🔸 Common Issues
-
+* **Common Issues**
 * Rounding errors
 * Precision loss
 * Overflow / underflow
 
-### 🔸 Use Cases
-
-* Scientific calculations
-* Measurements
-* Financial calculations (prefer `double`)
 ---
 
 ##### characters
 ---
+## Character Literals
 
-## 💎 Character Literals
+* **Character**: stores a single symbol
+* **Type**: `char`
+* **Size**: 1 byte
+* **Written in**: single quotes `'A'`
 
-* **💠 Character**: stores a single symbol
-* **💠 Type**: `char`
-* **💠 Size**: 1 byte
-* **💠 Written in**: single quotes `'A'`
+* **Includes**
+* **Letters** → `A–Z`, `a–z`
+* **Digits** → `0–9`
+* **Special symbols** → `@ # $ %`
+* **Whitespace** → space, tab, newline
 
-### ✨ Includes
-
-* 🔹 **Letters** → `A–Z`, `a–z`
-* 🔹 **Digits** → `0–9`
-* 🔹 **Special symbols** → `@ # $ %`
-* 🔹 **Whitespace** → space, tab, newline
-
-### ⚡ ASCII-based Storage
-
+* **ASCII-based Storage**
 * `'A'` = 65, `'a'` = 97, `'0'` = 48
 
-### 🛠 Escape Characters
-
+* **Escape Characters**
 * `\n` → newline
 * `\t` → tab
 * `\\` → backslash
 * `\'` → single quote
 
-### 📝 Common Functions
-
+* **Common Functions**
 * `isalpha()` → check letter
 * `isdigit()` → check digit
 * `toupper()` → convert to uppercase
 * `tolower()` → convert to lowercase
-
 ---
 
 ##### string
 ---
 
-## 💎 String 
+## String 
 
-* **💠 String**: collection of characters
-* **💠 Type**: `string` (STL)
-* **💠 Header**: `<string>`
+* **String**: collection of characters
+* **Type**: `string` (STL)
+* **Header**: `<string>`
 
-### ✨ Features
+* **Features**
+* Dynamic size
+* Stores text data
+* Uses contiguous memory
 
-* 🔹 Dynamic size
-* 🔹 Stores text data
-* 🔹 Uses contiguous memory
+* **Common Operations**
+* **Length** → `length()` / `size()`
+* **Access** → `at(i)` / `[]`
+* **Add** → `append()` / `+`
+* **Remove** → `erase()`
+* **Clear** → `clear()`
 
-### 🛠 Common Operations
+* **Input / Output**
+* `cin` → single word
+* `getline()` → full line
 
-* 🔹 **Length** → `length()` / `size()`
-* 🔹 **Access** → `at(i)` / `[]`
-* 🔹 **Add** → `append()` / `+`
-* 🔹 **Remove** → `erase()`
-* 🔹 **Clear** → `clear()`
-
-### 📝 Input / Output
-
-* 🔹 `cin` → single word
-* 🔹 `getline()` → full line
-
-### ⚡ Important Points
-
-* 🔹 Indexing starts from 0
-* 🔹 Strings are mutable
-* 🔹 Safer than C-style strings
+* **Important Points**
+* Indexing starts from 0
+* Strings are mutable
+* Safer than C-style strings
 
 ---
 
