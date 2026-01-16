@@ -22,22 +22,6 @@
 - [string manipulation](#string-manipulation)
 - [basic maths codes](https://github.com/Saujanya-rajvanshi/basic-maths)
 
-###### basics
-### 🎗 BASICS
-- [character set](#character-set)
-- [tokens](#tokens)
-- [Barebones of c++ Program](#barebones-of-cpp-program)
-- [Data Types (overview)](#Data-Types-overview)
-- [Variables & Constants](#Variables-Constants)
-- [Type Modifiers](#Type-Modifiers)
-- [Type Conversion & Type Casting](#Type-Conversion-Type-Casting)
-- [sizeof operator](#sizeof-operator)
-- [Comments](#Comments)
-- [data handling](#data-handling)
-- [boiler plate code](#boile-plate-code)
-- [next line](#next-line)
-- [Escape Sequences](#Escape-Sequences)
-- [output & input](#output-and-input)
 
 
 ###### History
@@ -107,6 +91,22 @@
   Data hiding using access specifiers (`private`, `protected`, `public`).
 
 
+###### basics
+### 🎗 BASICS
+- [character set](#character-set)
+- [tokens](#tokens)
+- [Barebones of c++ Program](#barebones-of-cpp-program)
+- [Data Types (overview)](#Data-Types-overview)
+- [Variables & Constants](#Variables-Constants)
+- [Type Modifiers](#Type-Modifiers)
+- [Type Conversion & Type Casting](#Type-Conversion-Type-Casting)
+- [sizeof operator](#sizeof-operator)
+- [Comments](#Comments)
+- [data handling](#data-handling)
+- [boiler plate code](#boile-plate-code)
+- [next line](#next-line)
+- [Escape Sequences](#Escape-Sequences)
+- [output & input](#output-and-input)
 
 
 ## character set
