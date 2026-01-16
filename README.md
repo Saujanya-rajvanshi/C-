@@ -153,8 +153,7 @@ C++ Keywords
 int, float, double, char, void, bool, short, long, signed, unsigned, wchar_t
 
 2. Control statements
-if, else, switch, case, default
-for, while, do, break, continue, goto, return
+if, else, switch, case, default, for, while, do, break, continue, goto, return
 
 3. Storage classes
 auto, register, static, extern, mutable
@@ -163,12 +162,10 @@ auto, register, static, extern, mutable
 const, volatile, typedef, using, sizeof, typeid
 
 5. OOP related
-class, struct, union, public, private, protected
-this, new, delete, virtual, override, final, friend
+class, struct, union, public, private, protected, this, new, delete, virtual, override, final, friend
 
 6. Inheritance & polymorphism
-inherit, (no direct keyword)
-virtual, dynamic_cast, static_cast, reinterpret_cast, const_cast
+inherit, (no direct keyword), virtual, dynamic_cast, static_cast, reinterpret_cast, const_cast
 
 7. Templates & namespaces
 template, typename, namespace, export
@@ -177,8 +174,7 @@ template, typename, namespace, export
 try, catch, throw, noexcept
 
 9. Others / advanced
-inline, explicit, constexpr, decltype, operator
-nullptr, true, false, asm
+inline, explicit, constexpr, decltype, operator, nullptr, true, false, asm
 
 📌 Important note
  * Keywords cannot be used as identifiers
@@ -187,6 +183,7 @@ nullptr, true, false, asm
 Interview one-liner
 “Keywords are reserved words in C++ with predefined meaning and cannot be used as variable or function names.”
 ```
+
 ##### identifier
 ---
 Identifier in C++
