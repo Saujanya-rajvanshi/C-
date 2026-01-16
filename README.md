@@ -46,19 +46,27 @@
 
 ###### history
 ### History of C++
-
+* The C++ language is an object-oriented programming language & is a combination of both low-level & high-level language - a Middle-Level Language.
+* created, designed & developed by a Danish Computer Scientist - Bjarne Stroustrup at Bell Telephone Laboratories (now known as Nokia Bell Labs) in Murray Hill, New Jersey.
 * **1979** – Bjarne Stroustrup at Bell Labs started working on a language called **“C with Classes”** to support object-oriented programming.
 * **Early 1980s** – Features like **classes, constructors, destructors, and data hiding** were added to C.
 * **1983** – The language was renamed **C++** (`++` means increment in C, indicating an improvement over C).
 * **1985** – First commercial release of C++ and the book **“The C++ Programming Language”** by Bjarne Stroustrup was published.
 * **1990** – C++ became widely popular for system and application development.
-* **1998** – First ISO standard released: **C++98**.
-* **2003** – Minor update released as **C++03**.
-* **2011** – Major update **C++11** introduced modern features like auto, nullptr, lambda expressions, and smart pointers.
-* **2014** – **C++14** refined and improved C++11 features.
-* **2017** – **C++17** added filesystem library and performance improvements.
-* **2020** – **C++20** introduced concepts, ranges, coroutines, and modules.
-* **2023** – **C++23** continued enhancements and standard library improvements.
+
+<img width="1042" height="745" alt="image" src="https://github.com/user-attachments/assets/f0df1c76-dd3c-400e-b11f-9ecee354efde" />
+
+
+| **C++ Version**                | **Release Date** | **Major Changes / Features**                                                                                                 |
+| ------------------------------ | ---------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| **C++98** (ISO/IEC 14882:1998) | October 1998     | First official C++ standard, STL introduced, basic OOP features standardized                                                 |
+| **C++03** (ISO/IEC 14882:2003) | February 2003    | Bug fixes to C++98, value initialization improvements                                                                        |
+| **C++11**                      | August 2011      | Lambda expressions, `auto`, `nullptr`, uniform initialization, rvalue references, move semantics, `decltype`, smart pointers |
+| **C++14**                      | August 2014      | Polymorphic lambdas, digit separators, variable templates, binary literals, `std::quoted`                                    |
+| **C++17**                      | December 2017    | Fold expressions, `if`/`switch` with initializer, inline variables, `std::optional`, `std::variant`, `std::any`              |
+| **C++20**                      | March 2020       | Concepts, ranges, coroutines, modules, reflection-like inspection of program entities, enhanced lambdas                      |
+| **C++23**                      | Future Release   | Next major revision of C++ standard, further language and library enhancements                                               |
+
 
 **C++ is a general-purpose, high-performance language** used in system software, game development, competitive programming, embedded systems, and large-scale applications.
 
@@ -70,9 +78,6 @@
 
 * **Fast and Efficient**
   Close to hardware, suitable for system-level and high-performance applications.
-
-* **Based on C Language**
-  Backward compatible with most C programs.
 
 * **Compiled Language**
   Programs are compiled, giving better performance and security.
