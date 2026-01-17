@@ -117,8 +117,8 @@
 * **Whitespace characters:** space, tab (`\t`), newline (`\n`), carriage return (`\r`)
 
 
+###### tokens
 ## 🧩 tokens
-
  Tokens are the **smallest units** of a C++ program.
 * **Keywords:** `int`, `float`, `if`, `else`, `for`, `while`, `return`, etc.
 * - [tokens - keywords](#keywords)
@@ -131,7 +131,7 @@
 *  **Separators (punctuators):** `; , ( ) { } [ ]
 *  - [tokens - panctuator](#panctuator)
 
-
+###### keywords
 ## 💎 keywords
 
 * **1. Basic & Data types :**  int, float, double, char, void, bool, short, long, signed, unsigned, wchar_t
@@ -149,6 +149,7 @@
  * Total keywords ≈ 95 (C++20)
 
 ---
+###### identifier
 ## 💎 identifier
 
 An **identifier** is the **name given to a variable, function, class, or object** in a C++ program.
@@ -161,6 +162,7 @@ An **identifier** is the **name given to a variable, function, class, or object*
 * Case-sensitive
 
 ---
+###### literals
 ## 💎 literals
 
 Literals are fixed constant values used directly in a program.
@@ -175,6 +177,7 @@ Literals are fixed constant values used directly in a program.
 
 
 ---
+###### integer
 ## 💎 integer 
 
 Integer Literals in C++ (Sub-types)
