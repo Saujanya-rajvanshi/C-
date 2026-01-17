@@ -564,7 +564,8 @@ if(ptr == nullptr) {
 ---
 
 
-## Data Types Overview
+###### Data Types Overview
+## 🧩 data type 
 
 Data types specify **what kind of data** a variable can store and **how much memory** is allocated.
 
@@ -585,7 +586,8 @@ Data types specify **what kind of data** a variable can store and **how much mem
 
 ---
 
-## Variables Constants
+###### Variables Constants
+## 🧩 Variable & constants
 
 A **variable** stores data whose value can change, while a **constant** stores fixed data.
 
@@ -606,7 +608,8 @@ A **variable** stores data whose value can change, while a **constant** stores f
 
 ---
 
-## Type Modifiers
+###### Type Modifiers
+## 🧩 Type Modifiers
 
 Type modifiers change the **range and storage size** of data types.
 
