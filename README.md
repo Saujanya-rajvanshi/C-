@@ -3067,7 +3067,7 @@ Type-Specific Code
 
 ---
 
-#### advance concept
+#### advanced concept
 ---
 
 # 🎗 Advanced C++ Concepts
