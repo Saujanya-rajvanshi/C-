@@ -2554,7 +2554,7 @@ void fun() noexcept;
 ##### file handling
 ---
 
-# 📁 File Handling — C++
+# 🎗 File Handling — C++
 
 **File Handling** allows a program to **store data permanently** in files and **retrieve it later**.
 
@@ -2814,7 +2814,7 @@ Program → File Stream → File
 ##### templates
 ---
 
-# 📦 Templates — C++
+# 🎗 Templates — C++
 
 **Templates** allow writing **generic programs**, so the **same code works for different data types**.
 
@@ -3070,7 +3070,7 @@ Type-Specific Code
 #### advance concept
 ---
 
-# 🚀 Advanced C++ Concepts
+# 🎗 Advanced C++ Concepts
 
 ---
 
@@ -3343,7 +3343,7 @@ Test(const Test&) = delete;
 ###### competitive programming
 ---
 
-# ⚔️ Competitive Programming / DSA Readiness (Google-Level Notes)
+# 🎗 Competitive Programming / DSA Readiness (Google-Level Notes)
 
 ---
 
@@ -3554,22 +3554,10 @@ cin.tie(nullptr);
 ---
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 ##### string manipulation
 ---
 
-# 📘 C++ String Manipulation – Complete Notes
+# 🎗 C++ String Manipulation – Complete Notes
 
 ---
 
