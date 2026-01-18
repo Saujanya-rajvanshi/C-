@@ -771,52 +771,6 @@ cout << "Hello\n";
 
 ---
 
-###### output and input
-## 🧩 Output & Input
-
-### Output → `cout`
-
-Used to display data on screen.
-
-```cpp
-cout << "Hello World";
-cout << x;
-```
-
-### Input → `cin`
-
-Used to take input from user.
-
-```cpp
-cin >> x;
-cin >> a >> b;
-```
-
-### Important rules:
-
-* `>>` separates input by space
-* `cin` stops at space (for strings)
-* For full line input → use `getline()`
-
-📌 Example:
-
-```cpp
-int n;
-cin >> n;
-cout << "Value: " << n;
-```
-
----
- 
-#### Exam & Interview Points
-
-* Escape sequences are **character literals**
-* `\n` moves cursor to next line, `\r` returns to start
-* `\t` spacing depends on environment
-* Used heavily in **string formatting**
-
----
-
 ###### Escape Sequences
 ## 🧩 Escape Sequences 
 
@@ -874,11 +828,57 @@ Hello
 World    C++
 ```
 ---
+###### output and input
+## 🧩 Output & Input
+
+### Output → `cout`
+
+Used to display data on screen.
+
+```cpp
+cout << "Hello World";
+cout << x;
+```
+
+### Input → `cin`
+
+Used to take input from user.
+
+```cpp
+cin >> x;
+cin >> a >> b;
+```
+
+### Important rules:
+
+* `>>` separates input by space
+* `cin` stops at space (for strings)
+* For full line input → use `getline()`
+
+📌 Example:
+
+```cpp
+int n;
+cin >> n;
+cout << "Value: " << n;
+```
+
+---
+
+ 
+#### Exam & Interview Points
+
+* Escape sequences are **character literals**
+* `\n` moves cursor to next line, `\r` returns to start
+* `\t` spacing depends on environment
+* Used heavily in **string formatting**
+
+---
 
 ###### header
 ---
 
-## 📘 Header Files & Namespaces — C++
+## 🎗 Header Files & Namespaces — C++
 
 Header files contain **declarations** (functions, classes, variables, macros) that are shared across multiple source files.
 
@@ -1099,7 +1099,7 @@ May not reliably include:
 ###### Data handling
 ---
 
-# 💎 Data Handling in C++
+# 🎗 Data Handling in C++
 
 * **Data Handling**
 * **Data handling** refers to **storing, processing, and manipulating data** in a program.
