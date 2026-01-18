@@ -2153,7 +2153,7 @@ delete[] arr;
 ###### Structures Unions
 ---
 
-# 📘 Structures & Unions — C++
+# 🎗 Structures & Unions — C++
 
 ---
 
@@ -2326,7 +2326,7 @@ using Stu = Student;
 ##### eception handling
 ---
 
-# 📘 Exception Handling — C++
+# 🎗 Exception Handling — C++
 
 **Exception Handling** is a mechanism to handle **runtime errors** and maintain **normal program flow**.
 
