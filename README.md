@@ -1626,7 +1626,7 @@ while (true) {
 ###### function
 ---
 
-# 📘 Functions — C++
+# 🎗 Functions — C++
 
 A **function** is a block of code that performs a specific task and can be reused multiple times.
 
@@ -1829,7 +1829,7 @@ int fact(int n) {
 ###### pointer
 ---
 
-# 📘 Pointers — C++
+# 🎗 Pointers — C++
 
 A **pointer** is a variable that stores the **address of another variable**.
 
@@ -1991,7 +1991,7 @@ delete p;
 ###### dynamic memory allocation
 ---
 
-# 📘 Dynamic Memory Allocation — C++
+# 🎗 Dynamic Memory Allocation — C++
 
 Dynamic Memory Allocation (DMA) allows memory to be **allocated and deallocated at runtime**, instead of compile time.
 
