@@ -1295,7 +1295,7 @@ Examples:
 
 ##### flow of control
 ---
-# Flow of Control in C++ – Complete Notes
+# 🎗 Flow of Control in C++ – Complete Notes
 
 Flow of control refers to the **order in which statements in a C++ program are executed**. By default, execution is **sequential (top to bottom)**, but flow-control statements allow us to change this order based on **conditions, loops, or jumps**.
 
