@@ -2323,7 +2323,7 @@ using Stu = Student;
 ---
 
 
-##### eception handling
+##### exception handling
 ---
 
 # 🎗 Exception Handling — C++
