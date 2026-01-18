@@ -102,7 +102,7 @@
 - [Type Conversion Type Casting](#Type-Conversion-Type-Casting)
 - [sizeof operator](#sizeof-operator)
 - [Comments](#Comments)
-- [data handling](#data-handling)
+- [data handling](#data-handling-basics)
 - [boiler plate code](#boile-plate-code)
 - [next line](#next-line)
 - [Escape Sequences](#Escape-Sequences)
@@ -685,7 +685,7 @@ Comments are used to **explain code** and are ignored by the compiler.
 ---
 
 
-###### data handling
+###### data handling basics
 ## 🧩 Data Handling
 
 **Data handling** means storing, reading, modifying, and managing data in a program.
