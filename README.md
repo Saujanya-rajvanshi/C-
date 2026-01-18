@@ -613,12 +613,12 @@ A **variable** stores data whose value can change, while a **constant** stores f
 
 Type modifiers change the **range and storage size** of data types.
 
-### Common Modifiers
+#### Common Modifiers
 
 * `short`, `long`, `long long`
 * `signed`, `unsigned`
 
-### Notes
+#### Notes
 
 * Valid combinations depend on the base type
 * Overflow & underflow may cause **undefined behavior**
@@ -626,20 +626,20 @@ Type modifiers change the **range and storage size** of data types.
 
 ---
 
-## Type Conversion Type Casting
+## 🧩 Type Conversion Type Casting
 
 Type conversion changes one data type into another.
 
-### Implicit Conversion
+#### Implicit Conversion
 
 * Done automatically by compiler
 * May cause **data loss**
 
-### Explicit Conversion
+#### Explicit Conversion
 
 * Programmer controlled
 
-### Casting Types
+#### Casting Types
 
 * **C-style cast**
 * **C++ casts:**
@@ -649,7 +649,7 @@ Type conversion changes one data type into another.
   * `reinterpret_cast`
   * `dynamic_cast`
 
-### Important Concepts
+#### Important Concepts
 
 * Narrowing conversions
 * User-defined conversion
@@ -658,11 +658,11 @@ Type conversion changes one data type into another.
 
 ---
 
-## size of Operator
+## 🧩 size of Operator
 
 `sizeof` is a **compile-time operator** used to find memory size.
 
-### Key Points
+#### Key Points
 
 * Returns value in bytes
 * Result type is `size_t`
@@ -673,11 +673,11 @@ Type conversion changes one data type into another.
 
 ---
 
-## Comments
+## 🧩 Comments
 
 Comments are used to **explain code** and are ignored by the compiler.
 
-### Types
+#### Types
 
 * **Single-line:** `//`
 * **Multi-line:** `/* */`
@@ -686,15 +686,14 @@ Comments are used to **explain code** and are ignored by the compiler.
 
 ---
 
-## Escape Sequences 
+## 🧩 Escape Sequences 
 
-Escape sequences are **special character combinations** used inside **character and string literals** to represent **non-printable or special characters**.
-
+Escape sequences are **special character combinations** used inside **character and string literals** to represent **non-printable or special characters**. <br>
 They always start with a **backslash (`\`)**.
 
 ---
 
-## 🔹 Common Escape Sequences
+## 🧩 Common Escape Sequences
 
 | Escape | Meaning            |
 | ------ | ------------------ |
@@ -713,7 +712,7 @@ They always start with a **backslash (`\`)**.
 
 ---
 
-## 🔹 Numeric Escape Sequences
+## 🧩 Numeric Escape Sequences
 
 * **Octal** → `\nnn` (e.g., `\101` → `A`)
 * **Hexadecimal** → `\xhh` (e.g., `\x41` → `A`)
@@ -724,7 +723,7 @@ They always start with a **backslash (`\`)**.
 
 ---
 
-## 🔹 Important Concepts
+### Important Concepts
 
 * Used inside **single (`' '`) and double (`" "`) quotes**
 * Interpreted at **compile time**
@@ -734,7 +733,7 @@ They always start with a **backslash (`\`)**.
 
 ---
 
-## 🔹 Example
+* **Example**
 
 ```cpp
 cout << "Hello\nWorld\tC++";
