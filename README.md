@@ -99,7 +99,7 @@
 - [Data Types (overview)](#Data-Types-overview)
 - [Variables & Constants](#Variables-Constants)
 - [Type Modifiers](#Type-Modifiers)
-- [Type Conversion & Type Casting](#Type-Conversion-Type-Casting)
+- [Type Conversion Type Casting](#Type-Conversion-Type-Casting)
 - [sizeof operator](#sizeof-operator)
 - [Comments](#Comments)
 - [data handling](#data-handling)
@@ -682,18 +682,148 @@ Comments are used to **explain code** and are ignored by the compiler.
 * **Single-line:** `//`
 * **Multi-line:** `/* */`
 
+---
 
+
+###### data handling
+## 🧩 Data Handling
+
+**Data handling** means storing, reading, modifying, and managing data in a program.
+
+* Data is stored using **variables**
+* Data types define what kind of data is stored
+
+  * `int` → numbers
+  * `float/double` → decimal values
+  * `char` → single character
+  * `string` → text
+* Operations on data:
+
+  * Assignment (`=`)
+  * Arithmetic (`+ - * / %`)
+  * Comparison (`== != < >`)
+* Proper data handling avoids:
+
+  * Overflow
+  * Data loss
+  * Type mismatch errors
+
+📌 Example:
+
+```cpp
+int age = 20;
+float price = 99.5;
+```
+
+---
+###### boile plate code
+
+## 🧩 Boiler Plate Code
+
+**Boilerplate code** is the **minimum required code** to run a C++ program.
+
+### Standard C++ boilerplate:
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    return 0;
+}
+```
+
+### Explanation:
+
+* `#include <iostream>` → input/output
+* `using namespace std;` → avoids writing `std::`
+* `int main()` → program execution starts here
+* `return 0;` → successful program end
+
+📌 Without boilerplate → program won’t compile
 
 ---
 
+###### next line
+## 🧩 Next Line
+
+To move output to the **next line**, C++ provides two methods:
+
+### 1️⃣ `endl`
+
+```cpp
+cout << "Hello" << endl;
+```
+
+* Adds new line
+* Flushes output buffer (slower)
+
+### 2️⃣ `\n`
+
+```cpp
+cout << "Hello\n";
+```
+
+* Faster
+* Preferred in competitive programming
+
+📌 Both move cursor to next line
+
+---
+
+###### output and input
+## 🧩 Output & Input
+
+### Output → `cout`
+
+Used to display data on screen.
+
+```cpp
+cout << "Hello World";
+cout << x;
+```
+
+### Input → `cin`
+
+Used to take input from user.
+
+```cpp
+cin >> x;
+cin >> a >> b;
+```
+
+### Important rules:
+
+* `>>` separates input by space
+* `cin` stops at space (for strings)
+* For full line input → use `getline()`
+
+📌 Example:
+
+```cpp
+int n;
+cin >> n;
+cout << "Value: " << n;
+```
+
+---
+ 
+#### Exam & Interview Points
+
+* Escape sequences are **character literals**
+* `\n` moves cursor to next line, `\r` returns to start
+* `\t` spacing depends on environment
+* Used heavily in **string formatting**
+
+---
+
+###### Escape Sequences
 ## 🧩 Escape Sequences 
 
 Escape sequences are **special character combinations** used inside **character and string literals** to represent **non-printable or special characters**. <br>
 They always start with a **backslash (`\`)**.
 
----
-
-## 🧩 Common Escape Sequences
+### Common Escape Sequences
 
 | Escape | Meaning            |
 | ------ | ------------------ |
@@ -710,9 +840,7 @@ They always start with a **backslash (`\`)**.
 | `\?`   | Question mark      |
 | `\0`   | Null character     |
 
----
-
-## 🧩 Numeric Escape Sequences
+### Numeric Escape Sequences
 
 * **Octal** → `\nnn` (e.g., `\101` → `A`)
 * **Hexadecimal** → `\xhh` (e.g., `\x41` → `A`)
@@ -745,18 +873,7 @@ cout << "Hello\nWorld\tC++";
 Hello
 World    C++
 ```
-
 ---
-
-## 🔹 Exam & Interview Points
-
-* Escape sequences are **character literals**
-* `\n` moves cursor to next line, `\r` returns to start
-* `\t` spacing depends on environment
-* Used heavily in **string formatting**
-
----
-
 
 ###### header
 ---
