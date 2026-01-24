@@ -108,9 +108,8 @@
 - [Escape Sequences](#Escape-Sequences)
 - [output & input](#output-and-input)
 
-
+###### character set
 ## 🧩 character set
-
 * **Letters:** A–Z, a–z
 * **Digits :** 0–9
 * **Special symbols:** `+  -  *  /  %  =  <  >  !  &  |  ^  ~  ?  :  ;  ,  .  '  "  #  $  @  _  ( )  { }  [ ]
