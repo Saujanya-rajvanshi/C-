@@ -875,6 +875,7 @@ cout << "Value: " << n;
 ---
 
 ###### header
+
 ---
 
 ## 🎗 Header Files & Namespaces — C++
@@ -888,7 +889,14 @@ Header files contain **declarations** (functions, classes, variables, macros) th
 * Better modularity
 * Separation of declaration & definition
 
----
+```cpp
+#include<iostream>
+
+int main() {
+    std::cout << "hey saujanya";
+    return 0;
+}
+```
 
 ## 🔹 Standard Header Files
 
