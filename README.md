@@ -575,6 +575,39 @@ Data types specify **what kind of data** a variable can store and **how much mem
 * **User-defined:** `struct`, `union`, `enum`, `class`, `typedef`, `using`
 * **Library / STL Types:** `string`, `vector`, `map`, `set`
 
+
+### Integer Data Types
+
+| Data Type            | Size (bytes) | Range                                                   |
+| -------------------- | ------------ | ------------------------------------------------------- |
+| `char`               | 1            | −128 to 127                                             |
+| `unsigned char`      | 1            | 0 to 255                                                |
+| `short int`          | 2            | −32,768 to 32,767                                       |
+| `unsigned short int` | 2            | 0 to 65,535                                             |
+| `int`                | 4            | −2,147,483,648 to 2,147,483,647                         |
+| `unsigned int`       | 4            | 0 to 4,294,967,295                                      |
+| `long int`           | 8            | −9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 |
+| `unsigned long int`  | 8            | 0 to 18,446,744,073,709,551,615                         |
+| `long long int`      | 8            | −9.22×10¹⁸ to 9.22×10¹⁸                                 |
+
+
+### Floating-Point Data Types
+
+| Data Type     | Size (bytes) | Range (Approx.)           |
+| ------------- | ------------ | ------------------------- |
+| `float`       | 4            | 1.2×10⁻³⁸ to 3.4×10³⁸     |
+| `double`      | 8            | 2.3×10⁻³⁰⁸ to 1.7×10³⁰⁸   |
+| `long double` | 16           | 3.4×10⁻⁴⁹³² to 1.1×10⁴⁹³² |
+
+
+### Other Data Types
+
+| Data Type | Size       |
+| --------- | ---------- |
+| `bool`    | 1 byte     |
+| `void`    | No storage |
+
+
 ### Important Concepts
 
 * Size and range are **compiler & system dependent**
