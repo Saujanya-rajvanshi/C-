@@ -3595,14 +3595,9 @@ cin.tie(nullptr);
 
 
 ##### string manipulation
----
+## 🎗 C++ String Manipulation 
 
-# 🎗 C++ String Manipulation – Complete Notes
-
----
-
-## 🔹 What is a String?
-
+## What is a String?
 A **string** is a sequence of characters used to store text.
 
 In C++, strings can be handled in **two ways**:
@@ -3610,11 +3605,7 @@ In C++, strings can be handled in **two ways**:
 1. **C-style strings (character arrays)**
 2. **C++ `string` class (STL)**
 
----
-
-## 🔹 Types of Strings in C++
-
-### 1️⃣ C-style Strings
+### 1. C-style Strings
 
 * Implemented using **character arrays**
 * End with a **null character `\0`**
@@ -3625,9 +3616,7 @@ char str[20] = "Hello";
 
 📌 Stored as: `H e l l o \0`
 
----
-
-### 2️⃣ C++ String Class (`<string>`)
+### 2️. C++ String Class (`<string>`)
 
 * Part of **Standard Template Library (STL)**
 * Dynamic, safer, and easier to use
@@ -3637,11 +3626,9 @@ char str[20] = "Hello";
 string s = "Hello";
 ```
 
----
+#### Input & Output of Strings
 
-## 🔹 Input & Output of Strings
-
-### Using `cin` and `cout`
+* Using `cin` and `cout`
 
 ```cpp
 string s;
@@ -3649,16 +3636,14 @@ cin >> s;      // reads single word
 cout << s;
 ```
 
-### Using `getline()` (recommended)
+* Using `getline()` (recommended)
 
 ```cpp
 string s;
 getline(cin, s);   // reads full line with spaces
 ```
 
----
-
-## 🔹 Common String Functions (STL)
+## Common String Functions (STL)
 
 | Function              | Description               |
 | --------------------- | ------------------------- |
@@ -3673,20 +3658,17 @@ getline(cin, s);   // reads full line with spaces
 | `substr()`            | Extracts substring        |
 | `compare()`           | Compares strings          |
 
----
-
-## 🔹 String Length
+### String Length
 
 ```cpp
 string s = "Hello";
 cout << s.length();   // 5
 ```
 
----
 
-## 🔹 Concatenation (Joining Strings)
+### Concatenation (Joining Strings)
 
-### Using `+` operator
+#### Using `+` operator
 
 ```cpp
 string a = "Hello";
@@ -3694,15 +3676,14 @@ string b = "World";
 string c = a + " " + b;
 ```
 
-### Using `append()`
+#### Using `append()`
 
 ```cpp
 a.append(b);
 ```
 
----
 
-## 🔹 Accessing Characters
+### Accessing Characters
 
 ```cpp
 string s = "Hello";
@@ -3710,9 +3691,8 @@ cout << s[0];      // H
 cout << s.at(1);   // e
 ```
 
----
 
-## 🔹 Comparing Strings
+### Comparing Strings
 
 ### Using `==`
 
@@ -3732,18 +3712,14 @@ s1.compare(s2);
 | `<0`         | s1 < s2 |
 | `>0`         | s1 > s2 |
 
----
-
-## 🔹 Substring
+### Substring
 
 ```cpp
 string s = "Programming";
 string sub = s.substr(0, 7); // Program
 ```
 
----
-
-## 🔹 Finding a Substring
+### Finding a Substring
 
 ```cpp
 string s = "Hello World";
@@ -3752,33 +3728,27 @@ cout << s.find("World"); // returns index
 
 📌 If not found → returns `string::npos`
 
----
+### Insert & Erase
 
-## 🔹 Insert & Erase
-
-### Insert
+#### Insert
 
 ```cpp
 s.insert(5, " C++");
 ```
 
-### Erase
+#### Erase
 
 ```cpp
 s.erase(5, 3);
 ```
 
----
-
-## 🔹 Replace
+### Replace
 
 ```cpp
 s.replace(0, 5, "Hi");
 ```
 
----
-
-## 🔹 C-Style String Functions (`<cstring>`)
+### C-Style String Functions (`<cstring>`)
 
 | Function   | Purpose     |
 | ---------- | ----------- |
@@ -3795,11 +3765,10 @@ char b[10] = "Hello";
 strcpy(a, b);
 ```
 
----
 
-## 🔹 Conversion Between String Types
+### Conversion Between String Types
 
-### string → char array
+#### string → char array
 
 ```cpp
 string s = "Hello";
@@ -3807,38 +3776,32 @@ char ch[10];
 strcpy(ch, s.c_str());
 ```
 
----
+### Traversing a String
 
-## 🔹 Traversing a String
-
-### Using loop
+#### Using loop
 
 ```cpp
 for(int i = 0; i < s.length(); i++)
     cout << s[i];
 ```
 
-### Using range-based loop
+#### Using range-based loop
 
 ```cpp
 for(char c : s)
     cout << c;
 ```
 
----
+### Common String Programs (Important)
 
-## 🔹 Common String Programs (Important)
+* Reverse a string
+* Check palindrome
+* Count vowels/consonants
+* Convert to uppercase/lowercase
+* Compare two strings
+* Find frequency of characters
 
-✔ Reverse a string
-✔ Check palindrome
-✔ Count vowels/consonants
-✔ Convert to uppercase/lowercase
-✔ Compare two strings
-✔ Find frequency of characters
-
----
-
-## 🔹 Advantages of C++ `string` over C-style strings
+### Advantages of C++ `string` over C-style strings
 
 | C-style          | C++ string       |
 | ---------------- | ---------------- |
@@ -3847,20 +3810,3 @@ for(char c : s)
 | Manual functions | Built-in methods |
 
 ---
-
-## 🔹 Exam & Viva Points ⭐
-
-* `getline()` is used for strings with spaces
-* `string::npos` means not found
-* `string` is part of STL
-* Prefer `string` over `char[]`
-
----
-
-## ✅ Conclusion
-
-C++ string manipulation is **easy, powerful, and safe** using the STL `string` class and is **highly preferred** over traditional C-style strings.
-
----
-
-📌 **Tip for Exams**: Always write examples + function names for full marks.
