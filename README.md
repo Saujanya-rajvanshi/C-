@@ -3739,13 +3739,50 @@ s.insert(5, " C++");
 #### Erase
 
 ```cpp
-s.erase(5, 3);
+s.erase(5, 3); //start index, count
 ```
 
 ### Replace
 
 ```cpp
-s.replace(0, 5, "Hi");
+s.replace(0, 5, "Hi"); //start index, count, replacment
+```
+
+### practical
+```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+// --------- C++ string class (STL)
+    string sa = "hello";
+    string s;
+    cin >> s;  // read single word
+    cout << s << endl ;
+    cin.ignore();          // clears leftover newline --> this is a add on because cin and getline cant worktogether (hello is stored with /n and getline asume this as the string)
+    string t;
+    getline(cin,t); //read whole line with space
+    cout<< t << endl ;
+    // finding length 
+    cout << "length of s : " <<  s.length() << endl ;
+    cout << "length of t : " << t.length() << endl ;
+    // appending
+    cout << " append : " <<  s.append(t) << endl ;
+    // Accessing Characters
+    cout << s[0] << endl ;      // h
+    cout << s.at(1) << endl ;   // e
+    // compairing
+    cout << (s == t) << endl;
+    cout << (s.compare(t) == 0) << endl;
+    //substring
+    cout << s.substr(0, 3) << endl;
+    cout << (s.find("World") != string::npos) << endl; // returns index
+    // insert , erase , replace
+    cout << s.insert(5, " C++") << endl;
+    cout << s.erase(5, 3) << endl;
+    cout << s.replace(0, 5, "Hi") << endl;
+}
 ```
 
 ### C-Style String Functions (`<cstring>`)
