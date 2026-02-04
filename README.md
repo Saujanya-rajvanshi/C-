@@ -1334,14 +1334,11 @@ Examples:
 ---
 
 ##### flow of control
----
-# 🎗 Flow of Control in C++ – Complete Notes
+# 🎗 Flow of Control in C++ 
 
 Flow of control refers to the **order in which statements in a C++ program are executed**. By default, execution is **sequential (top to bottom)**, but flow-control statements allow us to change this order based on **conditions, loops, or jumps**.
 
----
-
-## 1. Types of Flow of Control in C++
+## Types of Flow of Control in C++
 
 C++ flow of control is broadly classified into:
 
@@ -1350,9 +1347,7 @@ C++ flow of control is broadly classified into:
 3. **Looping / Iteration Statements**
 4. **Jump Statements**
 
----
-
-## 2. Sequential Control
+## 1. Sequential Control
 
 * Statements execute **one after another** in the order written.
 * No condition or repetition involved.
@@ -1365,13 +1360,11 @@ int b = 20;
 int c = a + b;
 ```
 
----
-
-## 3. Decision Making Statements
+## 2. Decision Making Statements
 
 Used to **execute statements based on conditions**.
 
-### 3.1 if Statement
+### 2.1 if Statement
 
 * Executes a block **only if condition is true**.
 
@@ -1391,9 +1384,7 @@ if (a > b) {
 }
 ```
 
----
-
-### 3.2 if–else Statement
+### 2.2 if–else Statement
 
 * Executes one block if condition is true, otherwise another.
 
@@ -1407,9 +1398,7 @@ if (condition) {
 }
 ```
 
----
-
-### 3.3 if–else if–else Ladder
+### 2.3 if–else if–else Ladder
 
 * Used when **multiple conditions** are to be checked.
 
@@ -1424,9 +1413,8 @@ else {
 }
 ```
 
----
 
-### 3.4 Nested if
+### 2.4 Nested if
 
 * An if statement inside another if.
 
@@ -1440,9 +1428,7 @@ if (a > b) {
 }
 ```
 
----
-
-### 3.5 switch Statement
+### 2.5 switch Statement
 
 * Used to select one block from **multiple choices**.
 * Works with **int, char, enum** (not float or string).
@@ -1467,9 +1453,7 @@ Important Points:
 * `break` prevents **fall-through**
 * `default` is optional
 
----
-
-## 4. Looping Statements
+## 3. Looping Statements
 
 Used to **repeat a block of code** multiple times.
 
@@ -1479,9 +1463,8 @@ Used to **repeat a block of code** multiple times.
 2. do–while loop
 3. for loop
 
----
 
-### 4.1 while Loop (Entry Controlled)
+### 3.1 while Loop (Entry Controlled)
 
 * Condition is checked **before** loop body execution.
 
@@ -1503,9 +1486,7 @@ while (i <= 5) {
 }
 ```
 
----
-
-### 4.2 do–while Loop (Exit Controlled)
+### 3.2 do–while Loop (Exit Controlled)
 
 * Loop body executes **at least once**.
 
@@ -1517,9 +1498,7 @@ do {
 } while (condition);
 ```
 
----
-
-### 4.3 for Loop
+### 3.3 for Loop
 
 * Best suited when number of iterations is known.
 
@@ -1539,9 +1518,8 @@ for (int i = 1; i <= 5; i++) {
 }
 ```
 
----
 
-## 5. Nested Loops
+## Nested Loops
 
 * One loop inside another.
 * Commonly used for **2D arrays and patterns**.
@@ -1556,13 +1534,11 @@ for (int i = 1; i <= 3; i++) {
 }
 ```
 
----
-
-## 6. Jump Statements
+## 4. Jump Statements
 
 Used to **transfer control abruptly**.
 
-### 6.1 break
+### 4.1 break
 
 * Terminates loop or switch immediately.
 
@@ -1570,9 +1546,7 @@ Used to **transfer control abruptly**.
 break;
 ```
 
----
-
-### 6.2 continue
+### 4.2 continue
 
 * Skips current iteration and moves to next.
 
@@ -1580,9 +1554,7 @@ break;
 continue;
 ```
 
----
-
-### 6.3 goto (Not Recommended)
+### goto (Not Recommended)
 
 * Transfers control to a labeled statement.
 
@@ -1598,9 +1570,7 @@ Reason to avoid:
 
 * Makes code **hard to read and debug**
 
----
-
-### 6.4 return
+### return
 
 * Exits from a function and returns value.
 
@@ -1608,9 +1578,8 @@ Reason to avoid:
 return 0;
 ```
 
----
 
-## 7. Conditional Operator (Ternary Operator)
+## Conditional Operator (Ternary Operator)
 
 * Short form of if–else.
 
@@ -1626,9 +1595,7 @@ Example:
 int max = (a > b) ? a : b;
 ```
 
----
-
-## 8. Infinite Loops
+## Infinite Loops
 
 A loop that **never terminates**.
 
@@ -1638,29 +1605,6 @@ Example:
 while (true) {
 }
 ```
-
----
-
-## 9. Common Mistakes
-
-* Missing `break` in switch
-* Infinite loops due to wrong condition
-* Using `=` instead of `==` in conditions
-
----
-
-## 10. Exam-Oriented Summary
-
-* Flow of control defines execution order
-* Decision statements → if, else, switch
-* Looping → for, while, do–while
-* Jump → break, continue, goto, return
-
----
-
-### One-line Definition:
-
-> Flow of control statements control the execution order of a program based on conditions, loops, and jumps.
 
 
 ###### function
