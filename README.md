@@ -3846,4 +3846,35 @@ for(char c : s)
 | Error-prone      | Safe             |
 | Manual functions | Built-in methods |
 
+### code 
+```cpp
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main(){
+// --------- C style string function (STL)
+    string s = "Hello";
+    char ch[10];
+    cout << strcpy(ch, s.c_str()) << endl;
+    // Traversing a String - Using loop
+    for(int i = 0; i < s.length(); i++){
+        cout << s[i];
+    }
+    cout << endl;
+    // Traversing a String - range-based loop
+    for(char c : s){
+        cout << c;
+    }
+    cout << endl;
+    // finding length 
+    cout << "length of s : " << strlen(s.c_str()) << endl;
+    // concatination
+    char ch1[20] = "Hello";
+    char ch2[] = "World";
+    cout << "concatination : " << strcat(ch1, ch2) << endl;   // ch1 = "HelloWorld"
+    // compare
+    cout << "compare : " << strcmp(ch1, ch2) << endl;
+}
+```
 ---
