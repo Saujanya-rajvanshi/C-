@@ -100,7 +100,7 @@
 - [Variables & Constants](#Variables-Constants)
 - [Type Modifiers](#Type-Modifiers)
 - [Type Conversion Type Casting](#Type-Conversion-Type-Casting)
-- [sizeof operator](#size-of-operator)
+- [sizeof operator](#sizeof-operator)
 - [Comments](#Comments)
 - [data handling](#data-handling-basics)
 - [boiler plate code](#boile-plate-code)
@@ -691,8 +691,8 @@ Type conversion changes one data type into another.
 
 ---
 
-###### size of operator 
-## 🧩 size of Operator
+###### sizeof operator 
+## 🧩 sizeof Operator
 
 `sizeof` is a **compile-time operator** used to find memory size.
 
