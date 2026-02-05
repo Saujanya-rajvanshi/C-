@@ -100,7 +100,7 @@
 - [Variables & Constants](#Variables-Constants)
 - [Type Modifiers](#Type-Modifiers)
 - [Type Conversion Type Casting](#Type-Conversion-Type-Casting)
-- [sizeof operator](#sizeof-operator)
+- [sizeof operator](#size-of-operator)
 - [Comments](#Comments)
 - [data handling](#data-handling-basics)
 - [boiler plate code](#boile-plate-code)
@@ -658,6 +658,7 @@ Type modifiers change the **range and storage size** of data types.
 
 ---
 
+###### Type Conversion Type Casting
 ## 🧩 Type Conversion Type Casting
 
 Type conversion changes one data type into another.
@@ -690,6 +691,7 @@ Type conversion changes one data type into another.
 
 ---
 
+###### size of operator 
 ## 🧩 size of Operator
 
 `sizeof` is a **compile-time operator** used to find memory size.
@@ -705,6 +707,7 @@ Type conversion changes one data type into another.
 
 ---
 
+###### Comments
 ## 🧩 Comments
 
 Comments are used to **explain code** and are ignored by the compiler.
