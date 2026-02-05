@@ -911,9 +911,6 @@ cout << "Value: " << n;
 ---
 
 ###### header
-
----
-
 ## 🎗 Header Files & Namespaces — C++
 
 Header files contain **declarations** (functions, classes, variables, macros) that are shared across multiple source files.
@@ -1608,11 +1605,11 @@ Example:
 while (true) {
 }
 ```
+---
+
 
 
 ###### function
----
-
 # 🎗 Functions — C++
 
 A **function** is a block of code that performs a specific task and can be reused multiple times.
