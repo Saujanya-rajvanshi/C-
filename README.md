@@ -3329,7 +3329,7 @@ Test(const Test&) = delete;
 
 
 
-###### Competitive Programming
+###### C P
 # 🎗 Competitive Programming / DSA Readiness (Google-Level Notes)
 
 
