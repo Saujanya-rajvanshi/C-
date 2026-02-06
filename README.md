@@ -1719,7 +1719,7 @@ while (true) {
 
 
 ###### function
-# 🎗 Functions — C++
+# 🎗 Functions (C++)
 
 A **function** is a block of code that performs a specific task and can be reused multiple times.
 
@@ -1916,15 +1916,11 @@ int fact(int n) {
 
 
 ###### pointer
----
-
 # 🎗 Pointers — C++
 
 A **pointer** is a variable that stores the **address of another variable**.
 
----
-
-## 🔹 Pointer Declaration & Initialization
+## Pointer Declaration & Initialization
 
 ```cpp
 int a = 10;
@@ -1935,9 +1931,7 @@ int *p = &a;
 * `&` → address-of operator
 * Pointer must match the **data type** it points to
 
----
-
-## 🔹 Dereferencing Pointer
+## Dereferencing Pointer
 
 ```cpp
 cout << *p;
@@ -1946,11 +1940,10 @@ cout << *p;
 * `*p` accesses the **value at the stored address**
 * Dereferencing an uninitialized pointer causes **undefined behavior**
 
----
 
-## 🔹 Types of Pointers
+## Types of Pointers
 
-### 1️⃣ Null Pointer
+### 1️. Null Pointer
 
 ```cpp
 int *p = NULL;   // or nullptr (preferred)
@@ -1959,7 +1952,7 @@ int *p = NULL;   // or nullptr (preferred)
 * Points to nothing
 * Prevents accidental access
 
-### 2️⃣ Void Pointer
+### 2️. Void Pointer
 
 ```cpp
 void *p;
@@ -1968,19 +1961,17 @@ void *p;
 * Can store address of any type
 * Must be **type-cast before dereferencing**
 
-### 3️⃣ Wild Pointer
+### 3️. Wild Pointer
 
 * Declared but **not initialized**
 * Dangerous, may crash program
 
-### 4️⃣ Dangling Pointer
+### 4️. Dangling Pointer
 
 * Points to memory that has been **freed**
 * Causes runtime errors
 
----
-
-## 🔹 Pointer Arithmetic
+## Pointer Arithmetic
 
 * `p + 1` → moves by **size of data type**
 * Valid only within **array bounds**
@@ -1990,9 +1981,7 @@ p++;
 p--;
 ```
 
----
-
-## 🔹 Pointer & Arrays
+## Pointer & Arrays
 
 * Array name is a **constant pointer**
 
@@ -2003,9 +1992,7 @@ int *p = a;
 
 * `a[i] == *(a + i)`
 
----
-
-## 🔹 Pointer to Pointer
+## Pointer to Pointer
 
 ```cpp
 int **pp;
@@ -2014,9 +2001,7 @@ int **pp;
 * Stores address of another pointer
 * Used in **dynamic memory & 2D arrays**
 
----
-
-## 🔹 Call by Reference using Pointers
+## Call by Reference using Pointers
 
 ```cpp
 void swap(int *a, int *b);
@@ -2025,9 +2010,7 @@ void swap(int *a, int *b);
 * Changes affect original variables
 * Used for efficiency
 
----
-
-## 🔹 Dynamic Memory Allocation
+## Dynamic Memory Allocation
 
 ```cpp
 int *p = new int;
@@ -2038,9 +2021,7 @@ delete p;
 * `new` → allocate
 * `delete` → deallocate
 
----
-
-## 🔹 Smart Pointers (Modern C++)
+## Smart Pointers (Modern C++)
 
 * `unique_ptr`
 * `shared_ptr`
@@ -2049,27 +2030,21 @@ delete p;
 ✔ Automatic memory management
 ✔ Prevent memory leaks
 
----
-
-## 🔹 Common Mistakes (Exam Traps)
+## Common Mistakes (Exam Traps)
 
 * Dereferencing NULL pointer
 * Memory leak (missing `delete`)
 * Using freed pointer
 * Wrong pointer type
 
----
-
-## 🔹 Advantages of Pointers
+## Advantages of Pointers
 
 * Efficient memory usage
 * Dynamic memory handling
 * Used in data structures (LL, Tree, Graph)
 * Enables call by reference
 
----
-
-## 🔹 Disadvantages
+## Disadvantages
 
 * Complex syntax
 * Error-prone
@@ -2077,25 +2052,30 @@ delete p;
 ---
 
 
-###### dynamic memory allocation
----
 
-# 🎗 Dynamic Memory Allocation — C++
+
+
+
+
+
+
+
+
+
+
+###### dynamic memory allocation
+# 🎗 Dynamic Memory Allocation (C++)
 
 Dynamic Memory Allocation (DMA) allows memory to be **allocated and deallocated at runtime**, instead of compile time.
 
----
-
-## 🔹 Why Dynamic Memory Allocation?
+## Why Dynamic Memory Allocation?
 
 * Size not known at compile time
 * Efficient memory usage
 * Required for **data structures** (Linked List, Tree, Graph)
 * Memory allocated from **Heap**
 
----
-
-## 🔹 Memory Areas (Important)
+## Memory Areas (Important)
 
 | Area  | Purpose                          |
 | ----- | -------------------------------- |
@@ -2104,9 +2084,7 @@ Dynamic Memory Allocation (DMA) allows memory to be **allocated and deallocated 
 | Data  | Global & static variables        |
 | Code  | Program instructions             |
 
----
-
-## 🔹 `new` Operator
+## `new` Operator
 
 Allocates memory dynamically and returns its address.
 
@@ -2128,9 +2106,7 @@ int *p = new int(10);
 * Constructor is called (for objects)
 * Throws exception on failure
 
----
-
-## 🔹 `delete` Operator
+## `delete` Operator
 
 Frees dynamically allocated memory.
 
@@ -2145,9 +2121,8 @@ delete p;
 * Prevents memory leak
 * Pointer becomes **dangling** after delete
 
----
 
-## 🔹 Dynamic Array Allocation
+## Dynamic Array Allocation
 
 ```cpp
 int *arr = new int[n];
@@ -2164,9 +2139,7 @@ delete[] arr;
 * Use `delete[]` for arrays
 * `new[]` calls constructors for all elements
 
----
-
-## 🔹 `new` vs `malloc`
+## `new` vs `malloc`
 
 | Feature      | new           | malloc     |
 | ------------ | ------------- | ---------- |
@@ -2176,17 +2149,13 @@ delete[] arr;
 | Return type  | Typed pointer | `void*`    |
 | Deallocation | delete        | free       |
 
----
-
-## 🔹 `delete` vs `free`
+## `delete` vs `free`
 
 * `delete` → used with `new`
 * `free` → used with `malloc`
 * Mixing them causes **undefined behavior**
 
----
-
-## 🔹 Smart Pointers (Modern C++)
+## Smart Pointers (Modern C++)
 
 Automatically manage dynamic memory.
 
@@ -2201,9 +2170,7 @@ Automatically manage dynamic memory.
 ✔ No memory leaks
 ✔ Exception safe
 
----
-
-## 🔹 Common Errors (Exam Traps)
+## Common Errors (Exam Traps)
 
 * Memory leak (no delete)
 * Dangling pointer
@@ -2211,25 +2178,19 @@ Automatically manage dynamic memory.
 * Using deleted memory
 * Using `delete` instead of `delete[]`
 
----
-
-## 🔹 Advantages of DMA
+## Advantages of DMA
 
 * Efficient memory utilization
 * Flexible data size
 * Essential for advanced data structures
 
----
-
-## 🔹 Disadvantages
+## Disadvantages
 
 * Manual management needed
 * Slower than stack allocation
 * Risk of memory leaks
 
----
-
-## 🔹 Example
+## Example
 
 ```cpp
 int n;
@@ -2239,15 +2200,24 @@ int *arr = new int[n];
 delete[] arr;
 ```
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ###### Structures Unions
----
+# 🎗 Structures & Unions (C++)
 
-# 🎗 Structures & Unions — C++
-
----
-
-## 🔹 Structure (`struct`)
-
+**Structure (`struct`)**
 A **structure** is a **user-defined data type** that groups **different data types** under one name.
 
 ### Syntax
@@ -2267,9 +2237,8 @@ struct Student {
 * Supports **arrays, pointers, nesting**
 * Objects can be created like classes
 
----
 
-## 🔹 Structure Features
+## Structure Features
 
 * Memory allocated = **sum of all members**
 * Supports **data abstraction**
@@ -2281,9 +2250,7 @@ struct Student {
 Student s1;
 ```
 
----
-
-## 🔹 Union (`union`)
+## Union (`union`)
 
 A **union** is a user-defined data type where **all members share the same memory location**.
 
@@ -2303,9 +2270,8 @@ union Data {
 * Saves memory
 * Writing one member overwrites others
 
----
 
-## 🔹 Structure vs Union (Important Table)
+## Structure vs Union (Important Table)
 
 | Feature     | Structure                | Union               |
 | ----------- | ------------------------ | ------------------- |
@@ -2315,9 +2281,8 @@ union Data {
 | Data safety | High                     | Low                 |
 | Use case    | Complex data             | Memory optimization |
 
----
 
-## 🔹 Accessing Members
+## Accessing Members
 
 ```cpp
 s1.roll = 10;
@@ -2330,9 +2295,8 @@ Student *p;
 p->roll = 10;
 ```
 
----
 
-## 🔹 Nested Structure / Union
+## Nested Structure / Union
 
 ```cpp
 struct Address {
@@ -2344,9 +2308,8 @@ struct Student {
 };
 ```
 
----
 
-## 🔹 Structure with Functions
+## Structure with Functions
 
 ```cpp
 struct Test {
@@ -2357,9 +2320,8 @@ struct Test {
 };
 ```
 
----
 
-## 🔹 Typedef / using with Structure
+## Typedef / using with Structure
 
 ```cpp
 typedef struct Student {
@@ -2373,9 +2335,8 @@ OR
 using Stu = Student;
 ```
 
----
 
-## 🔹 When to Use What?
+## When to Use What?
 
 * Use **structure** when:
 
@@ -2387,18 +2348,16 @@ using Stu = Student;
   * Memory is limited
   * Only one value needed at a time
 
----
 
-## 🔹 Exam & Interview Traps
+## Exam & Interview Traps
 
 * Union members overwrite each other
 * Structure size affected by **padding**
 * C++ struct = class (default public)
 * Union cannot have non-static data members with constructors (older C++)
 
----
 
-## 🔹 Advantages
+## Advantages
 
 ### Structure
 
@@ -2412,24 +2371,29 @@ using Stu = Student;
 ---
 
 
-##### exception handling
----
 
-# 🎗 Exception Handling — C++
+
+
+
+
+
+
+
+
+
+##### exception handling
+# 🎗 Exception Handling (C++)
 
 **Exception Handling** is a mechanism to handle **runtime errors** and maintain **normal program flow**.
 
----
-
-## 🔹 Why Exception Handling?
+## Why Exception Handling?
 
 * Prevents abnormal program termination
 * Separates **error-handling code** from logic
 * Improves reliability & debugging
 
----
 
-## 🔹 Keywords Used
+## Keywords Used
 
 | Keyword | Purpose                         |
 | ------- | ------------------------------- |
@@ -2437,9 +2401,8 @@ using Stu = Student;
 | `catch` | Handles exception               |
 | `throw` | Generates exception             |
 
----
 
-## 🔹 Basic Syntax
+## Basic Syntax
 
 ```cpp
 try {
@@ -2451,18 +2414,16 @@ catch(int e) {
 }
 ```
 
----
 
-## 🔹 Flow of Control
+## Flow of Control
 
 1. Code inside `try` executes
 2. Exception occurs → `throw`
 3. Control jumps to matching `catch`
 4. Remaining `try` code is skipped
 
----
 
-## 🔹 Multiple Catch Blocks
+## Multiple Catch Blocks
 
 ```cpp
 try {
@@ -2478,9 +2439,8 @@ catch(...) { }   // default catch
 * Order matters (derived → base)
 * `catch(...)` must be last
 
----
 
-## 🔹 Catch All Handler
+## Catch All Handler
 
 ```cpp
 catch(...) {
@@ -2491,9 +2451,8 @@ catch(...) {
 * Handles all types
 * Used as fallback
 
----
 
-## 🔹 User-Defined Exceptions
+## User-Defined Exceptions
 
 ### Using Class
 
@@ -2509,9 +2468,8 @@ catch(MyException e) {
 }
 ```
 
----
 
-## 🔹 Throwing Objects
+## Throwing Objects
 
 ```cpp
 throw runtime_error("Error occurred");
@@ -2519,9 +2477,8 @@ throw runtime_error("Error occurred");
 
 * Supports object-oriented error handling
 
----
 
-## 🔹 Standard Exception Classes (`<exception>`)
+## Standard Exception Classes (`<exception>`)
 
 | Class           | Meaning                   |
 | --------------- | ------------------------- |
@@ -2530,9 +2487,8 @@ throw runtime_error("Error occurred");
 | `logic_error`   | Logical error             |
 | `bad_alloc`     | Memory allocation failure |
 
----
 
-## 🔹 Re-throwing an Exception
+## Re-throwing an Exception
 
 ```cpp
 catch(...) {
@@ -2542,9 +2498,8 @@ catch(...) {
 
 * Sends exception to outer `catch`
 
----
 
-## 🔹 Nested try-catch
+## Nested try-catch
 
 ```cpp
 try {
@@ -2560,9 +2515,8 @@ catch(int e) {
 }
 ```
 
----
 
-## 🔹 Exception vs Error
+## Exception vs Error
 
 | Exception      | Error             |
 | -------------- | ----------------- |
@@ -2570,24 +2524,21 @@ catch(int e) {
 | Runtime        | Compile/system    |
 | Can be handled | Cannot be handled |
 
----
 
-## 🔹 Stack Unwinding
+## Stack Unwinding
 
 * Automatic destruction of local objects
 * Happens when exception is thrown
 * Ensures no memory leaks
 
----
 
-## 🔹 Destructor & Exception
+## Destructor & Exception
 
 * Destructors are called during stack unwinding
 * Never throw exceptions from destructors
 
----
 
-## 🔹 Function Exception Specification (Deprecated)
+## Function Exception Specification (Deprecated)
 
 ```cpp
 void fun() throw(int);
@@ -2595,9 +2546,8 @@ void fun() throw(int);
 
 ❌ Avoid — replaced by `noexcept`
 
----
 
-## 🔹 `noexcept`
+## `noexcept`
 
 ```cpp
 void fun() noexcept;
@@ -2606,67 +2556,65 @@ void fun() noexcept;
 * Guarantees no exception
 * Improves optimization
 
----
 
-## 🔹 Exception Handling Best Practices
+## Exception Handling Best Practices
 
 ✔ Throw by value
 ✔ Catch by reference
 ✔ Avoid using exceptions for flow control
 ✔ Handle resources using RAII
 
----
 
-## 🔹 Common Traps (Exam)
+## Common Traps (Exam)
 
 * `catch` without `try` ❌
 * Base class `catch` before derived ❌
 * Ignoring `catch(...)`
 * Throwing pointer instead of object
 
----
 
-## 🔹 Real-World Example
+## Real-World Example
 
 * Division by zero
 * File not found
 * Memory allocation failure
 
----
 
-## 🔹 Short Definition (1-Line)
+## Short Definition (1-Line)
 
 > Exception handling is a technique to handle runtime errors using `try`, `catch`, and `throw`.
 
 
 
-##### file handling
----
 
-# 🎗 File Handling — C++
+
+
+
+
+
+
+
+
+##### file handling
+# 🎗 File Handling (C++)
 
 **File Handling** allows a program to **store data permanently** in files and **retrieve it later**.
 
----
-
-## 🔹 Why File Handling?
+## Why File Handling?
 
 * Data persistence
 * Large data storage
 * Data sharing between programs
 * Backup & recovery
 
----
-
-## 🔹 Header File
+## Header File
 
 ```cpp
 #include <fstream>
 ```
 
----
 
-## 🔹 File Stream Classes
+## File Stream Classes
 
 | Class      | Purpose        |
 | ---------- | -------------- |
@@ -2674,9 +2622,8 @@ void fun() noexcept;
 | `ofstream` | Write to file  |
 | `fstream`  | Read + Write   |
 
----
 
-## 🔹 File Object Creation
+## File Object Creation
 
 ```cpp
 ifstream fin;
@@ -2684,9 +2631,7 @@ ofstream fout;
 fstream file;
 ```
 
----
-
-## 🔹 Opening a File
+## Opening a File
 
 ### Method 1: Constructor
 
@@ -2700,9 +2645,8 @@ ofstream fout("data.txt");
 fout.open("data.txt");
 ```
 
----
 
-## 🔹 Closing a File
+## Closing a File
 
 ```cpp
 fout.close();
@@ -2710,18 +2654,16 @@ fout.close();
 
 ✔ Always close to avoid data loss
 
----
 
-## 🔹 Writing to a File
+## Writing to a File
 
 ```cpp
 ofstream fout("data.txt");
 fout << "Hello File";
 ```
 
----
 
-## 🔹 Reading from a File
+## Reading from a File
 
 ### Using `>>`
 
@@ -2737,9 +2679,8 @@ fin >> s;
 getline(fin, s);
 ```
 
----
 
-## 🔹 File Open Modes
+## File Open Modes
 
 | Mode          | Meaning             |
 | ------------- | ------------------- |
@@ -2756,16 +2697,13 @@ getline(fin, s);
 fstream file("data.txt", ios::in | ios::out);
 ```
 
----
-
-## 🔹 Append vs Write
+## Append vs Write
 
 * `ios::out` → overwrites
 * `ios::app` → adds data at end
 
----
 
-## 🔹 Checking File Open Status
+## Checking File Open Status
 
 ```cpp
 if(!file) {
@@ -2773,9 +2711,8 @@ if(!file) {
 }
 ```
 
----
 
-## 🔹 End of File (EOF)
+## End of File (EOF)
 
 ```cpp
 while(!fin.eof()) {
@@ -2785,18 +2722,16 @@ while(!fin.eof()) {
 
 ⚠ `eof()` becomes true **after** reading fails
 
----
 
-## 🔹 File Pointers
+## File Pointers
 
 | Pointer | Purpose       |
 | ------- | ------------- |
 | `get`   | Read pointer  |
 | `put`   | Write pointer |
 
----
 
-## 🔹 Pointer Functions
+## Pointer Functions
 
 ```cpp
 file.seekg(pos);   // move read pointer
@@ -2805,9 +2740,8 @@ file.tellg();      // current read position
 file.tellp();      // current write position
 ```
 
----
 
-## 🔹 Random Access in File
+## Random Access in File
 
 ```cpp
 file.seekg(5);
@@ -2816,9 +2750,8 @@ file.seekp(10);
 
 ✔ Used in binary files
 
----
 
-## 🔹 Binary File Handling
+## Binary File Handling
 
 ```cpp
 ofstream fout("data.bin", ios::binary);
@@ -2836,9 +2769,8 @@ fout.write((char*)&obj, sizeof(obj));
 fin.read((char*)&obj, sizeof(obj));
 ```
 
----
 
-## 🔹 Text File vs Binary File
+## Text File vs Binary File
 
 | Text File      | Binary File      |
 | -------------- | ---------------- |
@@ -2846,17 +2778,15 @@ fin.read((char*)&obj, sizeof(obj));
 | Slow           | Fast             |
 | Larger size    | Smaller size     |
 
----
 
-## 🔹 File Handling with Objects
+## File Handling with Objects
 
 * Direct storage of objects
 * Used in databases
 * Requires binary mode
 
----
 
-## 🔹 Error Handling in Files
+## Error Handling in Files
 
 * File not found
 * Permission denied
@@ -2868,46 +2798,45 @@ Use:
 if(file.fail())
 ```
 
----
 
-## 🔹 Common Mistakes (Exam)
+
+## Common Mistakes (Exam)
 
 ❌ Forgetting `close()`
 ❌ Using wrong open mode
 ❌ Using `eof()` incorrectly
 ❌ Mixing text & binary modes
 
----
 
-## 🔹 Real-Life Uses
+## Real-Life Uses
 
 * Student records
 * Log files
 * Configuration files
 * Databases
 
----
 
-## 🔹 One-Line Definition
+## One-Line Definition
 
 > File handling is the process of storing and retrieving data permanently using files.
 
----
 
-## 🔹 Diagram (Conceptual)
+## Diagram (Conceptual)
 
 ```
 Program → File Stream → File
 ```
 
-##### templates
----
 
-# 🎗 Templates — C++
+
+
+
+
+
+##### templates
+# 🎗 Templates (C++)
 
 **Templates** allow writing **generic programs**, so the **same code works for different data types**.
-
----
 
 ## 🔹 Why Templates?
 
