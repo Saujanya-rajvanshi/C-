@@ -1,6 +1,6 @@
 # C++
 
-### index 
+### index
 - [History of C++](#History)
 - [features of c++](#Features)
 - [basics](#basics)
