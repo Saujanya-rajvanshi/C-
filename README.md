@@ -1089,6 +1089,136 @@ May not reliably include:
 * `<boost/*>` (Boost is external)
 
 
+## C++ Standard Header Files 
+
+
+### 🔹 Input / Output
+
+| Header           | Purpose              | Important Components                             |
+| ---------------- | -------------------- | ------------------------------------------------ |
+| **`<iostream>`** | Standard I/O streams | `cin`, `cout`, `cerr`, `clog`                    |
+| **`<iomanip>`**  | Output formatting    | `setw()`, `setprecision()`, `fixed`, `setfill()` |
+| **`<fstream>`**  | File handling        | `ifstream`, `ofstream`, `fstream`                |
+| **`<sstream>`**  | String streams       | `stringstream`, `istringstream`, `ostringstream` |
+
+---
+
+### 🔹 Strings & Characters
+
+| Header          | Purpose            | Important Components                        |
+| --------------- | ------------------ | ------------------------------------------- |
+| **`<string>`**  | String handling    | `string`, `getline()`, `substr()`, `find()` |
+| **`<cstring>`** | C-style strings    | `strlen()`, `strcpy()`, `strcmp()`          |
+| **`<cctype>`**  | Character handling | `isalpha()`, `isdigit()`, `toupper()`       |
+| **`<cwchar>`**  | Wide characters    | `wchar_t`, wide string functions            |
+
+---
+
+### 🔹 Containers (STL)
+
+| Header                | Purpose            | Important Components              |
+| --------------------- | ------------------ | --------------------------------- |
+| **`<vector>`**        | Dynamic array      | `vector`, `push_back()`, `size()` |
+| **`<array>`**         | Fixed-size array   | `array`, `at()`                   |
+| **`<deque>`**         | Double-ended queue | `deque`, `push_front()`           |
+| **`<list>`**          | Doubly linked list | `list`, `push_back()`             |
+| **`<forward_list>`**  | Singly linked list | `forward_list`                    |
+| **`<set>`**           | Ordered set        | `set`, `multiset`                 |
+| **`<unordered_set>`** | Hash set           | `unordered_set`                   |
+| **`<map>`**           | Key-value pairs    | `map`, `multimap`                 |
+| **`<unordered_map>`** | Hash map           | `unordered_map`                   |
+| **`<stack>`**         | Stack container    | `stack`, `push()`, `pop()`        |
+| **`<queue>`**         | Queue container    | `queue`, `priority_queue`         |
+
+---
+
+### 🔹 Algorithms & Utilities
+
+| Header             | Purpose          | Important Components            |
+| ------------------ | ---------------- | ------------------------------- |
+| **`<algorithm>`**  | Algorithms       | `sort()`, `reverse()`, `find()` |
+| **`<numeric>`**    | Numeric ops      | `accumulate()`, `gcd()`         |
+| **`<functional>`** | Function objects | `function`, `greater<>`         |
+| **`<iterator>`**   | Iterators        | `advance()`, `next()`           |
+| **`<utility>`**    | Utility          | `pair`, `make_pair()`, `swap()` |
+
+---
+
+### 🔹 Math & Numbers
+
+| Header          | Purpose         | Important Components                  |
+| --------------- | --------------- | ------------------------------------- |
+| **`<cmath>`**   | Math functions  | `sqrt()`, `pow()`, `abs()`            |
+| **`<complex>`** | Complex numbers | `complex`, `real()`, `imag()`         |
+| **`<random>`**  | Random numbers  | `mt19937`, `uniform_int_distribution` |
+| **`<limits>`**  | Type limits     | `numeric_limits`                      |
+
+---
+
+### 🔹 Memory Management
+
+| Header          | Purpose           | Important Components                        |
+| --------------- | ----------------- | ------------------------------------------- |
+| **`<memory>`**  | Smart pointers    | `unique_ptr`, `shared_ptr`, `make_unique()` |
+| **`<new>`**     | Memory allocation | `operator new`, `bad_alloc`                 |
+| **`<cstdlib>`** | C utilities       | `malloc()`, `free()`                        |
+
+---
+
+### 🔹 Exception Handling
+
+| Header            | Purpose             | Important Components           |
+| ----------------- | ------------------- | ------------------------------ |
+| **`<exception>`** | Base exceptions     | `exception`, `bad_exception`   |
+| **`<stdexcept>`** | Standard exceptions | `runtime_error`, `logic_error` |
+| **`<typeinfo>`**  | RTTI                | `typeid`                       |
+
+---
+
+### 🔹 Time & Date
+
+| Header         | Purpose          | Important Components       |
+| -------------- | ---------------- | -------------------------- |
+| **`<chrono>`** | Time library     | `system_clock`, `duration` |
+| **`<ctime>`**  | C time functions | `time()`, `clock()`        |
+
+---
+
+### 🔹 Multithreading & Concurrency
+
+| Header                     | Purpose           | Important Components         |
+| -------------------------- | ----------------- | ---------------------------- |
+| **`<thread>`**             | Threads           | `thread`, `this_thread`      |
+| **`<mutex>`**              | Mutex locking     | `mutex`, `lock_guard`        |
+| **`<atomic>`**             | Atomic operations | `atomic<int>`                |
+| **`<future>`**             | Async             | `async`, `future`, `promise` |
+| **`<condition_variable>`** | Thread sync       | `condition_variable`         |
+
+---
+
+### 🔹 Type Traits & Compile-Time
+
+| Header              | Purpose          | Important Components   |
+| ------------------- | ---------------- | ---------------------- |
+| **`<type_traits>`** | Type info        | `is_same`, `enable_if` |
+| **`<concepts>`**    | Concepts (C++20) | `integral`, `concept`  |
+| **`<bitset>`**      | Bit manipulation | `bitset`               |
+
+---
+
+### 🔹 C Compatibility Headers (C → C++)
+
+| C Header   | C++ Version |
+| ---------- | ----------- |
+| `stdio.h`  | `<cstdio>`  |
+| `stdlib.h` | `<cstdlib>` |
+| `string.h` | `<cstring>` |
+| `math.h`   | `<cmath>`   |
+| `ctype.h`  | `<cctype>`  |
+
+---
+
+
 
 ###### Data handling
 # 🎗 Data Handling in C++
