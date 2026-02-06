@@ -911,7 +911,7 @@ cout << "Value: " << n;
 ---
 
 ###### header
-## 🎗 Header Files & Namespaces(C++)
+# 🎗 Header Files & Namespaces(C++)
 
 Header files contain **declarations** (functions, classes, variables, macros) that are shared across multiple source files.
 
@@ -930,7 +930,7 @@ int main() {
     return 0;
 }
 ```
-## `#include` Types
+## include Types
 
 1️. Angle Brackets -> **Standard Header Files** #include <iostream>
 2️. Double Quotes -> **User-Defined Header Files** #include "file.h"
