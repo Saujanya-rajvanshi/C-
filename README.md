@@ -2838,23 +2838,21 @@ Program → File Stream → File
 
 **Templates** allow writing **generic programs**, so the **same code works for different data types**.
 
-## 🔹 Why Templates?
+## Why Templates?
 
 * Avoid code duplication
 * Type-safe generic programming
 * Reusability
 * Faster development
 
----
 
-## 🔹 Types of Templates
+## Types of Templates
 
 1. **Function Templates**
 2. **Class Templates**
 
----
 
-## 🔹 Function Templates
+## Function Templates
 
 ### Definition
 
@@ -2878,9 +2876,8 @@ add<float>(2.5, 3.5);
 
 ✔ Compiler generates **separate functions** for each type
 
----
 
-## 🔹 Template Parameters
+## Template Parameters
 
 ```cpp
 template <typename T>
@@ -2888,9 +2885,8 @@ template <typename T>
 
 `class` and `typename` are **same**
 
----
 
-## 🔹 Multiple Template Parameters
+## Multiple Template Parameters
 
 ```cpp
 template <class T, class U>
@@ -2899,9 +2895,7 @@ void display(T a, U b) {
 }
 ```
 
----
-
-## 🔹 Class Templates
+## Class Templates
 
 ### Syntax
 
@@ -2926,9 +2920,8 @@ Box<int> b1(10);
 Box<float> b2(5.5);
 ```
 
----
 
-## 🔹 Default Template Arguments
+## Default Template Arguments
 
 ```cpp
 template <class T = int>
@@ -2944,9 +2937,8 @@ Sample<> s;     // int
 Sample<float> f;
 ```
 
----
 
-## 🔹 Template Specialization
+## Template Specialization
 
 Used to **change behavior for a specific type**
 
@@ -2959,7 +2951,6 @@ void display<int>(int a) {
 }
 ```
 
----
 
 ### Class Specialization
 
@@ -2973,9 +2964,8 @@ public:
 };
 ```
 
----
 
-## 🔹 Partial Specialization (Class Only)
+## Partial Specialization (Class Only)
 
 ```cpp
 template <class T, class U>
@@ -2987,9 +2977,8 @@ class Test<T, int> { };
 
 ✔ Not allowed for function templates
 
----
 
-## 🔹 Template Overloading
+## Template Overloading
 
 Templates can be **overloaded like functions**
 
@@ -3002,18 +2991,16 @@ void fun(int a);
 
 ✔ Non-template has higher priority
 
----
 
-## 🔹 Compile-Time Polymorphism
+## Compile-Time Polymorphism
 
 Templates achieve **compile-time polymorphism**
 
 ✔ Faster than run-time
 ✔ No virtual table
 
----
 
-## 🔹 Template vs Macro
+## Template vs Macro
 
 | Template            | Macro         |
 | ------------------- | ------------- |
@@ -3021,9 +3008,8 @@ Templates achieve **compile-time polymorphism**
 | Checked by compiler | No checking   |
 | Debuggable          | Hard to debug |
 
----
 
-## 🔹 STL & Templates
+## STL & Templates
 
 STL containers use templates:
 
@@ -3032,9 +3018,8 @@ vector<int>
 map<int, string>
 ```
 
----
 
-## 🔹 Hidden / Advanced Concepts
+## Hidden / Advanced Concepts
 
 ### ✔ Template Instantiation
 
@@ -3048,32 +3033,28 @@ map<int, string>
 
 * Templates must be in `.h` file
 
----
 
-## 🔹 Common Errors (Exam)
+## Common Errors (Exam)
 
 ❌ Missing `< >` while object creation
 ❌ Defining template functions in `.cpp`
 ❌ Confusing specialization with overloading
 
----
 
-## 🔹 One-Line Definition (Exam)
+## One-Line Definition (Exam)
 
 > Templates enable generic programming by allowing functions and classes to operate with any data type.
 
---- 
 
-## 🔹 Very Important Questions
+## Very Important Questions
 
 * Why templates are header-only?
 * Difference between template and function overloading
 * Template specialization vs overloading
 * Why partial specialization not allowed for functions?
 
----
 
-## 🔹 Diagram (Concept)
+## Diagram (Concept)
 
 ```
 Template Code
@@ -3083,16 +3064,22 @@ Compiler Instantiation
 Type-Specific Code
 ```
 
----
+
+
+
+
+
+
+
+
+
+
 
 #### advanced concept
----
-
 # 🎗 Advanced C++ Concepts
 
----
 
-## 1️⃣ Lambda Expressions
+## 1️. Lambda Expressions
 
 ### Definition
 
@@ -3126,15 +3113,12 @@ auto sum = [](int a, int b) {
 
 ✔ Used heavily in **STL algorithms**
 
----
 
-## 2️⃣ Smart Pointers
+## 2️. Smart Pointers
 
 ### Why?
 
 Avoid **memory leaks** and **dangling pointers**
-
----
 
 ### Types of Smart Pointers
 
@@ -3144,7 +3128,6 @@ Avoid **memory leaks** and **dangling pointers**
 | `shared_ptr` | Multiple owners      |
 | `weak_ptr`   | Non-owning reference |
 
----
 
 ### unique_ptr
 
@@ -3155,7 +3138,6 @@ unique_ptr<int> p = make_unique<int>(10);
 ✔ Cannot be copied
 ✔ Can be moved
 
----
 
 ### shared_ptr
 
@@ -3166,22 +3148,19 @@ shared_ptr<int> p2 = p1;
 
 ✔ Reference counting
 
----
 
 ### weak_ptr
 
 * Prevents **circular dependency**
 * No ownership
 
----
 
-## 3️⃣ Move Semantics
+## 3️. Move Semantics
 
 ### Why?
 
 Avoid **deep copy** → improves performance
 
----
 
 ### Move Constructor
 
@@ -3192,7 +3171,6 @@ MyClass(MyClass&& obj);
 ✔ Uses **rvalue references (`&&`)**
 ✔ Transfers resources
 
----
 
 ### std::move
 
@@ -3202,9 +3180,7 @@ obj2 = std::move(obj1);
 
 ✔ Converts lvalue → rvalue
 
----
-
-## 4️⃣ auto Keyword
+## 4️. auto Keyword
 
 ### Purpose
 
@@ -3218,9 +3194,8 @@ auto y = 5.5;
 ✔ Mandatory with lambdas iterators
 ❌ Cannot be used without initialization
 
----
 
-## 5️⃣ constexpr
+## 5️. constexpr
 
 ### Meaning
 
@@ -3235,9 +3210,8 @@ constexpr int square(int x) {
 ✔ Faster execution
 ✔ Used for constants & functions
 
----
 
-## 6️⃣ mutable Keyword
+## 6️. mutable Keyword
 
 ### Purpose
 
@@ -3255,23 +3229,18 @@ public:
 
 ✔ Breaks const restriction safely
 
----
 
-## 7️⃣ friend Keyword
+## 7️. friend Keyword
 
 ### Meaning
 
 Allows **non-member access to private data**
-
----
 
 ### Friend Function
 
 ```cpp
 friend void show(Test&);
 ```
-
----
 
 ### Friend Class
 
@@ -3282,9 +3251,7 @@ friend class Demo;
 ✔ Friendship is **not inherited**
 ✔ Not transitive
 
----
-
-## 8️⃣ nullptr
+## 8️. nullptr
 
 ### Why?
 
@@ -3297,9 +3264,8 @@ int* p = nullptr;
 ✔ Type-safe
 ✔ Avoids ambiguity
 
----
 
-## 9️⃣ enum class (Scoped Enum)
+## 9️. enum class (Scoped Enum)
 
 ```cpp
 enum class Color { Red, Blue };
@@ -3308,9 +3274,8 @@ enum class Color { Red, Blue };
 ✔ Strongly typed
 ✔ Avoids name conflicts
 
----
 
-## 🔟 Deleted & Default Functions
+## 10. Deleted & Default Functions
 
 ```cpp
 Test() = default;
@@ -3320,9 +3285,8 @@ Test(const Test&) = delete;
 ✔ Control object behavior
 ✔ Important for safety
 
----
 
-## 🔹 Compile-Time vs Run-Time
+## Compile-Time vs Run-Time
 
 | Feature          | Time    |
 | ---------------- | ------- |
@@ -3330,24 +3294,21 @@ Test(const Test&) = delete;
 | Inline           | Compile |
 | Virtual Function | Run     |
 
----
 
-## 🔹 Hidden Exam Points
+## Hidden Exam Points
 
 ✔ Lambdas are **function objects**
 ✔ Smart pointers are in `<memory>`
 ✔ Move semantics reduces copy overhead
 ✔ constexpr ≠ const
 
----
 
-## 🔹 One-Line Exam Definition
+## One-Line Exam Definition
 
 > Advanced C++ concepts enhance performance, safety, and expressiveness of programs.
 
----
 
-## 🔹 Very Important Questions
+## Very Important Questions
 
 * Difference: auto vs decltype
 * shared_ptr vs unique_ptr
@@ -3358,14 +3319,21 @@ Test(const Test&) = delete;
 ---
 
 
-###### competitive programming
----
 
+
+
+
+
+
+
+
+
+
+###### competitive programming
 # 🎗 Competitive Programming / DSA Readiness (Google-Level Notes)
 
----
 
-## 1️⃣ Time Complexity (Big-O Thinking)
+## 1️. Time Complexity (Big-O Thinking)
 
 ### What Google Cares About
 
@@ -3385,9 +3353,9 @@ O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2ⁿ)
 
 > If your solution is worse than **O(n log n)**, rethink.
 
----
 
-## 2️⃣ Space Complexity (Memory Awareness)
+
+## 2️. Space Complexity (Memory Awareness)
 
 ### Types
 
@@ -3404,9 +3372,8 @@ Merge Sort → O(n) space
 Quick Sort → O(log n) stack
 ```
 
----
 
-## 3️⃣ Recursion vs Iteration (Production View)
+## 3️. Recursion vs Iteration (Production View)
 
 | Recursion              | Iteration     |
 | ---------------------- | ------------- |
@@ -3417,9 +3384,8 @@ Quick Sort → O(log n) stack
 ✔ Google prefers **iteration** unless recursion is natural
 ✔ Tail recursion ≠ optimized in C++
 
----
 
-## 4️⃣ Input / Output Optimization
+## 4️. Input / Output Optimization
 
 ### Why It Matters
 
@@ -3436,9 +3402,8 @@ cin.tie(nullptr);
 ✔ Use `\n`
 ✔ Batch output when possible
 
----
 
-## 5️⃣ Bit Manipulation (Google Favorite)
+## 5️. Bit Manipulation (Google Favorite)
 
 ### Why?
 
@@ -3456,9 +3421,8 @@ cin.tie(nullptr);
 
 ✔ Used in **optimization**, **masking**, **DP**
 
----
 
-## 6️⃣ Core Data Structures (Must-Know)
+## 6️. Core Data Structures (Must-Know)
 
 | DS      | Why Google Uses    |
 | ------- | ------------------ |
@@ -3472,9 +3436,8 @@ cin.tie(nullptr);
 
 ✔ Know **trade-offs**, not just usage
 
----
 
-## 7️⃣ Algorithms Google Expects
+## 7️. Algorithms Google Expects
 
 ### Searching
 
@@ -3499,9 +3462,7 @@ cin.tie(nullptr);
 * Dynamic Programming
 * Divide & Conquer
 
----
-
-## 8️⃣ Pattern-Based Thinking (VERY IMPORTANT)
+## 8️. Pattern-Based Thinking (VERY IMPORTANT)
 
 | Pattern                 | Example          |
 | ----------------------- | ---------------- |
@@ -3513,9 +3474,8 @@ cin.tie(nullptr);
 
 ✔ Google cares about **patterns**, not memorization
 
----
 
-## 9️⃣ Mathematical Readiness
+## 9️. Mathematical Readiness
 
 ✔ Modular arithmetic
 ✔ Power in log time
@@ -3526,9 +3486,8 @@ cin.tie(nullptr);
 (a * b) % mod  // avoid overflow
 ```
 
----
 
-## 🔟 Common Google Mistakes (Avoid)
+## 10. Common Google Mistakes (Avoid)
 
 ❌ Brute force
 ❌ Ignoring constraints
@@ -3536,15 +3495,13 @@ cin.tie(nullptr);
 ❌ Overusing recursion
 ❌ Not explaining logic
 
----
 
-## 🔹 Google Interview Rule
+## Google Interview Rule
 
 > Correct + Optimal + Clean code + Explanation
 
----
 
-## 🔹 What Google REALLY Tests
+## What Google REALLY Tests
 
 ✔ Problem-solving ability
 ✔ Trade-off understanding
@@ -3552,9 +3509,8 @@ cin.tie(nullptr);
 ✔ Edge case handling
 ✔ Communication
 
----
 
-## 🔹 Must-Practice Problems
+## Must-Practice Problems
 
 * Two Sum
 * Sliding Window Maximum
@@ -3563,13 +3519,22 @@ cin.tie(nullptr);
 * BFS in Matrix
 * Subarray Sum = K
 
----
 
-## 🔹 One-Line Summary
+## One-Line Summary
 
 > Competitive programming readiness for Google means solving scalable problems using optimal data structures, algorithms, and clean thinking.
 
 ---
+
+
+
+
+
+
+
+
+
+
 
 
 ##### string manipulation
