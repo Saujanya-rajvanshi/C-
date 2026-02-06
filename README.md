@@ -1220,6 +1220,15 @@ May not reliably include:
 
 
 
+
+
+
+
+
+
+
+
+
 ###### Data handling
 # 🎗 Data Handling in C++
 
@@ -1414,6 +1423,14 @@ Examples:
 * Flow-chart classification is **very important for theory exams**
 
 ---
+
+
+
+
+
+
+
+
 
 ##### flow of control
 # 🎗 Flow of Control in C++ 
@@ -1691,14 +1708,22 @@ while (true) {
 
 
 
+
+
+
+
+
+
+
+
+
+
 ###### function
 # 🎗 Functions — C++
 
 A **function** is a block of code that performs a specific task and can be reused multiple times.
 
----
-
-## 🔹 Function Declaration & Definition
+## Function Declaration & Definition
 
 ### Declaration (Prototype)
 
@@ -1726,7 +1751,7 @@ int add(int a, int b) {
 
 ---
 
-## 🔹 Function Call
+## Function Call
 
 Used to execute a function.
 
@@ -1739,9 +1764,8 @@ int result = add(2, 3);
 * Arguments are copied or referenced based on call type
 * Control returns after function execution
 
----
 
-## 🔹 Return Type
+## Return Type
 
 Specifies the type of value returned by the function.
 
@@ -1755,9 +1779,7 @@ int sum();
 * Only **one value** can be returned (multiple via structures / references)
 * `return;` used in `void` functions
 
----
-
-## 🔹 Void Functions
+## Void Functions
 
 Functions that **do not return any value**.
 
@@ -1771,9 +1793,7 @@ void display() {
 
 * Printing, updating global variables, performing actions
 
----
-
-## 🔹 Call by Value
+## Call by Value
 
 * Copy of actual argument is passed
 * Changes **do not affect original value**
@@ -1787,9 +1807,8 @@ void fun(int x);
 ✔ Safe
 ✖ Extra memory & time
 
----
 
-## 🔹 Call by Reference
+## Call by Reference
 
 * Reference (address) is passed
 * Changes **affect original variable**
@@ -1804,9 +1823,7 @@ void fun(int &x);
 * Used for swapping, updating values
 * Pointer-based reference also possible
 
----
-
-## 🔹 Default Arguments
+## Default Arguments
 
 Provide default values to parameters.
 
@@ -1819,9 +1836,7 @@ int add(int a, int b = 10);
 * Default arguments must be **from right to left**
 * Defined only once (usually in prototype)
 
----
-
-## 🔹 Inline Functions
+## Inline Functions
 
 Replaces function call with function code.
 
@@ -1837,9 +1852,8 @@ inline int square(int x) {
 * Used for **small functions**
 * Compiler may ignore `inline`
 
----
 
-## 🔹 Function Overloading
+## Function Overloading
 
 Multiple functions with **same name but different parameters**.
 
@@ -1854,9 +1868,8 @@ float add(float a, float b);
 * Return type alone is **not sufficient**
 * Achieves **compile-time polymorphism**
 
----
 
-## 🔹 Recursion
+## Recursion
 
 A function calling itself to solve a problem.
 
@@ -1873,9 +1886,8 @@ int fact(int n) {
 * Uses **stack memory**
 * Can cause stack overflow if not controlled
 
----
 
-## 🔹 Hidden / Exam Important Points
+## Hidden / Exam Important Points
 
 * Functions use **call stack**
 * Parameter passing affects performance
@@ -1883,14 +1895,25 @@ int fact(int n) {
 * Overloading resolved at compile time
 * Tail recursion is optimized by compiler
 
----
 
-## 🔹 Advantages of Functions
+## Advantages of Functions
 
 * Code reusability
 * Modularity
 * Easy debugging
 * Better readability
+
+
+
+
+
+
+
+
+
+
+
+
 
 ###### pointer
 ---
