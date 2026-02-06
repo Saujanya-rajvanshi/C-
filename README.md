@@ -911,7 +911,7 @@ cout << "Value: " << n;
 ---
 
 ###### header
-## 🎗 Header Files & Namespaces — C++
+## 🎗 Header Files & Namespaces(C++)
 
 Header files contain **declarations** (functions, classes, variables, macros) that are shared across multiple source files.
 
@@ -931,7 +931,7 @@ int main() {
 }
 ```
 
-## 🔹 Standard Header Files
+## Standard Header Files
 
 Provided by the C++ Standard Library.
 
@@ -949,9 +949,7 @@ Provided by the C++ Standard Library.
 * Stored in system directories
 * Platform independent
 
----
-
-## 🔹 User-Defined Header Files
+## User-Defined Header Files
 
 Created by the programmer for custom code.
 
@@ -968,11 +966,9 @@ Created by the programmer for custom code.
 * Used to share functions/classes across files
 * Should contain **declarations only**, not main logic
 
----
+## `#include` Types
 
-## 🔹 `#include` Types
-
-### 1️⃣ Angle Brackets
+### 1️. Angle Brackets
 
 ```cpp
 #include <iostream>
@@ -980,7 +976,7 @@ Created by the programmer for custom code.
 
 → Used for **standard headers**
 
-### 2️⃣ Double Quotes
+### 2️. Double Quotes
 
 ```cpp
 #include "file.h"
@@ -988,9 +984,7 @@ Created by the programmer for custom code.
 
 → Used for **user-defined headers**
 
----
-
-## 🔹 `using namespace std;`
+## `using namespace std;`
 
 Used to avoid writing `std::` repeatedly.
 
@@ -1012,9 +1006,7 @@ cout << "Hello";
 std::cout << "Hello";
 ```
 
----
-
-## 🔹 Namespace Creation
+## Namespace Creation
 
 Namespaces group identifiers to avoid **name collision**.
 
@@ -1032,9 +1024,7 @@ namespace MySpace {
 MySpace::x;
 ```
 
----
-
-## 🔹 Scope Resolution Operator `::`
+## Scope Resolution Operator `::`
 
 Used to access:
 
@@ -1052,17 +1042,13 @@ ClassName::function();
 ::globalVar;
 ```
 
----
-
-## 🔹 Exam & Interview Points
+## Exam & Interview Points
 
 * Header guards prevent multiple inclusion
 * `#pragma once` is an alternative
 * Namespaces improve code scalability
 * `std` is a predefined namespace
 * `::` binds identifier to its scope
-
----
 
 
 ### **#include <bits/stdc++.h>**
@@ -1087,7 +1073,6 @@ These are outside the C++ standard:
 
 Reason: They are **OS/compiler specific**, not C++ STL.
 
----
 
 2. **C headers without `c` prefix (sometimes)**
 
@@ -1103,7 +1088,6 @@ But **not guaranteed** to include:
 
 (Use the `c` versions in C++)
 
----
 
  3. **Graphics / GUI libraries**
 
@@ -1113,8 +1097,6 @@ But **not guaranteed** to include:
 * `<SDL.h>`
 
 These are **external libraries**, not STL.
-
----
 
 4. **Threading / system-level libraries (sometimes missing)**
 
@@ -1127,18 +1109,13 @@ May not reliably include:
 
 (Some GCC versions include them, some don’t → **not safe to rely on**)
 
----
 
 5. **Networking / modern C++ libs**
 
 * `<asio>`
 * `<boost/*>` (Boost is external)
 
----
-
 ###### Data handling
----
-
 # 🎗 Data Handling in C++
 
 * **Data Handling**
