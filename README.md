@@ -18,7 +18,7 @@
 - [Templates](#templates)
 - [STL (Standard Template Library)](https://github.com/Saujanya-rajvanshi/STL)
 - [Advanced C++ Concepts](#advanced-concept)
-- [Competitive Programming / DSA Readiness](#competitive-programming)
+- [Competitive Programming / DSA Readiness](#Competitive-Programming)
 - [string manipulation](#string-manipulation)
 - [basic maths codes](https://github.com/Saujanya-rajvanshi/basic-maths)
 
@@ -3329,7 +3329,7 @@ Test(const Test&) = delete;
 
 
 
-###### competitive programming
+###### Competitive Programming
 # 🎗 Competitive Programming / DSA Readiness (Google-Level Notes)
 
 
