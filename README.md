@@ -930,24 +930,22 @@ int main() {
     return 0;
 }
 ```
+## `#include` Types
+
+1️. Angle Brackets -> **Standard Header Files** #include <iostream>
+2️. Double Quotes -> **User-Defined Header Files** #include "file.h"
 
 ## Standard Header Files
 
-Provided by the C++ Standard Library.
+Provided by the C++ Standard Library. <br>
+Stored in system directories, Platform independent
 
-### Examples
-
+#### Examples
 * `<iostream>` → input/output
 * `<string>` → string handling
 * `<cmath>` → math functions
 * `<vector>`, `<map>`, `<algorithm>` → STL
 * `<cstdlib>`, `<cstdio>`, `<cstring>`
-
-### Key Points
-
-* Enclosed in **angle brackets `< >`**
-* Stored in system directories
-* Platform independent
 
 ## User-Defined Header Files
 
@@ -959,43 +957,20 @@ Created by the programmer for custom code.
 #include "myfile.h"
 ```
 
-### Notes
-
 * Enclosed in **double quotes**
 * Compiler searches **current directory first**
 * Used to share functions/classes across files
 * Should contain **declarations only**, not main logic
 
-## `#include` Types
-
-### 1️. Angle Brackets
-
-```cpp
-#include <iostream>
-```
-
-→ Used for **standard headers**
-
-### 2️. Double Quotes
-
-```cpp
-#include "file.h"
-```
-
-→ Used for **user-defined headers**
-
-## `using namespace std;`
+## using namespace std
 
 Used to avoid writing `std::` repeatedly.
 
-### Example
-
+#### Example
 ```cpp
 using namespace std;
 cout << "Hello";
 ```
-
-### Important Points
 
 * Saves typing
 * Should be **avoided in large projects**
@@ -1033,7 +1008,7 @@ Used to access:
 * Global variables
 * Static class members
 
-### Examples
+#### Examples
 
 ```cpp
 std::cout << "Hello";
@@ -1050,17 +1025,15 @@ ClassName::function();
 * `std` is a predefined namespace
 * `::` binds identifier to its scope
 
-
-### **#include <bits/stdc++.h>**
-#include <bits/stdc++.h> is a non-standard header that includes almost all standard C++ libraries at once.
+## competitive programming 
+**#include <bits/stdc++.h>** is a non-standard header that includes almost all standard C++ libraries at once.
 
 * It is mainly used in competitive programming.
-* It pulls in headers like:
-<iostream>, <vector>, <algorithm>, <map>, <set>, <stack>, <queue>, <cmath>
+* It pulls in headers like: <iostream>, <vector>, <algorithm>, <map>, <set>, <stack>, <queue>, <cmath> <br>
 So you don’t need to include each one separately.
 
 
-## ❌ Libraries it does **NOT** include
+❌ **Libraries it does **NOT** include**
 
 1. **Non-standard / compiler-specific headers**
 
@@ -1114,6 +1087,8 @@ May not reliably include:
 
 * `<asio>`
 * `<boost/*>` (Boost is external)
+
+
 
 ###### Data handling
 # 🎗 Data Handling in C++
