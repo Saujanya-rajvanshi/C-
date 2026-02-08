@@ -25,7 +25,7 @@
 
 
 ###### History
-## 🎗 HISTORY
+# 🎗 HISTORY
 
 * The C++ language is an object-oriented programming language & is a combination of both low-level & high-level language - a Middle-Level Language.
 * created, designed & developed by a Danish Computer Scientist - Bjarne Stroustrup at Bell Telephone Laboratories (now known as Nokia Bell Labs) in Murray Hill, New Jersey.
@@ -52,7 +52,7 @@
 **C++ is a general-purpose, high-performance language** used in system software, game development, competitive programming, embedded systems, and large-scale applications.
 
 ###### Features
-## 🎗 FEATURES
+# 🎗 FEATURES
 
 * **Object-Oriented Programming (OOP)**
   Supports classes, objects, inheritance, polymorphism, encapsulation, and abstraction.
@@ -92,7 +92,7 @@
 
 
 ###### basics
-## 🎗 BASICS 
+# 🎗 BASICS 
 - [character set](#character-set)
 - [tokens](#tokens)
 - [Barebones of c++ Program](#barebones-of-cpp-program)
