@@ -159,12 +159,12 @@
  * Total keywords ≈ 95 (C++20)
 
 ---
-###### identifier
-## 💎 identifier
+
+## identifier
 
 An **identifier** is the **name given to a variable, function, class, or object** in a C++ program.
 
-* 🔹 **Rules for identifiers**
+#### **Rules for identifiers**
 * Must start with a letter (A–Z / a–z) or **underscore (_)
 * Can contain **letters, digits, and underscores
 * Cannot start with a digit
@@ -172,12 +172,12 @@ An **identifier** is the **name given to a variable, function, class, or object*
 * Case-sensitive
 
 ---
-###### literals
-## 💎 literals
+
+## literals
 
 Literals are fixed constant values used directly in a program.
 
-* 🔹 **Types of literals**
+#### **Types of literals**
 * **Integer literals :** 10, -5, 0, 100  - [integer](#integer)
 * **Floating-point literals :** 3.14, 0.5, 2.0 - [Floating-point](#Floating-point)
 * **Character literals :** 'a', 'Z', '9' -[Character](#Characters)
@@ -187,27 +187,27 @@ Literals are fixed constant values used directly in a program.
 
 
 ---
-###### integer
-## 💎 integer 
+
+## integer
 
 Integer Literals in C++ (Sub-types)
 
-* 🔹 **Decimal :** base 10 → digits 0–9
-*  Examples: 10, 25, 100
+#### **Decimal :** base 10 → digits 0–9
+Examples: 10, 25, 100
 
-* 🔹 **Octal :** base 8 → starts with 0
-* Digits: 0–7
-*  Examples: 012, 075
+#### **Octal :** base 8 → starts with 0
+Digits: 0–7 <br>
+Examples: 012, 075
 
-* 🔹 **Hexadecimal :** base 16 → starts with 0x or 0X
+#### **Hexadecimal :** base 16 → starts with 0x or 0X
 * Digits: 0–9, A–F
 * Examples: 0x1A, 0XFF
 
-* 🔹 **Binary (C++14 onwards) :** base 2 → starts with 0b or 0B
+#### **Binary (C++14 onwards) :** base 2 → starts with 0b or 0B
 * Digits: 0 and 1
 * Examples: 0b1010, 0B1101
 
-* 🔹 **conversion**
+#### **conversion**
 ```
 1. decimal to binary(2)/octal(8)/hexadecimal(16)
       A.B  devide A -|-- by 2/8/16   B  multiply 0.---*2/8/16
@@ -215,36 +215,36 @@ Integer Literals in C++ (Sub-types)
 2. binary(2)/octal(8)/hexadecimal(16) to decimal
      A * (2/8/16) power n 
 ```
----
 
-##### 💎 Floating-point
+
+
 ---
 ## floating point numbers literals
 Floating-point numbers are numbers that **contain a decimal point** or are written in **exponential form**.
 
-* 🔹 **Types in C++**
+#### **Types in C++**
 * `float` → single precision
 * `double` → double precision (more accurate)
 * `long double` → extended precision
 
 * **Examples** -> `3.14` , `-0.5` , `2.5e3` (means 2.5 × 10³)
 
-* 🔹 **Storage**
+#### **Storage**
 Floating-point numbers are stored in **IEEE 754 format** using:
 * Sign
 * Exponent
 * Mantissa (fraction)
 
-* 🔹 **Precision**
+#### **Precision**
 * `float` → ~6–7 decimal digits
 * `double` → ~15–16 decimal digits
 
-* 🔹 **Important Points**
+#### **Important Points**
 * Floating-point values are **approximate**, not exact
 * Direct comparison (`==`) is unsafe
 * Use a small **epsilon** for comparison
 
-* 🔹 **Common Issues**
+#### **Common Issues**
 * Rounding errors
 * Precision loss
 * Overflow / underflow
@@ -317,31 +317,28 @@ Sign | Exponent(11) | Mantissa(52)
 ---
 
 
-##### characters
----
-## 💎 Character Literals
-
+## characters
 * **Character**: stores a single symbol
 * **Type**: `char`
 * **Size**: 1 byte
 * **Written in**: single quotes `'A'`
 
-* 🔹 **Includes**
+#### **Includes**
 * **Letters** → `A–Z`, `a–z`
 * **Digits** → `0–9`
 * **Special symbols** → `@ # $ %`
 * **Whitespace** → space, tab, newline
 
-* 🔹 **ASCII-based Storage**
+#### **ASCII-based Storage**
 * `'A'` = 65, `'a'` = 97, `'0'` = 48
 
-* 🔹 **Escape Characters**
+#### **Escape Characters**
 * `\n` → newline
 * `\t` → tab
 * `\\` → backslash
 * `\'` → single quote
 
-* 🔹 **Common Functions**
+#### **Common Functions**
 * `isalpha()` → check letter
 * `isdigit()` → check digit
 * `toupper()` → convert to uppercase
@@ -350,32 +347,29 @@ Sign | Exponent(11) | Mantissa(52)
 
 
 
-##### string
----
-
-## 💎 String 
+## string
 
 * **String**: collection of characters
 * **Type**: `string` (STL)
 * **Header**: `<string>`
 
-* 🔹 **Features**
+#### **Features**
 * Dynamic size
 * Stores text data
 * Uses contiguous memory
 
-* 🔹 **Common Operations**
+#### **Common Operations**
 * **Length** → `length()` / `size()`
 * **Access** → `at(i)` / `[]`
 * **Add** → `append()` / `+`
 * **Remove** → `erase()`
 * **Clear** → `clear()`
 
-* 🔹 **Input / Output**
+#### **Input / Output**
 * `cin` → single word
 * `getline()` → full line
 
-* 🔹 **Important Points**
+#### **Important Points**
 * Indexing starts from 0
 * Strings are mutable
 * Safer than C-style strings
@@ -383,20 +377,16 @@ Sign | Exponent(11) | Mantissa(52)
 ---
 
 
-#####  boolean
----
-
-## 💎 Boolean
-
+##  boolean
 * **Boolean**: stores truth values
 * **Type**: `bool`
 * **Size**: usually 1 byte
 * **Values**: `true` / `false`
 
-* 🔹 **Usage**
+#### **Usage**
 *  Used in **conditions**, **flags**, and **logical operations**
 
-* 🔹 **Common Operators**
+#### **Common Operators**
 *  `!` → NOT
 *  `&&` → AND
 *  `||` → OR
@@ -410,7 +400,7 @@ if(!isOn) {
 }
 ```
 
-* 🔹 **Important Points**
+#### **Important Points**
 * Only two values: `true` or `false`
 * Can be used in arithmetic: `true = 1`, `false = 0`
 
@@ -437,17 +427,14 @@ if(ptr == nullptr) {
 }
 ```
 
-* 🔹 **Important Points**
+#### **Important Points**
 * `NULL` is older, `nullptr` is preferred in modern C++
 * Always initialize pointers to `nullptr` if not assigned
 * Dereferencing a null pointer → **runtime error**
 ---
 
 
-##### operator
----
-
-## 💎 C++ Operators
+## operator
 
 ### Categories
 * **Arithmetic** → `+`, `-`, `*`, `/`, `%`
@@ -495,10 +482,7 @@ if(ptr == nullptr) {
 ---
 
 
-##### panctuator
----
-
-## 💎 Punctuators (C++)
+## panctuator
 
 * **Punctuators**: symbols used to **separate, group, or structure** code
 * **Role**: define **syntax and program flow**
@@ -547,27 +531,27 @@ if(ptr == nullptr) {
 
 ## 🧩 Barebones of C++ Program
 
-### 🔹 Program Structure
+### Program Structure
 
 * Starts from `main()`
 * Statements end with `;`
 
-### 🔹 Expressions
+### Expressions
 
 * Produce a value
 * Example: `a + b`, `x > 5`
 
-### 🔹 Statements
+### Statements
 
 * Perform actions
 * Example: declaration, assignment, `if`, `cout`
 
-### 🔹 Comments
+### Comments
 
 * `//` → single-line
 * `/* */` → multi-line
 
-### 🔹 Blocks
+### Blocks
 
 * Defined using `{ }`
 * Same braces = same scope
@@ -911,7 +895,6 @@ cout << "Value: " << n;
 
 ---
 
- 
 #### Exam & Interview Points
 
 * Escape sequences are **character literals**
