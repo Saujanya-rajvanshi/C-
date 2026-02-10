@@ -114,6 +114,13 @@
 * **Digits :** 0–9
 * **Special symbols:** `+  -  *  /  %  =  <  >  !  &  |  ^  ~  ?  :  ;  ,  .  '  "  #  $  @  _  ( )  { }  [ ]
 * **Whitespace characters:** space, tab (`\t`), newline (`\n`), carriage return (`\r`)
+| Character           | Symbol | What it does                                   | Example / Use                   |
+| ------------------- | ------ | ---------------------------------------------- | ------------------------------- |
+| **Space**           | `' '`  | Adds a single blank gap                        | Separates words → `Hello World` |
+| **Tab**             | `\t`   | Adds a horizontal gap (bigger than space)      | Indentation in code             |
+| **Newline**         | `\n`   | Moves cursor to the **next line**              | End of a line                   |
+| **Carriage Return** | `\r`   | Moves cursor to the **start of the same line** | Line overwrite                  |
+
 
 
 ###### tokens
