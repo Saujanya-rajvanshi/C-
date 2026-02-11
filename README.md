@@ -144,15 +144,15 @@
 ###### keywords
 ## 💎 keywords
 
-* **1. Basic & Data types :**  int, float, double, char, void, bool, short, long, signed, unsigned, wchar_t
-* **Control statements :** if, else, switch, case, default, for, while, do, break, continue, goto, return
-* **Storage classes :** auto, register, static, extern, mutable
-* **Type modifiers & casting :** const, volatile, typedef, using, sizeof, typeid
-* **OOP related :** class, struct, union, public, private, protected, this, new, delete, virtual, override, final, friend
-* **Inheritance and polymorphism :** inherit, (no direct keyword), virtual, dynamic_cast, static_cast, reinterpret_cast, const_cast
-* **Templates & namespaces :** template, typename, namespace, export
-* **Exception handling :** try, catch, throw, noexcept
-* **Others / advanced :** inline, explicit, constexpr, decltype, operator, nullptr, true, false, asm
+* **Basic & Data types** :  int, float, double, char, void, bool, short, long, signed, unsigned, wchar_t
+* **Control statements** : if, else, switch, case, default, for, while, do, break, continue, goto, return
+* **Storage classes** : auto, register, static, extern, mutable
+* **Type modifiers & casting** :  const, volatile, typedef, using, sizeof, typeid
+* **OOP related** : class, struct, union, public, private, protected, this, new, delete, virtual, override, final, friend
+* **Inheritance and polymorphism** : inherit, (no direct keyword), virtual, dynamic_cast, static_cast, reinterpret_cast, const_cast
+* **Templates & namespaces** : template, typename, namespace, export
+* **Exception handling** : try, catch, throw, noexcept
+* **Others / advanced** : inline, explicit, constexpr, decltype, operator, nullptr, true, false, asm
 
 📌 Important note
  * Keywords cannot be used as identifiers
