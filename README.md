@@ -178,17 +178,15 @@ An **identifier** is the **name given to a variable, function, class, or object*
 Literals are fixed constant values used directly in a program.
 
 #### **Types of literals**
-* **Integer literals :** 10, -5, 0, 100  - [integer](#integer)
-* **Floating-point literals :** 3.14, 0.5, 2.0 - [Floating-point](#Floating-point)
-* **Character literals :** 'a', 'Z', '9' -[Character](#Characters)
-* **String literals :** "Hello", "C++" -[string](#string)
-* **Boolean literals :** true, false -[boolean](#boolean)
-* **Null pointer literal :** nullptr -[null pointer](#null)
+* **Integer literals :** 10, -5, 0, 100  - [integer](#integer-literals)
+* **Floating-point literals :** 3.14, 0.5, 2.0 - [Floating-point](#Floating-point-literals)
+* **Character literals :** 'a', 'Z', '9' -[Character](#Characters-literals)
+* **String literals :** "Hello", "C++" -[string](#string-literals)
+* **Boolean literals :** true, false -[boolean](#boolean-literals)
+* **Null pointer literal :** nullptr -[null pointer](#null-literals)
 
 
----
-
-## integer
+## integer literals
 
 Integer Literals in C++ (Sub-types)
 
@@ -217,9 +215,7 @@ Examples: 012, 075
 ```
 
 
-
----
-## floating point numbers literals
+## Floating point literals
 Floating-point numbers are numbers that **contain a decimal point** or are written in **exponential form**.
 
 #### **Types in C++**
@@ -250,7 +246,6 @@ Floating-point numbers are stored in **IEEE 754 format** using:
 * Overflow / underflow
 
 
----
 
 ### IEEE-754 FORMAT
 
@@ -314,10 +309,9 @@ Sign | Exponent(11) | Mantissa(52)
 0 | 10000000010 | 1010100000000000000000000000000000000000000000000000
 ```
 
----
 
+## characters literals
 
-## characters
 * **Character**: stores a single symbol
 * **Type**: `char`
 * **Size**: 1 byte
@@ -343,11 +337,9 @@ Sign | Exponent(11) | Mantissa(52)
 * `isdigit()` → check digit
 * `toupper()` → convert to uppercase
 * `tolower()` → convert to lowercase
----
 
 
-
-## string
+## string literals
 
 * **String**: collection of characters
 * **Type**: `string` (STL)
@@ -374,10 +366,9 @@ Sign | Exponent(11) | Mantissa(52)
 * Strings are mutable
 * Safer than C-style strings
 
----
 
+##  boolean literals
 
-##  boolean
 * **Boolean**: stores truth values
 * **Type**: `bool`
 * **Size**: usually 1 byte
@@ -404,11 +395,8 @@ if(!isOn) {
 * Only two values: `true` or `false`
 * Can be used in arithmetic: `true = 1`, `false = 0`
 
----
 
-
-##### null
----
+##### null literals
 
 * **Null Pointer**: a pointer that points to nothing
 * **Type**: any pointer type (e.g., `int*`, `char*`)
