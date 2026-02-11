@@ -437,9 +437,8 @@ if(ptr == nullptr) {
 * **Pointer / Reference** → `*`, `&`, `->`
 * **Member / Scope** → `.`, `::`
 
----
 
-### Operator Precedence & Associativity
+#### Operator Precedence & Associativity
 
 | **Precedence** | **Operator**                                                                 | **Description**                  | **Associativity** |            |              |
 | -------------- | ---------------------------------------------------------------------------- | -------------------------------- | ----------------- | ---------- | ------------ |
@@ -459,9 +458,8 @@ if(ptr == nullptr) {
 | 14             | `=`, `+=`, `-=`, `*=`, `/=`, `%=` …                                          | Assignment                       | Right → Left      |            |              |
 | 15             | `,`                                                                          | Comma                            | Left → Right      |            |              |
 
----
 
-### Notes
+#### Notes
 
 * Higher precedence → evaluated first
 * Associativity → resolves **operators with same precedence**
@@ -478,7 +476,6 @@ if(ptr == nullptr) {
 * **Role**: define **syntax and program flow**
 * **Do not perform operations** like operators
 
----
 
 ### Common Punctuators
 
@@ -496,18 +493,16 @@ if(ptr == nullptr) {
 | `#`            | Preprocessor directive            |
 | `...`          | Variadic arguments                |
 
----
 
-### Examples
+#### Examples
 
 * `;` → ends a statement
 * `{ }` → defines scope of loops / functions
 * `( )` → used in `if`, `while`, function calls
 * `#include` → uses `#` punctuator
 
----
 
-### Important Points
+#### Important Points
 
 * Punctuators **do not produce values**
 * Used to **organize and structure** code
