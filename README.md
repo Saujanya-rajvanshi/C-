@@ -142,7 +142,7 @@
 *  - [tokens - panctuator](#panctuator)
 
 ###### keywords
-## 💎 keywords
+## 🔮 keywords
 
 * **Basic & Data types** :  int, float, double, char, void, bool, short, long, signed, unsigned, wchar_t
 * **Control statements** : if, else, switch, case, default, for, while, do, break, continue, goto, return
@@ -160,7 +160,7 @@
 
 ---
 
-## identifier
+## 🔮 identifier
 
 An **identifier** is the **name given to a variable, function, class, or object** in a C++ program.
 
@@ -173,7 +173,7 @@ An **identifier** is the **name given to a variable, function, class, or object*
 
 ---
 
-## literals
+## 🔮 literals
 
 Literals are fixed constant values used directly in a program.
 
@@ -434,7 +434,7 @@ if(ptr == nullptr) {
 ---
 
 
-## operator
+## 🔮 operator
 
 ### Categories
 * **Arithmetic** → `+`, `-`, `*`, `/`, `%`
@@ -482,7 +482,7 @@ if(ptr == nullptr) {
 ---
 
 
-## panctuator
+## 🔮 panctuator
 
 * **Punctuators**: symbols used to **separate, group, or structure** code
 * **Role**: define **syntax and program flow**
@@ -527,8 +527,6 @@ if(ptr == nullptr) {
 ---
 
 ###### barebones of cpp program
----
-
 ## 🧩 Barebones of C++ Program
 
 ### Program Structure
