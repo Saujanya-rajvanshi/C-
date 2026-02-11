@@ -434,6 +434,7 @@ if(ptr == nullptr) {
 ---
 
 
+###### operator
 ## 🔮 operator
 
 ### Categories
@@ -482,7 +483,8 @@ if(ptr == nullptr) {
 ---
 
 
-## 🔮 panctuator
+###### panctuator
+## 🔮 pancuators
 
 * **Punctuators**: symbols used to **separate, group, or structure** code
 * **Role**: define **syntax and program flow**
