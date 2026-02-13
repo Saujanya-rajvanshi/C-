@@ -144,7 +144,7 @@
 ###### keywords
 ## 🔮 keywords
 
-* **Basic & Data types** :  int, float, double, char, void, bool, short, long, signed, unsigned, wchar_t
+* **Basic & Data types** :  int, float, double, char, string, void, bool, short, long, signed, unsigned, wchar_t
 * **Control statements** : if, else, switch, case, default, for, while, do, break, continue, goto, return
 * **Storage classes** : auto, register, static, extern, mutable
 * **Type modifiers & casting** :  const, volatile, typedef, using, sizeof, typeid
