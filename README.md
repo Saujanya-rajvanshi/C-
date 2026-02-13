@@ -892,6 +892,18 @@ cout << "Value: " << n;
 
 Header files contain **declarations** (functions, classes, variables, macros) that are shared across multiple source files.
 
+## boiler plate code 
+```cpp
+#include <iostream>
+using namespace std;
+
+int main(){
+    cout << "hello world";
+    return 0;
+}
+```
+
+
 ### Purpose
 
 * Code reusability
