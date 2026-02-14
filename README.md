@@ -154,9 +154,412 @@
 * **Exception handling** : try, catch, throw, noexcept
 * **Others / advanced** : inline, explicit, constexpr, decltype, operator, nullptr, true, false, asm
 
-📌 Important note
+###### Important note
  * Keywords cannot be used as identifiers
  * Total keywords ≈ 95 (C++20)
+
+
+### Basic & Data types
+
+int, float, double, char, string, void, bool, short, long, signed, unsigned, wchar_t
+
+* switch , case , default
+```cpp
+int day = 5;
+
+switch(day) {
+    case 1:
+        cout << "Monday";
+        break;
+    case 2:
+        cout << "Tuesday";
+        break;
+    default:
+        cout << "Invalid day";
+}
+```
+
+### Control statements
+
+if, else, switch, case, default, for, while, do, break, continue, goto, return
+
+* goto
+Used to jump to another part of program. <br>
+Not recommended in modern programming.
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int i = 1;
+
+start:
+    cout << i << endl;
+    i++;
+
+    if(i <= 3)
+        goto start;
+
+    return 0;
+}
+```
+
+### Storage classes
+
+* `auto` 
+
+Automatically deduces type.
+
+```cpp
+auto x = 10;      // int
+auto y = 3.14;    // double
+auto name = "Hi"; // const char*
+```
+
+* `register` ⚠ (Deprecated/Removed)
+
+Old keyword suggesting storing variable in CPU register.
+
+```cpp
+register int x = 5;
+```
+
+👉 Modern compilers ignore it.
+❌ Removed in C++17.
+
+---
+
+* `static` 
+
+#### a) Inside function → retains value
+
+```cpp
+void counter() {
+    static int count = 0;
+    count++;
+    cout << count << endl;
+}
+```
+
+Value persists between function calls.
+
+#### b) Outside function → internal linkage
+
+```cpp
+static int x = 10;
+```
+
+Accessible only within that file.
+
+* `extern` 
+
+Used to declare a global variable from another file.
+
+File1.cpp:
+
+```cpp
+int x = 100;
+```
+
+File2.cpp:
+
+```cpp
+extern int x;
+```
+
+Allows sharing global variable.
+
+* `mutable` (Used in classes)
+
+Allows modification inside `const` objects.
+
+```cpp
+class Test {
+public:
+    mutable int x;
+
+    void change() const {
+        x = 5;   // allowed because mutable
+    }
+};
+```
+
+Without `mutable`, this would give error.
+
+### Type Modifiers & Casting
+
+##### 1️. `const`
+
+Value cannot change.
+
+```cpp
+const int x = 10;
+```
+
+##### 2️. `volatile`
+
+Tells compiler: value may change unexpectedly (hardware, threads).
+
+```cpp
+volatile int flag;
+```
+
+##### 3️. `typedef`
+
+Old way to create alias.
+
+```cpp
+typedef unsigned int uint;
+uint x = 5;
+```
+
+##### 4️. `using`
+
+Modern alias.
+
+```cpp
+using uint = unsigned int;
+```
+
+##### 5️. `sizeof`
+
+Returns memory size (bytes).
+
+```cpp
+cout << sizeof(int);
+```
+
+##### 6️. `typeid`
+
+Gets type information.
+
+```cpp
+#include <typeinfo>
+cout << typeid(x).name();
+```
+
+### OOP Related
+
+##### `class`
+
+```cpp
+class A {};
+```
+
+##### `struct`
+
+Same as class, but default public.
+
+```cpp
+struct B {};
+```
+
+##### `union`
+
+All members share same memory.
+
+```cpp
+union Data {
+    int x;
+    float y;
+};
+```
+
+##### Access specifiers
+
+```cpp
+public:
+private:
+protected:
+```
+
+##### `this`
+
+Pointer to current object.
+
+```cpp
+this->x = x;
+```
+
+##### `new` / `delete`
+
+```cpp
+int* p = new int(10);
+delete p;
+```
+
+##### `virtual`
+
+Enables runtime polymorphism.
+
+```cpp
+virtual void show();
+```
+
+##### `override`
+
+```cpp
+void show() override;
+```
+
+##### `final`
+
+```cpp
+class A final {};
+```
+
+##### `friend`
+
+```cpp
+friend void display();
+```
+
+### Inheritance & Casting
+
+(No `inherit` keyword in C++)
+
+```cpp
+class B : public A {};
+```
+
+### Casting
+
+##### `static_cast`
+
+Compile-time safe cast.
+
+```cpp
+static_cast<double>(x);
+```
+
+##### `dynamic_cast`
+
+Runtime casting (polymorphism).
+
+```cpp
+dynamic_cast<Derived*>(basePtr);
+```
+
+##### `reinterpret_cast`
+
+Low-level cast.
+
+```cpp
+reinterpret_cast<long>(ptr);
+```
+
+##### `const_cast`
+
+Removes const.
+
+```cpp
+const_cast<int&>(x);
+```
+
+### Templates & Namespace
+
+##### `template`
+
+```cpp
+template <typename T>
+T add(T a, T b) { return a+b; }
+```
+
+##### `typename`
+
+Used in templates.
+
+##### `namespace`
+
+```cpp
+namespace MySpace {
+    int x = 5;
+}
+```
+
+##### `export`
+
+Rarely used (removed in modern standards for templates).
+
+
+### Exception Handling
+
+```cpp
+try {
+    throw 10;
+}
+catch(int x) {
+    cout << x;
+}
+```
+
+##### `noexcept`
+
+```cpp
+void func() noexcept {}
+```
+
+### Others / Advanced
+
+##### `inline`
+
+```cpp
+inline int square(int x) { return x*x; }
+```
+
+##### `explicit`
+
+```cpp
+explicit A(int x);
+```
+
+Prevents implicit conversion.
+
+##### `constexpr`
+
+```cpp
+constexpr int x = 5;
+```
+
+Compile-time constant.
+
+##### `decltype`
+
+```cpp
+decltype(x) y = 10;
+```
+
+##### `operator`
+
+```cpp
+int operator+(A obj);
+```
+
+##### `nullptr`
+
+```cpp
+int* p = nullptr;
+```
+
+##### `true` / `false`
+
+```cpp
+bool flag = true;
+```
+
+##### `asm`
+
+Inline assembly (rarely used).
+
+```cpp
+asm("nop");
+```
+
+
+
+
+
 
 ---
 
