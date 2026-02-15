@@ -1014,7 +1014,77 @@ A **variable** stores data whose value can change, while a **constant** stores f
 * `volatile` → value may change unexpectedly
 * `mutable` → allows modification in `const` objects
 
+### 1️. `const`
+
+Value cannot change after initialization.
+
+```cpp
+const int x = 10;
+// x = 20; ❌ error
+```
+
+With pointer:
+
+```cpp
+const int* p;   // cannot modify value through pointer
+```
+
+### 2️. `constexpr`
+
+Evaluated at compile time.
+
+```cpp
+constexpr int square(int x) {
+    return x * x;
+}
+
+constexpr int val = square(5);  // computed at compile time
+```
+
+⚠ Must use constant expression.
+
+### 3. `volatile`
+
+Value may change unexpectedly (hardware, threads).
+
+```cpp
+volatile int flag;
+```
+
+Used in:
+
+* Embedded systems
+* Hardware registers
+* Multi-threading signals
+
+Prevents compiler optimization on that variable.
+
+### 4. `mutable`
+
+Allows modification inside `const` object.
+
+```cpp
+class Test {
+public:
+    mutable int count = 0;
+
+    void update() const {
+        count++;   // allowed because mutable
+    }
+};
+```
+
+Without `mutable` → ❌ error
+
+| Keyword     | Meaning                         |
+| ----------- | ------------------------------- |
+| `const`     | Cannot change value             |
+| `constexpr` | Known at compile time           |
+| `volatile`  | May change unexpectedly         |
+| `mutable`   | Can modify even in const object |
+
 ---
+
 
 ###### Type Modifiers
 ## 🧩 Type Modifiers
