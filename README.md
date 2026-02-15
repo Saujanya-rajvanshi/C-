@@ -1152,6 +1152,46 @@ cout << sizeof(char);   // always 1
 * It is defined by standard.
 * Even if system uses 8-bit, 16-bit etc, `char` is defined as 1 byte.
 
+
+
+* Padding -> Extra unused bytes added               
+* Alignment -> Rule that decides where data is placed 
+### 1. Structure Padding
+
+Structure padding is the **extra unused memory** added by the compiler inside a structure to maintain proper alignment.
+
+#### Why?
+
+To make memory access faster.
+
+#### Example:
+
+```cpp
+struct A {
+    char c;   // 1 byte
+    int x;    // 4 bytes
+};
+```
+
+Expected: 5 bytes
+Actual: 8 bytes (because of 3 padding bytes)
+
+
+### 2. Memory Alignment
+
+Memory alignment means:
+
+> Data is stored at memory addresses that are multiples of their size.
+
+For example:
+
+* `int` (4 bytes) → stored at address divisible by 4
+* `double` (8 bytes) → stored at address divisible by 8
+
+This improves CPU performance.
+
+
+
 ---
 
 
