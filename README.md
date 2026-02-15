@@ -1219,8 +1219,6 @@ They always start with a **backslash (`\`)**.
   * `\uXXXX` (16-bit)
   * `\UXXXXXXXX` (32-bit)
 
----
-
 ### Important Concepts
 
 * Used inside **single (`' '`) and double (`" "`) quotes**
@@ -1229,20 +1227,45 @@ They always start with a **backslash (`\`)**.
 * `\0` marks end of C-style strings
 * Invalid escape sequences cause **compiler warnings**
 
----
-
 * **Example**
 
 ```cpp
-cout << "Hello\nWorld\tC++";
+#include <iostream>
+using namespace std;
+
+int main(){
+    cout << "new\nline" << endl ;
+    cout << "horizontal\ttab" << endl ;
+    cout << "vertical\vtab" << endl ;
+    cout << "back\bspace" << endl ;
+    cout << "carriage\rreturn" << endl ;
+    cout << "Form\ffeed" << endl ;
+    cout << "alert\a" << endl ;
+    cout << "C:\\back\\Slash";
+    cout << "single\'s quote" ;
+    cout << "Double Quote\"Hello\"";
+    cout << "\?";
+    char arr[] = "null\0chracter";
+    cout << arr;
+return 0;
+}
 ```
 
 **Output**
 
 ```
-Hello
-World    C++
+new
+line
+horizontal      tab
+vertical
+tab
+bacspace
+returnge
+Form
+feed
+alert
 ```
+
 ---
 ###### output and input
 ## 🧩 Output & Input
