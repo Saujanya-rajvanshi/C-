@@ -1147,15 +1147,15 @@ Always true in C++.
 cout << sizeof(char);   // always 1
 ```
 
-⚠ Important:
-
+##### Important :
 * It is defined by standard.
 * Even if system uses 8-bit, 16-bit etc, `char` is defined as 1 byte.
 
+---
 
+* **Padding** -> Extra unused bytes added               
+* **Alignment** -> Rule that decides where data is placed
 
-* Padding -> Extra unused bytes added               
-* Alignment -> Rule that decides where data is placed 
 ### 1. Structure Padding
 
 Structure padding is the **extra unused memory** added by the compiler inside a structure to maintain proper alignment.
