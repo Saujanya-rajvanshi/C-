@@ -102,7 +102,6 @@
 - [Type Conversion Type Casting](#Type-Conversion-Type-Casting)
 - [sizeof operator](#sizeof-operator)
 - [Comments](#Comments)
-- [data handling](#data-handling-basics)
 - [boiler plate code](#boile-plate-code)
 - [next line](#next-line)
 - [Escape Sequences](#Escape-Sequences)
@@ -1100,38 +1099,6 @@ Comments are used to **explain code** and are ignored by the compiler.
 
 ---
 
-
-###### data handling basics
-## 🧩 Data Handling
-
-**Data handling** means storing, reading, modifying, and managing data in a program.
-
-* Data is stored using **variables**
-* Data types define what kind of data is stored
-
-  * `int` → numbers
-  * `float/double` → decimal values
-  * `char` → single character
-  * `string` → text
-* Operations on data:
-
-  * Assignment (`=`)
-  * Arithmetic (`+ - * / %`)
-  * Comparison (`== != < >`)
-* Proper data handling avoids:
-
-  * Overflow
-  * Data loss
-  * Type mismatch errors
-
-📌 Example:
-
-```cpp
-int age = 20;
-float price = 99.5;
-```
-
----
 ###### boile plate code
 
 ## 🧩 Boiler Plate Code
@@ -1145,6 +1112,7 @@ float price = 99.5;
 using namespace std;
 
 int main() {
+    cout << "hello world"
     return 0;
 }
 ```
@@ -1165,7 +1133,7 @@ int main() {
 
 To move output to the **next line**, C++ provides two methods:
 
-### 1️⃣ `endl`
+### 1️. `endl`
 
 ```cpp
 cout << "Hello" << endl;
@@ -1174,7 +1142,7 @@ cout << "Hello" << endl;
 * Adds new line
 * Flushes output buffer (slower)
 
-### 2️⃣ `\n`
+### 2️. `\n`
 
 ```cpp
 cout << "Hello\n";
