@@ -1037,33 +1037,134 @@ Type modifiers change the **range and storage size** of data types.
 ###### Type Conversion Type Casting
 ## 🧩 Type Conversion Type Casting
 
-Type conversion changes one data type into another.
 
-#### Implicit Conversion
+Type conversion means changing one data type into another.
 
-* Done automatically by compiler
-* May cause **data loss**
+### Implicit Conversion (Automatic)
 
-#### Explicit Conversion
+* Done by compiler automatically
+* Also called **Type Promotion**
+* May cause data loss (narrowing)
 
-* Programmer controlled
+```cpp
+int x = 5;
+double y = x;   // int → double
+```
 
-#### Casting Types
+⚠ Example of data loss:
 
-* **C-style cast**
-* **C++ casts:**
+```cpp
+double d = 3.7;
+int n = d;   // 3 (decimal lost)
+```
 
-  * `static_cast`
-  * `const_cast`
-  * `reinterpret_cast`
-  * `dynamic_cast`
+### Explicit Conversion (Type Casting)
 
-#### Important Concepts
+Done manually by programmer.
 
-* Narrowing conversions
-* User-defined conversion
-* Conversion constructors
-* `explicit` keyword prevents automatic conversion
+#### C-Style Cast (Old)
+
+```cpp
+int x = (int)3.5;
+```
+
+Not recommended in modern C++.
+
+#### C++ Casts (Modern & Safe)
+
+##### 1️. `static_cast`
+
+Used for normal conversions.
+
+```cpp
+double d = 3.5;
+int x = static_cast<int>(d);
+```
+
+##### 2️. `const_cast`
+
+Adds or removes `const`.
+
+```cpp
+const int a = 10;
+int* p = const_cast<int*>(&a);
+```
+
+##### 3️. `reinterpret_cast`
+
+Low-level conversion (unsafe).
+
+```cpp
+int x = 65;
+char* p = reinterpret_cast<char*>(&x);
+```
+
+##### 4️. `dynamic_cast`
+
+Used in polymorphism (runtime check).
+
+```cpp
+dynamic_cast<Derived*>(basePtr);
+```
+
+## Important Concepts
+
+### Narrowing Conversion
+
+Losing data while converting large type → smaller type.
+
+```cpp
+double d = 9.8;
+int x = d;  // data loss
+```
+
+### User-Defined Conversion
+
+Conversion using class functions.
+
+```cpp
+class A {
+public:
+    A(int x) {}
+};
+```
+
+### Conversion Constructor
+
+Constructor with single parameter enables conversion.
+
+```cpp
+class A {
+public:
+    A(int x) {}
+};
+```
+
+### `explicit` Keyword
+
+Prevents automatic conversion.
+
+```cpp
+class A {
+public:
+    explicit A(int x) {}
+};
+```
+
+Now implicit conversion won’t happen.
+
+
+| Type             | Meaning                 |
+| ---------------- | ----------------------- |
+| Implicit         | Automatic conversion    |
+| Explicit         | Programmer controlled   |
+| static_cast      | Safe normal cast        |
+| dynamic_cast     | Runtime cast            |
+| reinterpret_cast | Unsafe low-level        |
+| const_cast       | Modify const            |
+| explicit         | Prevent auto conversion |
+
+
 
 ---
 
