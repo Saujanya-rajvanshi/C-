@@ -137,8 +137,8 @@
 * - [tokens - literals](#literals)
 * **Operators:** `+ - * / % = == < > && ||
 * - [tokens - operator](#operator)
-*  **Separators (punctuators):** `; , ( ) { } [ ]
-*  - [tokens - panctuator](#panctuator)
+* **Separators (punctuators):** `; , ( ) { } [ ]
+* - [tokens - panctuator](#panctuator)
 
 ###### keywords
 ## 🔮 keywords
@@ -1076,8 +1076,6 @@ Type conversion changes one data type into another.
 
 `sizeof` is a **compile-time operator** used to find memory size.
 
-#### Key Points
-
 * Returns value in bytes
 * Result type is `size_t`
 * `sizeof(array)` ≠ `sizeof(pointer)`
@@ -1085,7 +1083,81 @@ Type conversion changes one data type into another.
 * No side effects
 * `sizeof(char) == 1`
 
+#### Returns value in bytes
+
+```cpp
+cout << sizeof(int) << endl;
+```
+
+If `int` = 4 bytes → output: `4`
+
+#### 2. Result type is `size_t`
+
+```cpp
+size_t s = sizeof(double);
+```
+
+`size_t` is an unsigned integer type.
+
+#### 3. `sizeof(array) ≠ sizeof(pointer)`
+
+```cpp
+int arr[5];
+cout << sizeof(arr) << endl;      // 20 (5 × 4)
+
+int* ptr = arr;
+cout << sizeof(ptr) << endl;      // 8 (on 64-bit system)
+```
+
+* Array stores full memory
+* Pointer stores only address
+
+#### 4. Structure Padding Affects Result
+
+```cpp
+struct A {
+    char c;   // 1 byte
+    int x;    // 4 bytes
+};
+
+cout << sizeof(A);
+```
+
+You may expect 5 bytes,
+But output is often **8 bytes** (because of padding for alignment).
+
+
+#### 5. No Side Effects
+
+```cpp
+int x = 10;
+cout << sizeof(x++);
+```
+
+Output:
+
+```
+4
+```
+
+But `x` remains `10`
+Because `sizeof` does NOT evaluate the expression.
+
+#### 6. `sizeof(char) == 1`
+
+Always true in C++.
+
+```cpp
+cout << sizeof(char);   // always 1
+```
+
+⚠ Important:
+
+* It is defined by standard.
+* Even if system uses 8-bit, 16-bit etc, `char` is defined as 1 byte.
+
 ---
+
 
 ###### Comments
 ## 🧩 Comments
