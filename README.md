@@ -556,10 +556,6 @@ asm("nop");
 ```
 
 
-
-
-
-
 ---
 
 ## 🔮 identifier
@@ -1083,7 +1079,7 @@ Type conversion changes one data type into another.
 * No side effects
 * `sizeof(char) == 1`
 
-#### Returns value in bytes
+#### 1. Returns value in bytes
 
 ```cpp
 cout << sizeof(int) << endl;
