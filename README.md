@@ -1269,24 +1269,15 @@ cin >> a >> b;
 
 * `>>` separates input by space
 * `cin` stops at space (for strings)
-* For full line input → use `getline()`
-
-📌 Example:
+* For full line input → use `getline()` < br>
+<br>
+Example:
 
 ```cpp
 int n;
 cin >> n;
 cout << "Value: " << n;
 ```
-
----
-
-#### Exam & Interview Points
-
-* Escape sequences are **character literals**
-* `\n` moves cursor to next line, `\r` returns to start
-* `\t` spacing depends on environment
-* Used heavily in **string formatting**
 
 ---
 
