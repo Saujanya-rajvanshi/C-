@@ -1555,9 +1555,12 @@ cout << "Value: " << n;
 # 🎗 Header Files (C++)
 
 Header files contain **declarations** (functions, classes, variables, macros) that are shared across multiple source files.
+##### include Types
+1️. Angle Brackets -> **Standard Header Files** #include <iostream> <br>
+2️. Double Quotes -> **User-Defined Header Files** #include "file.h"
 
-### Purpose
 
+##### Purpose :
 * Code reusability
 * Faster development
 * Better modularity
@@ -1571,11 +1574,6 @@ int main() {
     return 0;
 }
 ```
-
-## include Types
-
-1️. Angle Brackets -> **Standard Header Files** #include <iostream>
-2️. Double Quotes -> **User-Defined Header Files** #include "file.h"
 
 ## Standard Header Files
 
