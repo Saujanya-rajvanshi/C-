@@ -1575,7 +1575,7 @@ int main() {
 }
 ```
 
-## Standard Header Files
+## 🌿 Standard Header Files
 
 Provided by the C++ Standard Library. <br>
 Stored in system directories, Platform independent
@@ -1587,7 +1587,7 @@ Stored in system directories, Platform independent
 * `<vector>`, `<map>`, `<algorithm>` → STL
 * `<cstdlib>`, `<cstdio>`, `<cstring>`
 
-## User-Defined Header Files
+## 🌿 User-Defined Header Files
 
 Created by the programmer for custom code.
 
@@ -1602,7 +1602,7 @@ Created by the programmer for custom code.
 * Used to share functions/classes across files
 * Should contain **declarations only**, not main logic
 
-## using namespace std
+## 🌿 using namespace std
 
 Used to avoid writing `std::` repeatedly.
 
@@ -1621,11 +1621,11 @@ cout << "Hello";
 std::cout << "Hello";
 ```
 
-## Namespace Creation
+### Namespace Creation
 
 Namespaces group identifiers to avoid **name collision**.
 
-### Syntax
+#### Syntax
 
 ```cpp
 namespace MySpace {
@@ -1633,13 +1633,13 @@ namespace MySpace {
 }
 ```
 
-### Usage
+#### Usage
 
 ```cpp
 MySpace::x;
 ```
 
-## Scope Resolution Operator `::`
+## 🌿 Scope Resolution Operator `::`
 
 Used to access:
 
@@ -1658,7 +1658,7 @@ ClassName::function();
 ```
 
 
-## competitive programming 
+## 🌿 competitive programming 
 **#include <bits/stdc++.h>** is a non-standard header that includes almost all standard C++ libraries at once.
 
 * It is mainly used in competitive programming.
@@ -1722,7 +1722,7 @@ May not reliably include:
 * `<boost/*>` (Boost is external)
 
 
-## C++ Standard Header Files 
+## 🌿 C++ Standard Header Files 
 
 
 ### Input / Output
