@@ -1556,18 +1556,6 @@ cout << "Value: " << n;
 
 Header files contain **declarations** (functions, classes, variables, macros) that are shared across multiple source files.
 
-## boiler plate code 
-```cpp
-#include <iostream>
-using namespace std;
-
-int main(){
-    cout << "hello world";
-    return 0;
-}
-```
-
-
 ### Purpose
 
 * Code reusability
@@ -1583,6 +1571,7 @@ int main() {
     return 0;
 }
 ```
+
 ## include Types
 
 1️. Angle Brackets -> **Standard Header Files** #include <iostream>
@@ -1670,13 +1659,6 @@ ClassName::function();
 ::globalVar;
 ```
 
-## Exam & Interview Points
-
-* Header guards prevent multiple inclusion
-* `#pragma once` is an alternative
-* Namespaces improve code scalability
-* `std` is a predefined namespace
-* `::` binds identifier to its scope
 
 ## competitive programming 
 **#include <bits/stdc++.h>** is a non-standard header that includes almost all standard C++ libraries at once.
@@ -1745,7 +1727,7 @@ May not reliably include:
 ## C++ Standard Header Files 
 
 
-### 🔹 Input / Output
+### Input / Output
 
 | Header           | Purpose              | Important Components                             |
 | ---------------- | -------------------- | ------------------------------------------------ |
@@ -1754,9 +1736,8 @@ May not reliably include:
 | **`<fstream>`**  | File handling        | `ifstream`, `ofstream`, `fstream`                |
 | **`<sstream>`**  | String streams       | `stringstream`, `istringstream`, `ostringstream` |
 
----
 
-### 🔹 Strings & Characters
+### Strings & Characters
 
 | Header          | Purpose            | Important Components                        |
 | --------------- | ------------------ | ------------------------------------------- |
@@ -1765,9 +1746,8 @@ May not reliably include:
 | **`<cctype>`**  | Character handling | `isalpha()`, `isdigit()`, `toupper()`       |
 | **`<cwchar>`**  | Wide characters    | `wchar_t`, wide string functions            |
 
----
 
-### 🔹 Containers (STL)
+### Containers (STL)
 
 | Header                | Purpose            | Important Components              |
 | --------------------- | ------------------ | --------------------------------- |
@@ -1783,9 +1763,8 @@ May not reliably include:
 | **`<stack>`**         | Stack container    | `stack`, `push()`, `pop()`        |
 | **`<queue>`**         | Queue container    | `queue`, `priority_queue`         |
 
----
 
-### 🔹 Algorithms & Utilities
+### Algorithms & Utilities
 
 | Header             | Purpose          | Important Components            |
 | ------------------ | ---------------- | ------------------------------- |
@@ -1795,9 +1774,8 @@ May not reliably include:
 | **`<iterator>`**   | Iterators        | `advance()`, `next()`           |
 | **`<utility>`**    | Utility          | `pair`, `make_pair()`, `swap()` |
 
----
 
-### 🔹 Math & Numbers
+### Math & Numbers
 
 | Header          | Purpose         | Important Components                  |
 | --------------- | --------------- | ------------------------------------- |
@@ -1806,9 +1784,8 @@ May not reliably include:
 | **`<random>`**  | Random numbers  | `mt19937`, `uniform_int_distribution` |
 | **`<limits>`**  | Type limits     | `numeric_limits`                      |
 
----
 
-### 🔹 Memory Management
+### Memory Management
 
 | Header          | Purpose           | Important Components                        |
 | --------------- | ----------------- | ------------------------------------------- |
@@ -1816,7 +1793,6 @@ May not reliably include:
 | **`<new>`**     | Memory allocation | `operator new`, `bad_alloc`                 |
 | **`<cstdlib>`** | C utilities       | `malloc()`, `free()`                        |
 
----
 
 ### 🔹 Exception Handling
 
@@ -1826,18 +1802,16 @@ May not reliably include:
 | **`<stdexcept>`** | Standard exceptions | `runtime_error`, `logic_error` |
 | **`<typeinfo>`**  | RTTI                | `typeid`                       |
 
----
 
-### 🔹 Time & Date
+### Time & Date
 
 | Header         | Purpose          | Important Components       |
 | -------------- | ---------------- | -------------------------- |
 | **`<chrono>`** | Time library     | `system_clock`, `duration` |
 | **`<ctime>`**  | C time functions | `time()`, `clock()`        |
 
----
 
-### 🔹 Multithreading & Concurrency
+### Multithreading & Concurrency
 
 | Header                     | Purpose           | Important Components         |
 | -------------------------- | ----------------- | ---------------------------- |
@@ -1847,9 +1821,8 @@ May not reliably include:
 | **`<future>`**             | Async             | `async`, `future`, `promise` |
 | **`<condition_variable>`** | Thread sync       | `condition_variable`         |
 
----
 
-### 🔹 Type Traits & Compile-Time
+### Type Traits & Compile-Time
 
 | Header              | Purpose          | Important Components   |
 | ------------------- | ---------------- | ---------------------- |
@@ -1857,9 +1830,8 @@ May not reliably include:
 | **`<concepts>`**    | Concepts (C++20) | `integral`, `concept`  |
 | **`<bitset>`**      | Bit manipulation | `bitset`               |
 
----
 
-### 🔹 C Compatibility Headers (C → C++)
+### C Compatibility Headers (C → C++)
 
 | C Header   | C++ Version |
 | ---------- | ----------- |
