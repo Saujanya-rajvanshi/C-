@@ -1601,6 +1601,83 @@ Created by the programmer for custom code.
 * Compiler searches **current directory first**
 * Used to share functions/classes across files
 * Should contain **declarations only**, not main logic
+* `< >` → compiler searches standard library
+* `" "` → compiler searches current folder first
+
+
+✔ Function declarations
+✔ Class declarations
+✔ Macros
+✔ Constants
+
+❌ Should NOT contain `main()`
+❌ Should NOT contain full logic (usually)
+
+
+### example
+
+#### 📄 `myfile.h`
+
+
+```cpp
+ifndef MYFILE_H
+#define MYFILE_H
+
+#include <iostream>
+using namespace std ;
+
+void greet() {
+        cout << "Hello from header file!" << endl;
+}
+
+int add(int a, int b) {
+    return a + b;
+}
+
+#endif
+```
+
+```cpp
+#ifndef MYFILE_H
+#define MYFILE_H
+```
+
+This is called a **header guard** <br>
+It prevents multiple inclusion errors. <br>
+Without guards → multiple definition error <br>
+With guards → safe <br>
+
+
+
+#### `main.cpp`
+
+```cpp
+#include <iostream>
+#include "myfile.h"
+
+using namespace std;
+
+int main(){
+    greet();                 // function call
+    cout << add(5, 3);       // function call
+    return 0;
+}
+```
+
+### How Compilation Works
+
+If using terminal:
+
+```bash
+g++ main.cpp myfile.cpp -o program
+./program
+```
+
+Compiler links both files together.
+
+---
+
+
 
 ## 🌿 using namespace std
 
