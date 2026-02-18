@@ -1552,7 +1552,7 @@ cout << "Value: " << n;
 ---
 
 ###### header
-# 🎗 Header Files (C++)
+# 🎗 Header Files 
 
 Header files contain **declarations** (functions, classes, variables, macros) that are shared across multiple source files.
 ##### include Types
@@ -1929,8 +1929,14 @@ May not reliably include:
 
 
 
+
+
+
+
+
+
 ###### Data handling
-# 🎗 Data Handling in C++
+# 🎗 Data Handling 
 
 * **Data Handling**
 * **Data handling** refers to **storing, processing, and manipulating data** in a program.
@@ -2076,8 +2082,20 @@ Prevents accidental modification
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 ##### flow of control
-# 🎗 Flow of Control in C++ 
+# 🎗 Flow of Control  
 
 Flow of control refers to the **order in which statements in a C++ program are executed**. By default, execution is **sequential (top to bottom)**, but flow-control statements allow us to change this order based on **conditions, loops, or jumps**.
 
@@ -2363,7 +2381,7 @@ while (true) {
 
 
 ###### function
-# 🎗 Functions (C++)
+# 🎗 Functions 
 
 A **function** is a block of code that performs a specific task and can be reused multiple times.
 
@@ -2560,7 +2578,7 @@ int fact(int n) {
 
 
 ###### pointer
-# 🎗 Pointers — C++
+# 🎗 Pointers 
 
 A **pointer** is a variable that stores the **address of another variable**.
 
@@ -2708,7 +2726,7 @@ delete p;
 
 
 ###### dynamic memory allocation
-# 🎗 Dynamic Memory Allocation (C++)
+# 🎗 Dynamic Memory Allocation 
 
 Dynamic Memory Allocation (DMA) allows memory to be **allocated and deallocated at runtime**, instead of compile time.
 
@@ -2859,7 +2877,7 @@ delete[] arr;
 
 
 ###### Structures Unions
-# 🎗 Structures & Unions (C++)
+# 🎗 Structures & Unions 
 
 **Structure (`struct`)**
 A **structure** is a **user-defined data type** that groups **different data types** under one name.
@@ -3026,7 +3044,7 @@ using Stu = Student;
 
 
 ##### exception handling
-# 🎗 Exception Handling (C++)
+# 🎗 Exception Handling 
 
 **Exception Handling** is a mechanism to handle **runtime errors** and maintain **normal program flow**.
 
@@ -3240,7 +3258,7 @@ void fun() noexcept;
 
 
 ##### file handling
-# 🎗 File Handling (C++)
+# 🎗 File Handling 
 
 **File Handling** allows a program to **store data permanently** in files and **retrieve it later**.
 
@@ -3478,7 +3496,7 @@ Program → File Stream → File
 
 
 ##### templates
-# 🎗 Templates (C++)
+# 🎗 Templates 
 
 **Templates** allow writing **generic programs**, so the **same code works for different data types**.
 
@@ -4182,7 +4200,7 @@ cin.tie(nullptr);
 
 
 ##### string manipulation
-## 🎗 C++ String Manipulation 
+## 🎗 String Manipulation 
 
 ## What is a String?
 A **string** is a sequence of characters used to store text.
