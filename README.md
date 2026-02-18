@@ -2549,21 +2549,6 @@ int fact(int n) {
 * Can cause stack overflow if not controlled
 
 
-## Hidden / Exam Important Points
-
-* Functions use **call stack**
-* Parameter passing affects performance
-* Inline + recursion not allowed together
-* Overloading resolved at compile time
-* Tail recursion is optimized by compiler
-
-
-## Advantages of Functions
-
-* Code reusability
-* Modularity
-* Easy debugging
-* Better readability
 
 
 
