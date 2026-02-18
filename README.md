@@ -1936,36 +1936,18 @@ May not reliably include:
 * **Data handling** refers to **storing, processing, and manipulating data** in a program.
 * C++ handles data using **data types, variables, constants, and operators**.
 
----
-
-###  Data Types in C++
-* **Data Type** specifies:
-  * Type of data
-  * Size in memory
-  * Range of values
-  * Operations allowed
-
----
-
-## 🏗 Classification of Data Types in C++
-
+#### classification
  1. Built-in (Core / Primitive)
  2. Derived
  3. User-defined
 
----
-
-### 💎 Core (Built-in) Data Types
-
- Characteristics
-
+### Core (Built-in) Data Types
+Characteristics : <br>
 * Predefined in C++
 * Fast and memory-efficient
 * Store **single values**
 
----
-
-## 🔰 Core Data Types – Flow Chart (Hierarchy)
+## Core Data Types – Flow Chart (Hierarchy)
 
 ```
                 Core Data Types
@@ -1981,11 +1963,9 @@ May not reliably include:
                                                       -----list
 ```
 
----
+## Numeric Data Types
 
-## 💎 Numeric Data Types
-
-### 🔹 Integer Types
+### Integer Types
 
 * Used to store **whole numbers**
 * No decimal point
@@ -1998,9 +1978,7 @@ May not reliably include:
 | `long long int` | Very large numbers   |
 | `unsigned int`  | Only positive values |
 
----
-
-### 🔹 Floating-Point Types
+### Floating-Point Types
 
 * Used to store **decimal numbers**
 
@@ -2010,11 +1988,9 @@ May not reliably include:
 | `double`      | Double precision   |
 | `long double` | Extended precision |
 
----
+### Character Data Type
 
-## 💎 Character Data Type
-
-### 🔹 `char`
+#### `char`
 
 * Stores **single character**
 * Written in **single quotes**
@@ -2025,11 +2001,9 @@ Examples:
 
 * `'A'`, `'9'`, `'@'`
 
----
+### Boolean Data Type
 
-## 💎 Boolean Data Type
-
-### 🔹 `bool`
+#### `bool`
 
 * Stores **true / false**
 * Used in **conditions and decisions**
@@ -2038,11 +2012,9 @@ Examples:
   * `true` → 1
   * `false` → 0
 
----
+### Void Data Type
 
-## 💎 Void Data Type
-
-### 🔹 `void`
+#### `void`
 
 * Represents **no value**
 * Used when:
@@ -2050,41 +2022,30 @@ Examples:
   * Function returns nothing
   * Generic pointers
 
----
-
-## 💎 Mutable vs Immutable Data (C++ Perspective)
+## Mutable vs Immutable Data (C++ Perspective)
 
 > C++ does **not strictly enforce** mutability like Python, but conceptually:
 
----
 
-### 🔹 Mutable Data
+#### Mutable Data
 
 * Data that **can be changed**
 * Examples:
-
   * Variables
   * Arrays
   * Objects
-  * `string` (STL)
+  * `string` (STL) <br>
+Value can be modified after creation
 
-✔ Value can be modified after creation
-
----
-
-### 🔹 Immutable Data
+#### Immutable Data
 
 * Data that **cannot be changed once created**
 * Achieved using:
-
   * `const` keyword
-  * Literal values
+  * Literal values <br>
+Prevents accidental modification
 
-✔ Prevents accidental modification
-
----
-
-## 💎 Derived Data Types
+## Derived Data Types
 
 * Formed using **core data types**
 
@@ -2095,9 +2056,8 @@ Examples:
 | Reference | Alias of variable       |
 | Function  | Block of code           |
 
----
 
-## 💎 User-Defined Data Types
+## User-Defined Data Types
 
 * Created by programmer
 
@@ -2110,22 +2070,6 @@ Examples:
 | `class`             | Blueprint for objects |
 
 ---
-
-## ⚡ Key Exam Points
-
-* Core data types store **single values**
-* Integer → whole numbers
-* Floating → decimal values
-* `char` → single character
-* `bool` → true / false
-* `void` → no value
-* `const` helps achieve immutability
-* Flow-chart classification is **very important for theory exams**
-
----
-
-
-
 
 
 
