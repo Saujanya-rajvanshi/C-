@@ -891,14 +891,6 @@ if(ptr == nullptr) {
 | `...`          | Variadic arguments                |
 
 
-#### Examples
-
-* `;` → ends a statement
-* `{ }` → defines scope of loops / functions
-* `( )` → used in `if`, `while`, function calls
-* `#include` → uses `#` punctuator
-
-
 #### Important Points
 
 * Punctuators **do not produce values**
