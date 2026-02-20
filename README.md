@@ -891,13 +891,6 @@ if(ptr == nullptr) {
 | `...`          | Variadic arguments                |
 
 
-#### Important Points
-
-* Punctuators **do not produce values**
-* Used to **organize and structure** code
-* Essential for **syntax correctness**
-* Different from operators, but some symbols overlap
-
 ---
 
 ###### barebones of cpp program
