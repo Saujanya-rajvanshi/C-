@@ -837,23 +837,23 @@ if(ptr == nullptr) {
 
 #### Operator Precedence & Associativity
 
-| **Precedence** | **Operator**                                                                 | **Description**                  | **Associativity** |            |              |
-| -------------- | ---------------------------------------------------------------------------- | -------------------------------- | ----------------- | ---------- | ------------ |
-| 1              | `::`                                                                         | Scope resolution                 | Left → Right      |            |              |
-| 2              | `++`, `--`, `+`(unary), `-`(unary), `!`, `~`, `*`(dereference), `&`(address) | Unary operators                  | Right → Left      |            |              |
-| 3              | `*`, `/`, `%`                                                                | Multiplication, division, modulo | Left → Right      |            |              |
-| 4              | `+`, `-`                                                                     | Addition, subtraction            | Left → Right      |            |              |
-| 5              | `<<`, `>>`                                                                   | Bitwise shift                    | Left → Right      |            |              |
-| 6              | `<`, `<=`, `>`, `>=`                                                         | Relational                       | Left → Right      |            |              |
-| 7              | `==`, `!=`                                                                   | Equality                         | Left → Right      |            |              |
-| 8              | `&`                                                                          | Bitwise AND                      | Left → Right      |            |              |
-| 9              | `^`                                                                          | Bitwise XOR                      | Left → Right      |            |              |
-| 10             | `\|`                                                                         | Bitwise OR                       | Left → Right      |            |              |
-| 11             | `&&`                                                                         | Logical AND                      | Left → Right      |            |              |
-| 12             | `||`                                                                         | Logical OR                       | Left → Right      |            |              |
-| 13             | `?:`                                                                         | Ternary conditional              | Right → Left      |            |              |
-| 14             | `=`, `+=`, `-=`, `*=`, `/=`, `%=` …                                          | Assignment                       | Right → Left      |            |              |
-| 15             | `,`                                                                          | Comma                            | Left → Right      |            |              |
+| **Precedence** | **Operator**                                                                 | **Description**                  | **Associativity** |          
+| -------------- | ---------------------------------------------------------------------------- | -------------------------------- | ----------------- | 
+| 1              | `::`                                                                         | Scope resolution                 | Left → Right      |            
+| 2              | `++`, `--`, `+`(unary), `-`(unary), `!`, `~`, `*`(dereference), `&`(address) | Unary operators                  | Right → Left      |            
+| 3              | `*`, `/`, `%`                                                                | Multiplication, division, modulo | Left → Right      |           
+| 4              | `+`, `-`                                                                     | Addition, subtraction            | Left → Right      |           
+| 5              | `<<`, `>>`                                                                   | Bitwise shift                    | Left → Right      |           
+| 6              | `<`, `<=`, `>`, `>=`                                                         | Relational                       | Left → Right      |            
+| 7              | `==`, `!=`                                                                   | Equality                         | Left → Right      |            
+| 8              | `&`                                                                          | Bitwise AND                      | Left → Right      |            
+| 9              | `^`                                                                          | Bitwise XOR                      | Left → Right      |         
+| 10             | `\|`                                                                         | Bitwise OR                       | Left → Right      |          
+| 11             | `&&`                                                                         | Logical AND                      | Left → Right      |            
+| 12             | `||`                                                                         | Logical OR                       | Left → Right      |        
+| 13             | `?:`                                                                         | Ternary conditional              | Right → Left      |            
+| 14             | `=`, `+=`, `-=`, `*=`, `/=`, `%=` …                                          | Assignment                       | Right → Left      |           
+| 15             | `,`                                                                          | Comma                            | Left → Right      |           
 
 
 #### Notes
