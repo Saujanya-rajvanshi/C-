@@ -136,7 +136,7 @@
 * **Constants (literals):** fixed values like `10`, `3.14`, `'a'`, `"hello"`
 * - [tokens - literals](#literals)
 * **Operators:** `+ - * / % = == < > && ||
-* - [tokens - operator](#operator)
+* - [tokens - operator](#operators)
 * **Separators (punctuators):** `; , ( ) { } [ ]
 * - [tokens - panctuator](#panctuator)
 
@@ -819,7 +819,7 @@ if(ptr == nullptr) {
 ---
 
 
-###### operator
+###### operators
 ## 🔮 operator
 
 ### Categories
