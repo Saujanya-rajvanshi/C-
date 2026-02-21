@@ -850,7 +850,7 @@ if(ptr == nullptr) {
 | 9              | `^`                                                                          | Bitwise XOR                      | Left → Right      |            |              |
 | 10             | `\|`                                                                         | Bitwise OR                       | Left → Right      |            |              |
 | 11             | `&&`                                                                         | Logical AND                      | Left → Right      |            |              |
-| 12             | `                                                                            |                                  | `                 | Logical OR | Left → Right |
+| 12             | `||`                                                                         | Logical OR                       | Left → Right      |            |              |
 | 13             | `?:`                                                                         | Ternary conditional              | Right → Left      |            |              |
 | 14             | `=`, `+=`, `-=`, `*=`, `/=`, `%=` …                                          | Assignment                       | Right → Left      |            |              |
 | 15             | `,`                                                                          | Comma                            | Left → Right      |            |              |
