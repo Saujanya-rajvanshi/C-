@@ -1091,7 +1091,6 @@ Type modifiers change the **range and storage size** of data types.
 ###### Type Conversion Type Casting
 ## 🧩 Type Conversion Type Casting
 
-
 Type conversion means changing one data type into another.
 
 ### Implicit Conversion (Automatic)
@@ -1206,6 +1205,23 @@ public:
 ```
 
 Now implicit conversion won’t happen.
+
+### example : 
+#### `char` 
+
+getting charecters integer value 
+
+```cpp
+char ch;
+cin >> ch;
+int x = (int) ch;
+cout << (int) ch;
+```
+
+
+
+
+
 
 
 | Type             | Meaning                 |
