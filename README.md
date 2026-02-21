@@ -1523,7 +1523,7 @@ cin >> a >> b;
 
 * `>>` separates input by space
 * `cin` stops at space (for strings)
-* For full line input → use `getline()` < br>
+* For full line input → use `getline()` <br>
 <br>
 Example:
 
