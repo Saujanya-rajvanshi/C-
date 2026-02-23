@@ -2577,6 +2577,105 @@ int *p = &a;
 * `*` → pointer variable
 * `&` → address-of operator
 * Pointer must match the **data type** it points to
+* sizeof the pointer is usually **8**
+
+
+### different fornays of initialisation 
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int i = 5;
+
+    int *q = &i;
+    cout << q << endl;   // prints address of i
+    cout << *q << endl;  // prints value of i (5)
+
+    int *p = 0;   // null pointer
+    p = &i;
+
+    cout << p << endl;   // prints address of i
+    cout << *p << endl;  // prints value of i (5)
+
+    return 0;
+}
+```
+
+###### What Happens Here
+
+### `int *q = &i;`
+
+* `q` stores the **address** of `i`
+* `*q` gives the **value at that address**
+
+### `int *p = 0;`
+
+* `p` is a **null pointer**
+* Safe, because it is not pointing to garbage
+* After `p = &i;` → it points to `i`
+
+
+| Pointer Type               | Meaning                      | Safe?       |
+| -------------------------- | ---------------------------- | ----------- |
+| `int *p;`                  | Wild pointer (uninitialized) | ❌ Dangerous |
+| `int *p = 0;` or `nullptr` | Null pointer                 | ✅ Safe      |
+| `int *p = &i;`             | Valid pointer                | ✅ Safe      |
+
+
+Output Pattern : Address will look like:
+
+```
+0x61ff08
+5
+0x61ff08
+5
+```
+Address may vary each run.
+
+
+
+### incrementing value at pointer 
+```cpp
+int num = 5;
+int a } num;
+cout << "a before " << num << endl;
+a++;
+cout << "a after " << num << endl;
+
+int *p = &num;
+cout << "before " << num << endl;
+(*p)++;
+cout << "after " << num << endl;
+
+```
+
+output : 
+```
+a before 5 
+a after 5
+before 5
+after 6
+```
+
+### copying apointer 
+```cpp
+int *q = p;
+cout << p << " - " << q << endl;
+cout << *p << " - " << *q << endl;
+
+output :
+
+0x16d823488 - 0x16d823488
+6 - 6
+```
+
+
+
+
+
 
 ## Dereferencing Pointer
 
@@ -2627,6 +2726,12 @@ void *p;
 p++;
 p--;
 ```
+
+
+
+
+
+
 
 ## Pointer & Arrays
 
