@@ -2753,9 +2753,304 @@ i[arr] = 67
 ->0x300
 ```
 
+### Why `cout` works differently for `int` and `char` array
+
+* For **int array (`int arr[]`)** →
+  `cout << arr;` prints the **address** of first element.
+  Because it decays to `int*`.
+
+* For **char array (`char ch[]`)** →
+  `cout << ch;` prints the **entire string**, not address.
+  Because `cout` treats `char*` as a **C-string** (prints until `'\0'`).
+
+###### Example
+
+```cpp
+int arr[] = {1,2,3};
+char ch[] = "Hello";
+
+cout << arr;   // prints address
+cout << ch;    // prints Hello
+```
+
+Reason: `ostream` has special handling (overloading) for `char*` but not for `int*`.
+
+
+### array and pointer address
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int arr[] = {10, 20, 30, 40};
+
+    int *ptr = &arr[0];
+
+    cout << ptr << endl;   // address of arr[0]
+
+    ptr = ptr + 1;         // move pointer to next int
+
+    cout << ptr << endl;   // address of arr[1]
+
+    return 0;
+}
+```
+
+Here is the **complete corrected code** with your added lines:
+
+```cpp
+#include <iostream>
+using namespace std;
+
+void print(int *p) {
+    cout << *p << endl;
+}
+
+void update(int *p) {
+    p = p + 1;   // changes only local copy
+}
+
+int main() {
+
+    int value = 5;
+    int *p = &value;
+
+    cout << "Before: " << p << endl;
+
+    update(p);
+
+    cout << "After:  " << p << endl;
+
+    return 0;
+}
+```
+
+---
+
+## 🔎 What Happens?
+
+### Step 1
+
+`p` stores address of `value`.
+
+Example:
+
+```
+value = 5
+Address of value = 0x61ff08   (example)
+```
+
+So:
+
+```
+p = 0x61ff08
+```
+
+---
+
+### Step 2 → Before update
+
+```
+Before: 0x61ff08
+```
+
+---
+
+### Step 3 → Inside update()
+
+```
+p = p + 1;
+```
+
+⚠ This changes only the **local copy of pointer**, not original pointer in `main()`.
+
+Because pointer is passed **by value**.
+
+---
+
+### Step 4 → After update
+
+Original `p` remains unchanged.
+
+```
+After: 0x61ff08
+```
+
+---
+
+## 📌 Important Concept
+
+Even though we pass a pointer,
+👉 the pointer itself is still passed by value.
+
+So:
+
+* Changing `*p` → changes actual value
+* Changing `p` → does NOT change original pointer (unless passed by reference)
+
+---
+
+## 🔥 If you want to change original pointer:
+
+```cpp
+void update(int *&p) {   // reference to pointer
+    p = p + 1;
+}
+```
+
+---
+
+### Final Output Pattern
+
+```
+Before: 0x61ff08
+After:  0x61ff08
+```
+
+(Address will vary on your system.)
 
 
 
+#include <iostream>
+using namespace std;
+
+void update(int *p) {
+    *p = *p + 1;   // modifies actual value
+}
+
+int getSum(int arr[], int n) {
+
+    cout << "Size inside function: " << sizeof(arr) << endl;
+
+    int sum = 0;
+    for(int i = 0; i < n; i++) {
+        sum += arr[i];
+    }
+
+    return sum;
+}
+
+```
+int main() {
+
+    /*
+    int value = 5;
+    int *p = &value;
+
+    cout << "Before " << *p << endl;
+    update(p);
+    cout << "After " << *p << endl;
+    */
+
+    int arr[5] = {1,2,3,4,5};
+
+    cout << "Size in main: " << sizeof(arr) << endl;
+    cout << "Sum is " << getSum(arr,5) << endl;
+
+    return 0;
+}
+```
+
+
+Your code has typing mistakes. Let me correct it properly and clearly.
+
+---
+
+## ✅ Correct Version
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int getSum(int *arr, int n) {
+
+    cout << "Size inside function: " << sizeof(arr) << endl;
+
+    int sum = 0;
+    for(int i = 0; i < n; i++) {
+        sum += arr[i];
+    }
+
+    return sum;
+}
+
+int main() {
+
+    int arr[5] = {1,2,3,4,5};
+
+    cout << "Size in main: " << sizeof(arr) << endl;
+    cout << "Sum is " << getSum(arr, 5) << endl;
+
+    return 0;
+}
+```
+
+---
+
+## 🔎 What Happens Here?
+
+### In `main()`
+
+```
+sizeof(arr) = 20
+```
+
+(5 integers × 4 bytes)
+
+### Inside `getSum()`
+
+```
+sizeof(arr) = 8   (on 64-bit system)
+```
+
+Because:
+
+```
+int *arr   // it is a pointer now
+```
+
+Array → becomes pointer when passed to function.
+
+---
+
+## 🚫 Your Mistakes
+
+You wrote:
+
+```
+sum += arrr[arr];
+```
+
+Correct:
+
+```
+sum += arr[i];
+```
+
+Also:
+
+```
+arc4random
+```
+
+This is not C++ code. It belongs to BSD/macOS random functions and is not needed here.
+
+## 📌 Important Concept
+
+These two are SAME when passing to function:
+
+```
+int getSum(int arr[], int n)
+int getSum(int *arr, int n)
+```
+
+Both mean pointer parameter.
+
+---
+
+If you want, I can give you a quick pointer vs array memory diagram.
 
 
 
