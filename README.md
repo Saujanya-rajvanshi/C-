@@ -3202,6 +3202,188 @@ delete p;
 ---
 
 
+<img width="1030" height="523" alt="image" src="https://github.com/user-attachments/assets/22d4cba5-0c80-4664-9bbf-0ba8275253a7" />
+
+```cpp
+#include<iostream>
+using namespace std;
+
+int main() {
+
+    int i = 5;
+    int* p = &i;
+    int** p2 = &p;
+
+    cout << "\n\n Sab sahi chal rha h \n\n";
+
+    cout << i << endl;        // 5
+    cout << *p << endl;       // 5
+    cout << **p2 << endl;     // 5
+
+    cout << &i << endl;       // address of i
+    cout << p << endl;        // address of i
+    cout << *p2 << endl;      // address of i
+
+    cout << &p << endl;       // address of p
+    cout << p2 << endl;       // address of p
+
+    return 0;
+}
+```
+
+## 📌 Topic: Double Pointer Modification Scenarios in C++
+
+We will test **all three cases** and see what changes.
+
+---
+
+# ✅ Case 1: `p2 = p2 + 1;`
+
+👉 Changes local copy only
+👉 No change in main()
+
+```cpp
+#include<iostream>
+using namespace std;
+
+void update(int **p2) {
+    p2 = p2 + 1;   // changes local copy
+}
+
+int main() {
+
+    int i = 5;
+    int* p = &i;
+    int** p2 = &p;
+
+    cout << "Before i: " << i << endl;
+    cout << "Before p: " << p << endl;
+    cout << "Before p2: " << p2 << endl;
+
+    update(p2);
+
+    cout << "After i: " << i << endl;
+    cout << "After p: " << p << endl;
+    cout << "After p2: " << p2 << endl;
+}
+```
+
+### 🔎 Result
+
+Nothing changes.
+Because function gets **copy of p2**.
+
+---
+
+# ✅ Case 2: `*p2 = *p2 + 1;`
+
+👉 Changes pointer `p`
+👉 Value `i` does NOT change
+
+```cpp
+void update(int **p2) {
+    *p2 = *p2 + 1;   // moves pointer p to next int
+}
+```
+
+### 🔎 Result
+
+* `i` → same (5)
+* `p` → changed (points to next memory)
+* Dangerous (undefined behavior if no valid memory)
+
+---
+
+# ✅ Case 3: `**p2 = **p2 + 1;`
+
+👉 Changes actual value
+👉 `i` will change
+
+```cpp
+void update(int **p2) {
+    **p2 = **p2 + 1;   // increment value
+}
+```
+
+### 🔎 Full Working Code (Safe Example)
+
+```cpp
+#include<iostream>
+using namespace std;
+
+void update(int **p2) {
+    **p2 = **p2 + 1;   // increment i
+}
+
+int main() {
+
+    int i = 5;
+    int* p = &i;
+    int** p2 = &p;
+
+    cout << "\nBefore i: " << i << endl;
+    cout << "Before p: " << p << endl;
+    cout << "Before p2: " << p2 << endl;
+
+    update(p2);
+
+    cout << "\nAfter i: " << i << endl;
+    cout << "After p: " << p << endl;
+    cout << "After p2: " << p2 << endl;
+
+    return 0;
+}
+```
+
+---
+
+# 🎯 Final Concept Summary
+
+| Statement         | What Changes?          |
+| ----------------- | ---------------------- |
+| `p2 = p2 + 1`     | ❌ Nothing (local copy) |
+| `*p2 = *p2 + 1`   | ✅ Pointer `p` changes  |
+| `**p2 = **p2 + 1` | ✅ Value `i` changes    |
+
+---
+
+## 🔥 Memory Rule
+
+```
+p2 → p → i
+```
+
+* `*` → go one level inside
+* `**` → go two levels inside
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
