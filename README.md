@@ -5,6 +5,7 @@
 - [features of c++](#Features)
 - [basics](#basics)
 - [header](#header)
+- [pseudocode/flowchart](#pseudocode-flowchart)
 - [Data handling](#Data-handling)
 - [flow of control](#flow-of-control)
 - [function](#function)
@@ -1917,6 +1918,95 @@ May not reliably include:
 | `ctype.h`  | `<cctype>`  |
 
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## pseudocode flowchart
+
+**Definition of Pseudocode :** <br>
+
+**Pseudocode** is a simple way of writing the steps of an algorithm using **plain English mixed with programming-like statements**. It helps in planning the logic of a program before writing actual code.
+
+#### 🎯 **Purpose of Pseudocode**
+
+* Helps design the **algorithm of a program**
+* Makes program logic **easy to understand**
+* **Independent of programming languages**
+
+#### ✨ **Characteristics of Pseudocode**
+
+* Uses **simple English statements**
+* Focuses on **logic instead of syntax**
+* Does **not follow strict programming rules**
+* Can be easily converted into **actual code**
+
+#### 🧩 **Common Keywords in Pseudocode**
+
+* **START** – beginning of algorithm
+* **INPUT** – take data from user
+* **PROCESS** – perform calculation
+* **IF / ELSE** – decision making
+* **WHILE / FOR** – looping or repetition
+* **PRINT / OUTPUT** – display result
+* **END** – terminate algorithm
+
+#### 📝 **Example Pseudocode (Addition of Two Numbers)**
+
+```
+START
+INPUT A, B
+SUM ← A + B
+PRINT SUM
+END
+```
+
+### 📊 **Definition of Flowchart**
+
+A **Flowchart** is a **graphical representation of an algorithm** that uses **symbols and arrows** to show the sequence of steps in a program.
+
+#### 🎯 **Purpose of Flowchart**
+
+* Helps **visualize program logic**
+* Makes algorithms **easier to understand**
+* Useful for **program design and debugging**
+
+#### 🔷 **Common Flowchart Symbols**
+
+| Symbol               | Meaning                       |
+| -------------------- | ----------------------------- |
+| 🟢 **Oval**          | Start / End                   |
+| 🟦 **Rectangle**     | Process or calculation        |
+| 🟨 **Parallelogram** | Input / Output                |
+| 🔶 **Diamond**       | Decision (Yes / No condition) |
+| ➡ **Arrow**          | Direction of program flow     |
+
+#### 📝 **Example Flowchart Logic (Addition)**
+
+Start → Input A,B → Process SUM = A + B → Output SUM → End
+
+---
+
+
+
+
+
+
+
+
 
 
 
