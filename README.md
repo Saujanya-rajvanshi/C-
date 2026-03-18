@@ -2670,7 +2670,7 @@ int *p = &a;
 * sizeof the pointer is usually **8**
 
 
-### different fornays of initialisation 
+### different forms of initialisation 
 
 ```cpp
 #include <iostream>
@@ -2694,14 +2694,14 @@ int main() {
 }
 ```
 
-###### What Happens Here
+#### What Happens Here
 
-### `int *q = &i;`
+##### `int *q = &i;`
 
 * `q` stores the **address** of `i`
 * `*q` gives the **value at that address**
 
-### `int *p = 0;`
+##### `int *p = 0;`
 
 * `p` is a **null pointer**
 * Safe, because it is not pointing to garbage
@@ -2750,7 +2750,7 @@ before 5
 after 6
 ```
 
-### copying apointer 
+## copying a pointer 
 ```cpp
 int *q = p;
 cout << p << " - " << q << endl;
@@ -2843,7 +2843,9 @@ i[arr] = 67
 ->0x300
 ```
 
-### Why `cout` works differently for `int` and `char` array
+
+## char with pointer
+#### Why `cout` works differently for `int` and `char` array
 
 * For **int array (`int arr[]`)** →
   `cout << arr;` prints the **address** of first element.
@@ -2853,7 +2855,7 @@ i[arr] = 67
   `cout << ch;` prints the **entire string**, not address.
   Because `cout` treats `char*` as a **C-string** (prints until `'\0'`).
 
-###### Example
+##### Example
 
 ```cpp
 int arr[] = {1,2,3};
@@ -2917,9 +2919,7 @@ int main() {
 }
 ```
 
----
-
-## 🔎 What Happens?
+#### What Happens?
 
 ### Step 1
 
@@ -2938,15 +2938,11 @@ So:
 p = 0x61ff08
 ```
 
----
-
 ### Step 2 → Before update
 
 ```
 Before: 0x61ff08
 ```
-
----
 
 ### Step 3 → Inside update()
 
@@ -2958,8 +2954,6 @@ p = p + 1;
 
 Because pointer is passed **by value**.
 
----
-
 ### Step 4 → After update
 
 Original `p` remains unchanged.
@@ -2968,9 +2962,9 @@ Original `p` remains unchanged.
 After: 0x61ff08
 ```
 
----
 
-## 📌 Important Concept
+
+### Important Concept
 
 Even though we pass a pointer,
 👉 the pointer itself is still passed by value.
@@ -2980,9 +2974,7 @@ So:
 * Changing `*p` → changes actual value
 * Changing `p` → does NOT change original pointer (unless passed by reference)
 
----
-
-## 🔥 If you want to change original pointer:
+### If you want to change original pointer:
 
 ```cpp
 void update(int *&p) {   // reference to pointer
@@ -2990,7 +2982,6 @@ void update(int *&p) {   // reference to pointer
 }
 ```
 
----
 
 ### Final Output Pattern
 
