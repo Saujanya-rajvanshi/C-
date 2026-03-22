@@ -2679,8 +2679,8 @@ using namespace std;
 int main() {
 
     int i = 5;
-
     int *q = &i;
+
     cout << q << endl;   // prints address of i
     cout << *q << endl;  // prints value of i (5)
 
@@ -2694,29 +2694,6 @@ int main() {
 }
 ```
 
-#### What Happens Here
-
-##### `int *q = &i;`
-
-* `q` stores the **address** of `i`
-* `*q` gives the **value at that address**
-
-##### `int *p = 0;`
-
-* `p` is a **null pointer**
-* Safe, because it is not pointing to garbage
-* After `p = &i;` → it points to `i`
-
-
-| Pointer Type               | Meaning                      | Safe?       |
-| -------------------------- | ---------------------------- | ----------- |
-| `int *p;`                  | Wild pointer (uninitialized) | ❌ Dangerous |
-| `int *p = 0;` or `nullptr` | Null pointer                 | ✅ Safe      |
-| `int *p = &i;`             | Valid pointer                | ✅ Safe      |
-
-
-Output Pattern : Address will look like:
-
 ```
 0x61ff08
 5
@@ -2729,17 +2706,29 @@ Address may vary each run.
 
 ### incrementing value at pointer 
 ```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+int n = 5;
+cout << "n before : " << n << endl;
+n++;
+cout << "n after : " << n << endl;
+
+
 int num = 5;
-int a } num;
-cout << "a before " << num << endl;
+int a = num; // on diffent location so cant change the real value
+cout << "a before : " << num << endl;
 a++;
-cout << "a after " << num << endl;
+cout << "a after : " << num << endl;
 
 int *p = &num;
-cout << "before " << num << endl;
-(*p)++;
-cout << "after " << num << endl;
+cout << "before : " << num << endl;
+(*p)++; // poiter value can icrease the real value
+cout << "after : " << num << endl;
 
+    return 0;
+}
 ```
 
 output : 
